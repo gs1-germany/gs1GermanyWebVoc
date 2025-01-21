@@ -12,7 +12,8 @@
         "vann": "http://purl.org/vocab/vann/",
         "voaf": "http://purl.org/vocommons/voaf#"
     },
-    "@graph": [{
+    "@graph": [
+        {
             "@id": "gs1de:",
             "@type": [
                 "voaf:Vocabulary",
@@ -30,18 +31,19 @@
             "dc11:title": "GS1 Germany Web Vocabulary",
             "dc:issued:": {
                 "@type": "xsd:date",
-                "@value": "2025-01-09"
+                "@value": "2024-11-20"
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-01-09"
+                "@value": "2024-11-20"
             },
             "owl:versionInfo": "0.0.1",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
             },
-            "voaf:extends": [{
+            "voaf:extends": [
+                {
                     "@id": "schema:"
                 },
                 {
@@ -51,7 +53,8 @@
             "voaf:hasEquivalencesWith": {
                 "@id": "schema:"
             },
-            "voaf:specializes": [{
+            "voaf:specializes": [
+                {
                     "@id": "schema:"
                 },
                 {
@@ -236,6 +239,204 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CarbonFootPrint",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon footprint metadata and details."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CarbonFootPrintDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of carbon footprint information details."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCompositionDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Details on the composition of any materials used to make the trade item."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Composition Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCompositionDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Details on the composition of any materials used to make the trade item."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Composition Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionInformation",
+            "@type": [
+                "rdfs:Class",
+                "owl:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of details on an organisation’s greenhouse gas emissions, including reduction schemes."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of details about the specific goal(s) set by an organisation to reduce its greenhouse gas emissions within a defined timeframe."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Reduction Target Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ProductDurabilityDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of details about the usage units of a product and their expected lifespan, offering insights into its durability under normal conditions."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Product Durability Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of attributes describing the raw material(s) used in a specific packaging material."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This class includes attributes to provide the recyclability assessment of an item's packaging on the packaging level."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
                 "owl:DatatypeProperty",
@@ -258,6 +459,962 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:carbonFootPrint",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon footprint information."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon footprint"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpCountryCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code specifying a target market for which the carbon footprint values have been calculated. Transportation emissions can greatly vary from country to country."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon footprint country code"
+            },
+            "rdfs:range": {
+                "@id": "gs1:Country"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpValueVerificationCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code indicating how the calculated carbon footprint value is verified."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Value Verification Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:carbonFootPrintDetails",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon footprint information details."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Details"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpBoundariesCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code identifying the life cycle stage that the product carbon footprint value refers to. The boundary setting may vary depending on the purpose of the product carbon footprint assessment."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Boundaries Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpValue",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions value, i.e., carbon footprint, for a specific boundary setting."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Value"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpMeasurementUnitCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A string value indicating a Measurement Unit from the Carbon Footprint Measurement Unit Code List."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Measurement Unit Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1:unitCode "
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpFunctionalUnit",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The functional unit describes the quantity and/or performance characteristics of a product as it is used by the end-user, which forms the basis for calculating the emissions value (i.e., carbon footprint), and can be used for comparison to other similar products."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Functional Unit"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpMethodologyCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code specifying the method used to assess and communicate the environmental impact of the product in terms of carbon footprint."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Methodology Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpAccountingCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code specifying the method used to assess and communicate the environmental impact of the product in terms of carbon footprint."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Accounting Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:materialCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This element indicates the product material code that gives the composition of the trade item's first main material up to six material short codes that can be given in descending order of their respective percentages."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:MaterialCompositionDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:materialWeight",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The measured weight of the material."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Weight"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:substancesOfConcern",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Relates to information on any substances that have the potential to cause adverse effects on human health, animals, or the environment."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "substances of concern"
+            },
+            "rdfs:range": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionInfo",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information about the greenhouse gas emissions associated with an organisation."
+            },
+            "rdfs:domain": [
+                {
+                    "@id": "owl:Thing"
+                }
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Info"
+            },
+            "rdfs:range": {
+                "@id": "xsd:anyURI"
+            },
+            "rdfs:subPropertyOf": {
+                "@id": "gs1de:linkType"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionInfoIsExternallyValidated",
+            "@type": [
+              "owl:FunctionalProperty",
+              "rdf:Property",
+              "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+              "@language": "en",
+              "@value": "Indicator of whether the specified greenhouse gas emission information is validated by an external party."
+            },
+            "rdfs:domain": {
+              "@id": "gs1de:GreenhouseGasEmissionInformation"
+            },
+            "rdfs:isDefinedBy": {
+              "@id": "gs1de:"
+            },
+            "rdfs:label": {
+              "@language": "en",
+              "@value": "Greenhouse Gas Emission Info Is Externally Validated"
+            },
+            "rdfs:range": {
+              "@id": "gs1:NonbinaryLogicCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionReductionTarget",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information about the specific goal(s) set by an organisation to reduce its greenhouse gas emissions within a defined timeframe, categorised by Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain of the organisation)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Reduction Target"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionBaseLine",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The reference point representing an organisation’s greenhouse gas emissions before implementing any reduction measures, used to measure progress over time."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission BaseLine"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionBaseScope",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A classification that categorises an organisation’s greenhouse gas emissions into three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse gas emission base scope"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionScopeType"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionReductionTargetVerification",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicator of whether the specified greenhouse gas emission information is validated by an external party."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse gas emission reduction target verification"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ReferencedFileDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionYear",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The year associated with an organization’s greenhouse gas emissions, whether measured or projected."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Year"
+            },
+            "rdfs:range": {
+                "@id": "xsd:gYear"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionQuantityTCO2e",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The total quantity of greenhouse gas emissions, expressed in metric tons of CO2 equivalent (tCO2e)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Quantity TCO2e"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:greenhouseGasEmissionTarget",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The specific goal set by an organisation to reduce its greenhouse gas emissions from a defined baseline level."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Target"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:microplasticInformation",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Provides details about the presence, type, and quantity of microplastics in a product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:MicroplasticDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Information"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:MicroplasticDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:microplasticTypeCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Specifies the type of microplastic present in a product, using a standardised code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:microplasticInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:MicroplasticTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:microplasticQuantity",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates the amount of microplastics present in a product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:microplasticInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Quantity"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:productDurability",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Defines the usage units of a product and their expected lifespan, providing an indication of how long a product can be effectively used under normal conditions."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductDurabilityDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Product Durability"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:usageUnitDescription",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Description of a unit used to measure the usage of a product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductDurabilityDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Usage Unit Description"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:usageDuration",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Specifies the duration associated with a specific usage unit of a product, typically measured in units such as cycles, hours, or number of uses."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductDurabilityDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Usage Duration"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:postConsumerRecycledContentPercentage",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates the percentage of post-consumer material used in the trade item. The post-consumer material is collected from recycle bins and used as pulp to make new items. The percentage of post-consumer material is needed to drive whether the recycled logo goes on the item. Some post-consumer material is collected from the recycle bins and used as pulp to make new items."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingMaterialDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Post Consumer Recycled Content Percentage"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:packagingRawMaterialInformation",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information detailing the raw material(s) used in a specific packaging material."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingMaterialDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Information"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:packagingRawMaterialCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A code describing the type of raw or recycled material the packaging material is made from."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingMaterialDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PackagingRawMaterialCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:packagingRawMaterialContentPercentage",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The percentage of the type of raw or recycled material the product packaging material is made from, as specified by the Packaging Raw Material Code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingMaterialDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Content Percentage"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:packagingRecyclabilityAssessmentInformation",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information regarding the evaluation of an item’s packaging recyclability, assessed at the packaging level."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingRecyclabilityAssessmentInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Information"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:packagingRecyclabilityAssessmentSpecificationCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code that identifies the specification that defines how the degree of recyclability of packaging is calculated during assessment. These can be an agency, a regulation or directive, a community agreement, etc."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:packagingRecyclabilityAssessmentInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Specification Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:packagingRecyclabilityValue",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value that indicates the degree of recyclability of an item's packaging, which is calculated on the basis of the standard chosen in packagingRecyclabilityAssessmentSpecificationCode. This can be a percentage or value and can vary by country."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Value"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1:productReparability",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates how easily a product can be repaired, including factors like spare parts availability and repair complexity."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Product Reparability"
+            },
+            "rdfs:range": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:codeOfConduct",
+            "@type": [
+              "owl:ObjectProperty",
+              "rdf:Property"
+            ],
+            "rdfs:comment": {
+              "@language": "en",
+              "@value": "Relates to a set of guidelines and rules outlining acceptable behaviors and practices within an organisation or community"
+            },
+            "rdfs:domain": {
+              "@id": "gs1:ReferencedFileDetails"
+            },
+            "rdfs:isDefinedBy": {
+              "@id": "gs1:"
+            },
+            "rdfs:label": {
+              "@language": "en",
+              "@value": "Code of conduct"
+            },
+            "rdfs:range": {
+              "@id": "gs1:ReferencedFileDetails"
+            },
+            "sw:term_status": "testing"
+          },
+        {
+            "@id": "gs1de:ReferencedFileTypeCode-REPARABILITY_INFORMATION",
+            "@type": "gs1de:ReferenceFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Link to a file containing details about a product’s ease of repair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reparability Information"
+            },
+            "skos:prefLabel": "REPARABILITY_INFORMATION",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ReferencedFileTypeCode-CODE_OF_CONDUCT_SUPPLIER",
+            "@type": "gs1de:ReferenceFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Link to a file containing an organisation’scode of conduct for suppliers."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Code of conduct supplier"
+            },
+            "skos:prefLabel": "CODE_OF_CONDUCT_SUPPLIER",
             "sw:term_status": "testing"
         },
         {
@@ -670,7 +1827,8 @@
                 "@language": "en",
                 "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [{
+            "rdfs:domain": [
+                {
                     "@id": "gs1:Product"
                 },
                 {
@@ -703,7 +1861,8 @@
                 "@language": "en",
                 "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [{
+            "rdfs:domain": [
+                {
                     "@id": "gs1:Product"
                 },
                 {
