@@ -1021,6 +1021,20 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:ReferencedFileTypeCode-CODE_OF_CONDUCT_SUPPLIER",
+            "@type": "gs1:ReferenceFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Link to a file containing an organisation’scode of conduct for suppliers."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Code of conduct supplier"
+            },
+            "skos:prefLabel": "CODE_OF_CONDUCT_SUPPLIER",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:EuropeanTimberCode",
             "rdfs:label": {
                 "@language": "en",
