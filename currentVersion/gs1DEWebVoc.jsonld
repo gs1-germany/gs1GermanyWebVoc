@@ -879,6 +879,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionReductionTarget",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information about the specific goal(s) set by an organisation to reduce its greenhouse gas emissions within a defined timeframe, categorised by Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain of the organisation)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Reduction Target"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:OrganismCodeListCode",
             "rdfs:label": {
                 "@language": "en",
