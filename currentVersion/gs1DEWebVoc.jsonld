@@ -308,6 +308,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionBaseScope",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A classification that categorises an organisation’s greenhouse gas emissions into three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse gas emission base scope"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionScopeType"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
