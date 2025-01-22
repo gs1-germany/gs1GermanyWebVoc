@@ -236,6 +236,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:codeOfConduct",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Relates to a set of guidelines and rules outlining acceptable behaviors and practices within an organisation or community"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Code of conduct"
+            },
+            "rdfs:range": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
                 "owl:DatatypeProperty",
