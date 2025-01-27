@@ -1088,6 +1088,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:packagingRawMaterialInformation",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information detailing the raw material(s) used in a specific packaging material."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingMaterialDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Information"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PackagingRawMaterialInformation"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
