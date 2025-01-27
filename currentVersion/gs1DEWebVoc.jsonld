@@ -1138,6 +1138,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:packagingRawMaterialContentPercentage",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The percentage of the type of raw or recycled material the product packaging material is made from, as specified by the Packaging Raw Material Code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingRawMaterialInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Content Percentage"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
