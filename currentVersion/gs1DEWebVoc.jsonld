@@ -1183,6 +1183,31 @@
                 "@value": "Product Durability"
             },
             "rdfs:range": {
+                "@id": "gs1de:ProductDurabilityDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:usageUnitDescription",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Description of a unit used to measure the usage of a product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductDurabilityDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Usage Unit Description"
+            },
+            "rdfs:range": {
                 "@id": "rdf:langString"
             },
             "sw:term_status": "testing"
