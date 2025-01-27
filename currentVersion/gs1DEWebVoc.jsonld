@@ -383,6 +383,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionQuantityTCO2e",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The total quantity of greenhouse gas emissions, expressed in metric tons of CO2 equivalent (tCO2e)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Quantity TCO2e"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
