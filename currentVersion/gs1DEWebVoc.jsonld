@@ -433,6 +433,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionReductionTargetVerification",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicator of whether the specified greenhouse gas emission information is validated by an external party."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse gas emission reduction target verification"
+            },
+            "rdfs:range": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
