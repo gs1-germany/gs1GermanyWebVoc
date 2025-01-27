@@ -458,6 +458,30 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionInfo",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information about the greenhouse gas emissions associated with an organisation."
+            },
+            "rdfs:domain": [
+                {
+                    "@id": "gs1:Organization"
+                }
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Info"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionInformation"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
