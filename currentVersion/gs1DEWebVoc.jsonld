@@ -771,6 +771,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:cfpFunctionalUnit",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The functional unit describes the quantity and/or performance characteristics of a product as it is used by the end-user, which forms the basis for calculating the emissions value (i.e., carbon footprint), and can be used for comparison to other similar products."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Functional Unit"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
