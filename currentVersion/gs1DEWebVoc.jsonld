@@ -280,6 +280,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CarbonFootPrintDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of carbon footprint information details."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:MasterDataSet",
             "@type": [
                 "owl:Class",
