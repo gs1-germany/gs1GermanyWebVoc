@@ -368,6 +368,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This class includes attributes to provide the recyclability assessment of an item's packaging on the packaging level."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:MasterDataSet",
             "@type": [
                 "owl:Class",
