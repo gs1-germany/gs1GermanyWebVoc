@@ -846,6 +846,32 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:microplasticInformation",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": 
+            {
+                "@language": "en",
+                "@value": "Provides details about the presence, type, and quantity of microplastics in a product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Information"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:MicroplasticDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
