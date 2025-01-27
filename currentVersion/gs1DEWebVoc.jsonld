@@ -333,6 +333,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionBaseLine",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The reference point representing an organisation’s greenhouse gas emissions before implementing any reduction measures, used to measure progress over time."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission BaseLine"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
