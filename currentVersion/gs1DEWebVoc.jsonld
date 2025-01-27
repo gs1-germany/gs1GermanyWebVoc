@@ -897,6 +897,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:microplasticQuantity",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates the amount of microplastics present in a product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:MicroplasticDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Quantity"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:substancesOfConcern",
             "@type": [
                 "owl:ObjectProperty",
