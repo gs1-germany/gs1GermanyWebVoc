@@ -997,6 +997,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:postConsumerRecycledContentPercentage",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates the percentage of post-consumer material used in the trade item. The post-consumer material is collected from recycle bins and used as pulp to make new items. The percentage of post-consumer material is needed to drive whether the recycled logo goes on the item. Some post-consumer material is collected from the recycle bins and used as pulp to make new items."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Post Consumer Recycled Content Percentage"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
