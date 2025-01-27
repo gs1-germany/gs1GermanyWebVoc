@@ -324,6 +324,50 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:PackagingRawMaterialInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of attributes describing the raw material(s) used in a specific packaging material."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ProductDurabilityDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of details about the usage units of a product and their expected lifespan, offering insights into its durability under normal conditions."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Product Durability Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:MasterDataSet",
             "@type": [
                 "owl:Class",
