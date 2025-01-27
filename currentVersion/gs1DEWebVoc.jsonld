@@ -408,6 +408,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionTarget",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The specific goal set by an organisation to reduce its greenhouse gas emissions from a defined baseline level."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Organization"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Target"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionStatement"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
