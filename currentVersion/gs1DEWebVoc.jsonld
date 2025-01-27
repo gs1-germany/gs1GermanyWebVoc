@@ -214,6 +214,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:GreenhouseGasEmissionInformation",
+            "@type": [
+                "rdfs:Class",
+                "owl:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of details on an organisation’s greenhouse gas emissions, including reduction schemes."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails",
             "@type": [
                 "owl:Class",
