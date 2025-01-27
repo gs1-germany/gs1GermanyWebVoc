@@ -746,6 +746,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:cfpMeasurementUnitCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A string value indicating a Measurement Unit from the Carbon Footprint Measurement Unit Code List."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Measurement Unit Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:CfpMeasurementUnitCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
