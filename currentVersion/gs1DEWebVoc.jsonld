@@ -897,6 +897,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:substancesOfConcern",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Relates to information on any substances that have the potential to cause adverse effects on human health, animals, or the environment."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Substances Of Concern"
+            },
+            "rdfs:range": {
+                "@id": "gs1:ReferencedFileDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
