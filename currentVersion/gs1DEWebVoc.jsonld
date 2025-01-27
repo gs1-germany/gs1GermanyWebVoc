@@ -1313,6 +1313,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:packagingRecyclabilityValue",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value that indicates the degree of recyclability of an item's packaging, which is calculated on the basis of the standard chosen in packagingRecyclabilityAssessmentSpecificationCode. This can be a percentage or value and can vary by country."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingRecyclabilityAssessmentInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Value"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
