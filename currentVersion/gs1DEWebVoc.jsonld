@@ -821,6 +821,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:cfpAccountingCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code specifying the method used to assess and communicate the environmental impact of the product in terms of carbon footprint."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Accounting Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:CfpAccountingCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
