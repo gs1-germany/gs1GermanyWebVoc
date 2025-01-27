@@ -1263,6 +1263,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:packagingRecyclabilityAssessmentInformation",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information regarding the evaluation of an item’s packaging recyclability, assessed at the packaging level."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Information"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PackagingRecyclabilityAssessmentInformation"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
