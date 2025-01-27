@@ -1288,6 +1288,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:packagingRecyclabilityAssessmentSpecificationCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code that identifies the specification that defines how the degree of recyclability of packaging is calculated during assessment. These can be an agency, a regulation or directive, a community agreement, etc."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:PackagingRecyclabilityAssessmentInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Specification Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
