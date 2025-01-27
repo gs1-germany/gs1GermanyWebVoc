@@ -1163,6 +1163,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:productDurability",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Defines the usage units of a product and their expected lifespan, providing an indication of how long a product can be effectively used under normal conditions."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Product Durability"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
