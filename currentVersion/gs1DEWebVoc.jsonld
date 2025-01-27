@@ -596,6 +596,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:carbonFootPrint",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon footprint information."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon footprint"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:CarbonFootPrint"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:referenceNumber",
             "@type": [
                 "owl:DatatypeProperty",
