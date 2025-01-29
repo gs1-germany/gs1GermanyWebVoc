@@ -2289,6 +2289,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CfpAccountingCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Accounting Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpAccountingCode-ATTRIBUTIONAL",
+            "@type": "gs1de:CfpAccountingCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code indicating which method is used to conduct the lifecycle assessment for carbon footprint calculation."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Attributional"
+            },
+            "skos:prefLabel": "ATTRIBUTIONAL",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
