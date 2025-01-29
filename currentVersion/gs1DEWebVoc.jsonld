@@ -2250,6 +2250,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Specification Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode-DEUTSCHER_MINDESTSTANDARD",
+            "@type": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code that identifies the specification that defines how the degree of recyclability of packaging is calculated during assessment. These can be an agency, a regulation or directive, a community agreement, etc."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Deutscher Mindeststandard"
+            },
+            "skos:prefLabel": "DEUTSCHER_MINDESTSTANDARD",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:CfpValueVerificationCode",
             "rdfs:label": {
                 "@language": "en",
