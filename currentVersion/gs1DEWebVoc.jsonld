@@ -2084,6 +2084,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Scope Type"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_1",
+            "@type": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Direct emissions from owned or controlled sources."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhousegas Protocol Scope 1"
+            },
+            "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_1",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
