@@ -2217,7 +2217,7 @@
             "@id": "gs1de:CfpBoundariesCode",
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Cfp Boundaries Code "
+                "@value": "Cfp Boundaries Code"
             },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
@@ -2236,6 +2236,31 @@
                 "@value": "Use"
             },
             "skos:prefLabel": "USE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMeasurementUnitCode ",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Measurement Unit Code "
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMeasurementUnitCode-KG_CO2_EQ_PER_100G",
+            "@type": "gs1de:CfpMeasurementUnitCode ",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A string value indicating a Measurement Unit from the Carbon Footprint Measurement Unit Code List."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Kg CO2 Eq Per 100G"
+            },
+            "skos:prefLabel": "KG_CO2_EQ_PER_100G",
             "sw:term_status": "testing"
         },
         {
