@@ -2336,6 +2336,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:MicroplasticTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MicroplasticTypeCode-PRIMARY_TYPE_A",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code indicating which method is used to conduct the lifecycle assessment for carbon footprint calculation."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Primary Type A"
+            },
+            "skos:prefLabel": "PRIMARY_TYPE_A",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
