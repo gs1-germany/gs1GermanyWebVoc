@@ -2411,6 +2411,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:PackagingRawMaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode-RECYCLED",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A code describing the type of raw or recycled material the packaging material is made from."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Recycled"
+            },
+            "skos:prefLabel": "RECYCLED",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
