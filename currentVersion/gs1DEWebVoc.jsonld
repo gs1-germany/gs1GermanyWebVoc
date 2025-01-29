@@ -1760,6 +1760,39 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:cfpDate",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The date on which the product carbon footprint assessment was conducted."
+            },
+            "rdfs:domain": [{
+                    "@id": "gs1:Product"
+                },
+                {
+                    "@id": "schema:Product"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Date"
+            },
+            "rdfs:range": {
+                "@id": "xsd:date"
+            },
+            "skos:altLabel": {
+                "@language": "en",
+                "@value": "Cfp Date"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:productionDateStart",
             "@type": [
                 "owl:ObjectProperty",
