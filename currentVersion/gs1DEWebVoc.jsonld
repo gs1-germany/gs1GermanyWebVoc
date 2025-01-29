@@ -2264,6 +2264,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CfpMethodologyCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Methodology Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-CARBON_FOOTPRINT_STANDARD",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code specifying the method used to assess and communicate the environmental impact of the product in terms of carbon footprint."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Standard"
+            },
+            "skos:prefLabel": "CARBON_FOOTPRINT_STANDARD",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
