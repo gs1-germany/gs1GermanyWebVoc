@@ -2386,6 +2386,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:MaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLASTIC_BIO_PLASTIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This element indicates the product material code that gives the composition of the trade item's first main material up to six material short codes that can be given in descending order of their respective percentages."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Plastic Bio Plastic"
+            },
+            "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
