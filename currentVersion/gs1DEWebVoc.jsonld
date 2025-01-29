@@ -2189,6 +2189,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CfpValueVerificationCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Value Verification Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpValueVerificationCode-EXTERNAL_VERIFICATION",
+            "@type": "gs1de:CfpValueVerificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code indicating how the calculated carbon footprint value is verified."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "External Verification"
+            },
+            "skos:prefLabel": "EXTERNAL_VERIFICATION",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
