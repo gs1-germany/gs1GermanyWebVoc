@@ -2236,6 +2236,20 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:ReferencedFileTypeCode-REPARABILITY_INFORMATION",
+            "@type": "gs1de:ReferencedFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "???."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reparability Information"
+            },
+            "skos:prefLabel": "REPARABILITY_INFORMATION",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:CfpValueVerificationCode",
             "rdfs:label": {
                 "@language": "en",
