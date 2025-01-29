@@ -2214,6 +2214,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CfpBoundariesCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Boundaries Code "
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-USE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code identifying the life cycle stage that the product carbon footprint value refers to. The boundary setting may vary depending on the purpose of the product carbon footprint assessment."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Use"
+            },
+            "skos:prefLabel": "USE",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
