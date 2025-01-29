@@ -1082,6 +1082,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:materialComposition",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Links to details about the composition of any materials to make the trade item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:MaterialCompositionDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Composition"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:MaterialComposition"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:materialWeight",
             "@type": [
                 "owl:ObjectProperty",
