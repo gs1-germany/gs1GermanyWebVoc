@@ -412,6 +412,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:GreenhouseGasEmissionStatement",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A declaration detailing an organisation's greenhouse gas emissions."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Statement"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:codeOfConduct",
             "@type": [
                 "owl:ObjectProperty",
