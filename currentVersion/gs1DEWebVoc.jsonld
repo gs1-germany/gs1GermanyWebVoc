@@ -2211,6 +2211,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_2",
+            "@type": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "indirect emissions from the generation of purchased electricity, steam, heating, and cooling."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhousegas Protocol Scope 2"
+            },
+            "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_2",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_3",
+            "@type": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "all other indirect emissions that occur in the value chain."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhousegas Protocol Scope 3"
+            },
+            "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_3",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
