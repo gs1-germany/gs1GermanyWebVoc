@@ -143,7 +143,7 @@
                 "@value": "Import Classification"
             },
             "rdfs:subClassOf": {
-                "@id": "gs1:Product"
+                "@id": "owl:Thing"
             },
             "sw:term_status": "testing"
         },
@@ -165,7 +165,7 @@
                 "@value": "Contained Regulated Commodity Details"
             },
             "rdfs:subClassOf": {
-                "@id": "gs1:Product"
+                "@id": "owl:Thing"
             },
             "sw:term_status": "testing"
         },
