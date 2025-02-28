@@ -471,7 +471,7 @@
             "@value": "Specific code or number assigned to uniquely identify a particular license, associated with a Licence Identification Type Code."
         },
         "rdfs:domain": {
-            "@id": "gs1de:LicenceDetails"
+            "@id": "gs1de:LicenceID_Details"
         },
         "rdfs:isDefinedBy": {
             "@id": "gs1de:"
@@ -546,7 +546,7 @@
             "@value": "Licence Identification Type Code"
         },
         "rdfs:domain": {
-            "@id": "gs1de:LicenceDetails"
+            "@id": "gs1de:LicenceID_Details"
         },
         "rdfs:isDefinedBy": {
             "@id": "gs1de:"
