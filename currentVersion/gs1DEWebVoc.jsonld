@@ -431,7 +431,7 @@
             "@value": "Licence Identification"
         },
         "rdfs:range": {
-            "@id": "xsd:string"
+            "@id": "gs1de:LicenceID_Details"
         },
         "sw:term_status": "testing"
     },
