@@ -556,7 +556,7 @@
             "@value": "Licence Identification Type Code"
         },
         "rdfs:range": {
-            "@id": "xsd:string"
+            "@id": "gs1de:LicenceIdentificationTypeCode"
         },
         "sw:term_status": "testing"
     },
