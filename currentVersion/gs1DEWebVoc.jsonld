@@ -531,7 +531,7 @@
             "@value": "Reference Number Type Code"
         },
         "rdfs:range": {
-            "@id": "xsd:string"
+            "@id": "gs1de:ReferenceNumberTypeCode"
         },
         "sw:term_status": "testing"
     },
