@@ -851,7 +851,7 @@
             "@value": "Organism Type Code Value"
         },
         "rdfs:range": {
-            "@id": "gs1de:OrganismCodeListCode-EUROPEAN_TIMBER_CODE"
+            "@id": "xsd:string"
         },
         "sw:term_status": "testing"
     },
