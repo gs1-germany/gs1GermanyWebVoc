@@ -606,7 +606,7 @@
             "@value": "Import Classification Type Code"
         },
         "rdfs:range": {
-            "@id": "xsd:string"
+            "@id": "gs1de:ImportClassificationTypeCode"
         },
         "sw:term_status": "testing"
     },
