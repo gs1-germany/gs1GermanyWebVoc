@@ -371,7 +371,7 @@
             "@value": "Information on applicable government regulations a subject is in compliance with."
         },
         "rdfs:domain": {
-            "@id": "gs1de:RegulatoryInformation"
+            "@id": "owl:Thing"
         },
         "rdfs:isDefinedBy": {
             "@id": "gs1de:"
@@ -381,7 +381,7 @@
             "@value": "Regulatory Information"
         },
         "rdfs:range": {
-            "@id": "xsd:string"
+            "@id": "gs1de:RegulatoryInformation"
         },
         "sw:term_status": "testing"
     },
