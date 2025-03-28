@@ -581,7 +581,7 @@
             "@value": "Regulation Type Code"
         },
         "rdfs:range": {
-            "@id": "gs1de:RegulatoryInformation"
+            "@id": "gs1de:RegulationTypeCode"
         },
         "sw:term_status": "testing"
     },
