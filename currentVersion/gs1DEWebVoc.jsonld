@@ -238,7 +238,7 @@
     {
         "@id": "gs1de:masterDataAvailableFor",
         "@type": [
-            "owl:DatatypeProperty",
+            "owl:ObjectProperty",
             "rdf:Property"
         ],
         "rdfs:comment": {
