@@ -996,17 +996,6 @@
         },
         "skos:prefLabel": "DEFORESTATION_REGULATION",
         "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:EuropeanTimberCode",
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "European Timber Code"
-        },
-        "rdfs:subClassOf": {
-            "@id": "gs1:TypeCode"
-        },
-        "sw:term_status": "testing"
     }
 	]
 }
