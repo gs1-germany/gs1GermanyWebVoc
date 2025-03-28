@@ -209,7 +209,7 @@
             "@value": "Licence ID Details"
         },
         "rdfs:subClassOf": {
-            "@id": "gs1de:LicenceDetails"
+            "@id": "owl:Thing"
         },
         "sw:term_status": "testing"
     },
