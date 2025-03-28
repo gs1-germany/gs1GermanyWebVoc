@@ -756,7 +756,7 @@
     {
         "@id": "gs1de:species",
         "@type": [
-            "owl:ObjectProperty",
+            "owl:DatatypeProperty",
             "rdf:Property"
         ],
         "rdfs:comment": {
