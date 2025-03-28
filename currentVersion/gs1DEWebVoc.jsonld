@@ -538,7 +538,7 @@
     {
         "@id": "gs1de:licenceIdentificationTypeCode",
         "@type": [
-            "owl:DatatypeProperty",
+            "owl:ObjectProperty",
             "rdf:Property"
         ],
         "rdfs:comment": {
