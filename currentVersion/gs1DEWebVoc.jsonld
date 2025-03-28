@@ -588,7 +588,7 @@
     {
         "@id": "gs1de:importClassificationTypeCode",
         "@type": [
-            "owl:DatatypeProperty",
+            "owl:ObjectProperty",
             "rdf:Property"
         ],
         "rdfs:comment": {
