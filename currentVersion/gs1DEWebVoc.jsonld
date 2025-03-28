@@ -263,7 +263,7 @@
     {
         "@id": "gs1de:referenceNumber",
         "@type": [
-            "owl:DatatypeProperty",
+            "owl:ObjectProperty ",
             "rdf:Property"
         ],
         "rdfs:comment": {
