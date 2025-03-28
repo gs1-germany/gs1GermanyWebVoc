@@ -984,6 +984,17 @@
         "sw:term_status": "testing"
     },
     {
+        "@id": "gs1de:RegulationTypeCode",
+        "rdfs:label": {
+            "@language": "en",
+            "@value": "Regulation Type Code"
+        },
+        "rdfs:subClassOf": {
+            "@id": "gs1:TypeCode"
+        },
+        "sw:term_status": "testing"
+    },
+    {
         "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
         "@type": "gs1de:RegulationTypeCode",
         "rdfs:comment": {
