@@ -663,7 +663,7 @@
     {
         "@id": "gs1de:productionDateStart",
         "@type": [
-            "owl:ObjectProperty",
+            "owl:DatatypeProperty",
             "rdf:Property"
         ],
         "rdfs:comment": {
