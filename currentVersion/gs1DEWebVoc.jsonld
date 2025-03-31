@@ -36,7 +36,7 @@
                 "@type": "xsd:date",
                 "@value": "2025-03-31"
             },
-            "owl:versionInfo": "0.0.2",
+            "owl:versionInfo": "0.0.1",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
