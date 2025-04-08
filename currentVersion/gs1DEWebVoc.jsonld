@@ -571,7 +571,7 @@
             "@value": "A code that indicates that a subject is in compliance with specific applicable government regulations."
         },
         "rdfs:domain": {
-            "@id": "owl:Thing"
+            "@id": "gs1de:RegulatoryInformation"
         },
         "rdfs:isDefinedBy": {
             "@id": "gs1de:"
