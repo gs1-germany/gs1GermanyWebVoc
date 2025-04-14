@@ -101,7 +101,7 @@
         "rdfs:subClassOf": {
             "@id": "owl:Thing"
         },
-        "sw:term_status": "testing"
+        "sw:term_status": "stable"
     },
     {
         "@id": "gs1de:OrganismClassification",
