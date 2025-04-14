@@ -79,7 +79,7 @@
         "rdfs:subClassOf": {
             "@id": "owl:Thing"
         },
-        "sw:term_status": "stable"
+        "sw:term_status": "testing"
     },
     {
         "@id": "gs1de:RegulatoryInformation",
@@ -101,7 +101,7 @@
         "rdfs:subClassOf": {
             "@id": "owl:Thing"
         },
-        "sw:term_status": "stable"
+        "sw:term_status": "testing"
     },
     {
         "@id": "gs1de:OrganismClassification",
