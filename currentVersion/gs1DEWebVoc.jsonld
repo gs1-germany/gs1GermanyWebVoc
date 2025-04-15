@@ -1,6 +1,7 @@
 {
     "@context": {
         "gs1": "https://ref.gs1.org/voc/",
+        "gs1de": "https://voc.gs1.de/",
         "owl": "http://www.w3.org/2002/07/owl#",
         "dc": "http://purl.org/dc/elements/1.1/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -59,954 +60,952 @@
                 }
             ]
         },
-    {
-        "@id": "gs1de:ReferenceNumber",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A value representing a document’s reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Reference Number"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:RegulatoryInformation",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Regulation issued by a government which impacts a given subject (Organization, Place, Product)."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Regulatory Information"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:OrganismClassification",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Hierarchical system for grouping and naming types of living organisms."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Organism Classification"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ImportClassification",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "An import classification for the product."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Import Classification"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ContainedRegulatedCommodityDetails",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A set of attributes related to the regulated ingredients within a trade item."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Contained Regulated Commodity Details"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:LicenceDetails",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Licence issued by a licencing authority to an organisation."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Licence Details"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:LicenceID_Details",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "This class encapsulates the unique identification and type code of a licence issued by a licensing authority."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Licence ID Details"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:MasterDataSet",
-        "@type": [
-            "owl:Class",
-            "rdfs:Class"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A class encapsulating factual claims about a specific entity."
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Master Data Set"
-        },
-        "rdfs:subClassOf": {
-            "@id": "owl:Thing"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:masterDataAvailableFor",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A set of factual claims about a specific entity."
-        },
-        "rdfs:domain": {
-            "@id": "owl:Thing"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Master Data Available For"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:MasterDataSet"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:referenceNumber",
-        "@type": [
-            "owl:ObjectProperty ",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Unique identifier assigned to a document to facilitate tracking, retrieval, and management across systems."
-        },
-        "rdfs:domain": {
-            "@id": "owl:Thing"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Reference Number"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:ReferenceNumber"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:referenceNumberVerificationID",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A unique identifier that enables third parties to check or access a database entry associated with the related reference number."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:ReferenceNumber"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Reference Number Verification ID"
-        },
-        "rdfs:range": {
-            "@id": "xsd:string"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:licence",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Licence information about an organisation."
-        },
-        "rdfs:domain": {
-            "@id": "owl:Thing"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Has Licence"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:LicenceDetails"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:containedRegulatedCommodities",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Ingredients within a trade item that are subject to specific regulatory oversight and compliance requirements."
-        },
-        "rdfs:domain": {
-            "@id": "gs1:Product"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Has contained regulated commodities"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:ContainedRegulatedCommodityDetails"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:regulatoryInformation",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Information on applicable government regulations a subject is in compliance with."
-        },
-        "rdfs:domain": {
-            "@id": "owl:Thing"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Regulatory Information"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:RegulatoryInformation"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:importClassification",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Relates to a set of import classification details."
-        },
-        "rdfs:domain": {
-            "@id": "gs1:Product"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Import Classification"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:ImportClassification"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:licenceIdentification",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A unique identifier assigned to a specific authorisation or permit, consisting of a string value and a licence identification type code."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:LicenceDetails"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Licence Identification"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:LicenceID_Details"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:referenceNumberValue",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "The value of the reference number, associated with a Reference Number Type Code."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:ReferenceNumber"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Reference Number Value"
-        },
-        "rdfs:range": {
-            "@id": "xsd:string"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:licenceIdentificationValue",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Specific code or number assigned to uniquely identify a particular license, associated with a Licence Identification Type Code."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:LicenceID_Details"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Licence Identification Value"
-        },
-        "rdfs:range": {
-            "@id": "xsd:string"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:importClassificationValue",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "The value for an associated import classification type."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:ImportClassification"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Import Classification Value"
-        },
-        "rdfs:range": {
-            "@id": "xsd:string"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:referenceNumberTypeCode",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Reference Number Type Code"
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:ReferenceNumber"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Reference Number Type Code"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:ReferenceNumberTypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:licenceIdentificationTypeCode",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Licence Identification Type Code"
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:LicenceID_Details"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Licence Identification Type Code"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:LicenceIdentificationTypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:regulationTypeCode",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A code that indicates that a subject is in compliance with specific applicable government regulations."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:RegulatoryInformation"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Regulation Type Code"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:RegulationTypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:importClassificationTypeCode",
-        "@type": [
-            "owl:ObjectProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Imports and exports of trade items typically require classification codes to determine appropriate duties and tariffs. Values include Netherlands Import Code, Harmonized Commodity Description and Coding System, Custom Tariff and INTRASTRAT Code, Harmonized Tariff Schedule of the United States, INTRASTRAT Combined Nomenclature, Tarif Intégré de la Communauté. "
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:ImportClassification"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Import Classification Type Code"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:ImportClassificationTypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:organismClassification",
-        "@type": [
-            "rdf:Property",
-            "owl:ObjectProperty"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Taxonomic information related to a trade item."
-        },
-        "rdfs:domain": {
-            "@id": "owl:Thing"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Organism Classification"
-        },
-        "rdfs:range": {
-            "@id": "gs1de:OrganismClassification"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:commonName",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "The name of an organism used by the general public in everyday language, which is distinct from the scientific name."
-        },
-        "rdfs:domain": {
-            "@id": "gs1de:OrganismClassification"
-        },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Common Name"
-        },
-        "rdfs:range": {
-            "@id": "rdf:langString"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:productionDateStart",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
-        },
-        "rdfs:domain": [
-            {
+        {
+            "@id": "gs1de:ReferenceNumber",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A value representing a document’s reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reference Number"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:RegulatoryInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Regulation issued by a government which impacts a given subject (Organization, Place, Product)."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Regulatory Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:OrganismClassification",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hierarchical system for grouping and naming types of living organisms."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Organism Classification"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ImportClassification",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An import classification for the product."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Import Classification"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ContainedRegulatedCommodityDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of attributes related to the regulated ingredients within a trade item."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Contained Regulated Commodity Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:LicenceDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Licence issued by a licencing authority to an organisation."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Licence Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:LicenceID_Details",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This class encapsulates the unique identification and type code of a licence issued by a licensing authority."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Licence ID Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MasterDataSet",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A class encapsulating factual claims about a specific entity."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Master Data Set"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:masterDataAvailableFor",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of factual claims about a specific entity."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Master Data Available For"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:MasterDataSet"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:referenceNumber",
+            "@type": [
+                "owl:ObjectProperty ",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Unique identifier assigned to a document to facilitate tracking, retrieval, and management across systems."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reference Number"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ReferenceNumber"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:referenceNumberVerificationID",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A unique identifier that enables third parties to check or access a database entry associated with the related reference number."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ReferenceNumber"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reference Number Verification ID"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:licence",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Licence information about an organisation."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Has Licence"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:LicenceDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:containedRegulatedCommodities",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Ingredients within a trade item that are subject to specific regulatory oversight and compliance requirements."
+            },
+            "rdfs:domain": {
                 "@id": "gs1:Product"
             },
-            {
-                "@id": "schema:Product"
-            }
-        ],
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Has contained regulated commodities"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ContainedRegulatedCommodityDetails"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Production Date Start"
+        {
+            "@id": "gs1de:regulatoryInformation",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information on applicable government regulations a subject is in compliance with."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Regulatory Information"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:RegulatoryInformation"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "xsd:date"
-        },
-        "skos:altLabel": {
-            "@language": "en",
-            "@value": "Production Date Start"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:productionDateEnd",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
-        },
-        "rdfs:domain": [
-            {
+        {
+            "@id": "gs1de:importClassification",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Relates to a set of import classification details."
+            },
+            "rdfs:domain": {
                 "@id": "gs1:Product"
             },
-            {
-                "@id": "schema:Product"
-            }
-        ],
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Import Classification"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ImportClassification"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Production Date End"
+        {
+            "@id": "gs1de:licenceIdentification",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A unique identifier assigned to a specific authorisation or permit, consisting of a string value and a licence identification type code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:LicenceDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Licence Identification"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:LicenceID_Details"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "xsd:date"
+        {
+            "@id": "gs1de:referenceNumberValue",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value of the reference number, associated with a Reference Number Type Code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ReferenceNumber"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reference Number Value"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
         },
-        "skos:altLabel": {
-            "@language": "en",
-            "@value": "Production Date End"
+        {
+            "@id": "gs1de:licenceIdentificationValue",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Specific code or number assigned to uniquely identify a particular license, associated with a Licence Identification Type Code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:LicenceID_Details"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Licence Identification Value"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
         },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:genus",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A taxonomic category ranking below a family and above a species and generally consisting of a group of species exhibiting similar characteristics. In taxonomic nomenclature the genus name is used, either alone or followed by a Latin adjective or epithet, to form the name of a species."
+        {
+            "@id": "gs1de:importClassificationValue",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value for an associated import classification type."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ImportClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Import Classification Value"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:domain": {
-            "@id": "gs1de:OrganismClassification"
+        {
+            "@id": "gs1de:referenceNumberTypeCode",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Reference Number Type Code"
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ReferenceNumber"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reference Number Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ReferenceNumberTypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+        {
+            "@id": "gs1de:licenceIdentificationTypeCode",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Licence Identification Type Code"
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:LicenceID_Details"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Licence Identification Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:LicenceIdentificationTypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Genus"
+        {
+            "@id": "gs1de:regulationTypeCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A code that indicates that a subject is in compliance with specific applicable government regulations."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:RegulatoryInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Regulation Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:RegulationTypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "xsd:string"
+        {
+            "@id": "gs1de:importClassificationTypeCode",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Imports and exports of trade items typically require classification codes to determine appropriate duties and tariffs. Values include Netherlands Import Code, Harmonized Commodity Description and Coding System, Custom Tariff and INTRASTRAT Code, Harmonized Tariff Schedule of the United States, INTRASTRAT Combined Nomenclature, Tarif Intégré de la Communauté. "
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ImportClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Import Classification Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ImportClassificationTypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:species",
-        "@type": [
-            "owl:DatatypeProperty",
-            "rdf:Property"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A fundamental category of taxonomic classification, ranking below a genus and consisting of related organisms capable of interbreeding. An organism belonging to such a category, represented in binomial nomenclature by an uncapitalized Latin adjective or noun following a capitalized genus name, as in Ananas comosus, the pineapple, and Equus caballus, the horse."
+        {
+            "@id": "gs1de:organismClassification",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Taxonomic information related to a trade item."
+            },
+            "rdfs:domain": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Organism Classification"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:OrganismClassification"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:domain": {
-            "@id": "gs1de:OrganismClassification"
+        {
+            "@id": "gs1de:commonName",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The name of an organism used by the general public in everyday language, which is distinct from the scientific name."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:OrganismClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Common Name"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+        {
+            "@id": "gs1de:productionDateStart",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
+            },
+            "rdfs:domain": [{
+                    "@id": "gs1:Product"
+                },
+                {
+                    "@id": "schema:Product"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Production Date Start"
+            },
+            "rdfs:range": {
+                "@id": "xsd:date"
+            },
+            "skos:altLabel": {
+                "@language": "en",
+                "@value": "Production Date Start"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Species"
+        {
+            "@id": "gs1de:productionDateEnd",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
+            },
+            "rdfs:domain": [{
+                    "@id": "gs1:Product"
+                },
+                {
+                    "@id": "schema:Product"
+                }
+            ],
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Production Date End"
+            },
+            "rdfs:range": {
+                "@id": "xsd:date"
+            },
+            "skos:altLabel": {
+                "@language": "en",
+                "@value": "Production Date End"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "xsd:string"
+        {
+            "@id": "gs1de:genus",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A taxonomic category ranking below a family and above a species and generally consisting of a group of species exhibiting similar characteristics. In taxonomic nomenclature the genus name is used, either alone or followed by a Latin adjective or epithet, to form the name of a species."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:OrganismClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Genus"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
         },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:plotOfOrigin",
-        "@type": [
-            "rdf:Property",
-            "owl:ObjectProperty"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Specific geographic location or area where a product or material was originally harvested or produced."
+        {
+            "@id": "gs1de:species",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A fundamental category of taxonomic classification, ranking below a genus and consisting of related organisms capable of interbreeding. An organism belonging to such a category, represented in binomial nomenclature by an uncapitalized Latin adjective or noun following a capitalized genus name, as in Ananas comosus, the pineapple, and Equus caballus, the horse."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:OrganismClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Species"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:domain": {
-            "@id": "gs1:Product"
+        {
+            "@id": "gs1de:plotOfOrigin",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Specific geographic location or area where a product or material was originally harvested or produced."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Has Plot Of Origin"
+            },
+            "rdfs:range": {
+                "@id": "gs1:Place"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+        {
+            "@id": "gs1de:organismTypeCodeList",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty",
+                "owl:FunctionalProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The standards or norms defining the organism type code lists. Dependent on organism type code value."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:OrganismClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Organism Type Code List"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:OrganismCodeListCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Has Plot Of Origin"
+        {
+            "@id": "gs1de:organismTypeCodeValue",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty",
+                "owl:FunctionalProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A code indicating the organism type according to a specific code list. The applied code list is specified as additional information together with the value."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:OrganismClassification"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Organism Type Code Value"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "gs1:Place"
+        {
+            "@id": "gs1de:OrganismCodeListCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Organism Code List Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:organismTypeCodeList",
-        "@type": [
-            "rdf:Property",
-            "owl:ObjectProperty",
-            "owl:FunctionalProperty"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "The standards or norms defining the organism type code lists. Dependent on organism type code value."
+        {
+            "@id": "gs1de:OrganismCodeListCode-EUROPEAN_TIMBER_CODE",
+            "@type": "gs1de:OrganismCodeListCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Traded woods nomenclature according to EN 13556."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "European Timber Code"
+            },
+            "skos:prefLabel": "EUROPEAN_TIMBER_CODE",
+            "sw:term_status": "testing"
         },
-        "rdfs:domain": {
-            "@id": "gs1de:OrganismClassification"
+        {
+            "@id": "gs1de:LicenceIdentificationTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Licence Identification Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+        {
+            "@id": "gs1de:LicenceIdentificationTypeCode-FLEGT_LICENCE_NUMBER",
+            "@type": "gs1de:LicenceIdentificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Licence issued under the Forest Law Enforcement, Governance and Trade (FLEGT) initiative, confirming that a shipment of timber or timber products has been legally produced."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "FLEGT Licence Number"
+            },
+            "skos:prefLabel": "FLEGT_LICENCE_NUMBER",
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Organism Type Code List"
+        {
+            "@id": "gs1de:ImportClassificationTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Import Classification Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "gs1de:OrganismCodeListCode"
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-INTRASTAT_COMBINED_NOMENCLATURE",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Collection of commodity codes used with the European Union."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Intrastat Combined Nomenclature"
+            },
+            "skos:prefLabel": "INTRASTAT_COMBINED_NOMENCLATURE",
+            "sw:term_status": "testing"
         },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:organismTypeCodeValue",
-        "@type": [
-            "rdf:Property",
-            "owl:DatatypeProperty",
-            "owl:FunctionalProperty"
-        ],
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "A code indicating the organism type according to a specific code list. The applied code list is specified as additional information together with the value."
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An internationally standardized system of names and numbers for classifying traded products developed and maintained by the World Customs Organization (WCO)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Harmonized Commodity Description and Coding System"
+            },
+            "skos:prefLabel": "HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
+            "sw:term_status": "testing"
         },
-        "rdfs:domain": {
-            "@id": "gs1de:OrganismClassification"
+        {
+            "@id": "gs1de:ReferenceNumberTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reference Number Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "rdfs:isDefinedBy": {
-            "@id": "gs1de:"
+        {
+            "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
+            "@type": "gs1de:ReferenceNumberTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Reference number of the supplier’s Due Diligence Statement as provided by the European Deforestation Information System."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EUDR Supplier"
+            },
+            "skos:prefLabel": "EUDR_SUPPLIER",
+            "sw:term_status": "testing"
         },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Organism Type Code Value"
+        {
+            "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
+            "@type": "gs1de:ReferenceNumberTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Reference number of the sender’s Due Diligence Statement as provided by the European Deforestation Information System."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EUDR Sender"
+            },
+            "skos:prefLabel": "EUDR_SENDER",
+            "sw:term_status": "testing"
         },
-        "rdfs:range": {
-            "@id": "xsd:string"
+        {
+            "@id": "gs1de:RegulationTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Regulation Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
         },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:OrganismCodeListCode",
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Organism Code List Code"
-        },
-        "rdfs:subClassOf": {
-            "@id": "gs1:TypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:OrganismCodeListCode-EUROPEAN_TIMBER_CODE",
-        "@type": "gs1de:OrganismCodeListCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Traded woods nomenclature according to EN 13556."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "European Timber Code"
-        },
-        "skos:prefLabel": "EUROPEAN_TIMBER_CODE",
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:LicenceIdentificationTypeCode",
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Licence Identification Type Code"
-        },
-        "rdfs:subClassOf": {
-            "@id": "gs1:TypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:LicenceIdentificationTypeCode-FLEGT_LICENCE_NUMBER",
-        "@type": "gs1de:LicenceIdentificationTypeCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Licence issued under the Forest Law Enforcement, Governance and Trade (FLEGT) initiative, confirming that a shipment of timber or timber products has been legally produced."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "FLEGT Licence Number"
-        },
-        "skos:prefLabel": "FLEGT_LICENCE_NUMBER",
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ImportClassificationTypeCode",
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Import Classification Type Code"
-        },
-        "rdfs:subClassOf": {
-            "@id": "gs1:TypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ImportClassificationTypeCode-INTRASTAT_COMBINED_NOMENCLATURE",
-        "@type": "gs1de:ImportClassificationTypeCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Collection of commodity codes used with the European Union."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Intrastat Combined Nomenclature"
-        },
-        "skos:prefLabel": "INTRASTAT_COMBINED_NOMENCLATURE",
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ImportClassificationTypeCode-HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
-        "@type": "gs1de:ImportClassificationTypeCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "An internationally standardized system of names and numbers for classifying traded products developed and maintained by the World Customs Organization (WCO)."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Harmonized Commodity Description and Coding System"
-        },
-        "skos:prefLabel": "HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ReferenceNumberTypeCode",
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Reference Number Type Code"
-        },
-        "rdfs:subClassOf": {
-            "@id": "gs1:TypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
-        "@type": "gs1de:ReferenceNumberTypeCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Reference number of the supplier’s Due Diligence Statement as provided by the European Deforestation Information System."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "EUDR Supplier"
-        },
-        "skos:prefLabel": "EUDR_SUPPLIER",
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
-        "@type": "gs1de:ReferenceNumberTypeCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Reference number of the sender’s Due Diligence Statement as provided by the European Deforestation Information System."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "EUDR Sender"
-        },
-        "skos:prefLabel": "EUDR_SENDER",
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:RegulationTypeCode",
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Regulation Type Code"
-        },
-        "rdfs:subClassOf": {
-            "@id": "gs1:TypeCode"
-        },
-        "sw:term_status": "testing"
-    },
-    {
-        "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
-        "@type": "gs1de:RegulationTypeCode",
-        "rdfs:comment": {
-            "@language": "en",
-            "@value": "Regulation minimising the contribution to deforestation and forest degradation worldwide, and thereby contributing to a reduction in global deforestation; reducing the contribution to greenhouse gas emissions and global biodiversity loss (e.g. EU regulation 2023/1115)."
-        },
-        "rdfs:label": {
-            "@language": "en",
-            "@value": "Deforestation Regulation"
-        },
-        "skos:prefLabel": "DEFORESTATION_REGULATION",
-        "sw:term_status": "testing"
-    }
-	]
+        {
+            "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
+            "@type": "gs1de:RegulationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Regulation minimising the contribution to deforestation and forest degradation worldwide, and thereby contributing to a reduction in global deforestation; reducing the contribution to greenhouse gas emissions and global biodiversity loss (e.g. EU regulation 2023/1115)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Deforestation Regulation"
+            },
+            "skos:prefLabel": "DEFORESTATION_REGULATION",
+            "sw:term_status": "testing"
+        }
+    ]
 }
