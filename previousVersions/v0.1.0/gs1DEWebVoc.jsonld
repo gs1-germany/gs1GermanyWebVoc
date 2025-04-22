@@ -11,8 +11,7 @@
         "sw": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
         "types": "http://rdfs.org/sioc/types#",
         "vann": "http://purl.org/vocab/vann/",
-        "voaf": "http://purl.org/vocommons/voaf#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#"
+        "voaf": "http://purl.org/vocommons/voaf#"
     },
     "@graph": [{
             "@id": "gs1de:",
@@ -36,9 +35,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-04-22"
+                "@value": "2025-03-31"
             },
-            "owl:versionInfo": "0.1.1",
+            "owl:versionInfo": "0.1.0",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
