@@ -84,28 +84,6 @@
             "sw:term_status": "testing"
         },
         {
-            "@id": "gs1de:ReferenceNumber2",
-            "@type": [
-                "owl:Class",
-                "rdfs:Class"
-            ],
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "A value representing a document’s reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Reference Number"
-            },
-            "rdfs:subClassOf": {
-                "@id": "owl:Thing"
-            },
-            "sw:term_status": "testing"
-        },
-        {
             "@id": "gs1de:RegulatoryInformation",
             "@type": [
                 "owl:Class",
