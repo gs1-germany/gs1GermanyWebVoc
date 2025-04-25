@@ -4,9 +4,7 @@ This repository was set up to for the maintenance and further development of the
 
 ## What is the GS1 (Germany) Web Vocabulary?
 
-The GS1 Web Vocabulary (WebVoc), an official extension to schema.org, is a method for describing trade items, companies, locations, and more using linked data concepts. This structured data, often in the form of JSON-LD documents, enables IT applications to understand the contained information semantically. All globally defined terms are accessible both in a human-friendly way as well as in machine-readable datasets (see <https://ref.gs1.org/voc/>). To address country-specific demands and to facilitate easier migration, GS1 Germany provides an own Web Vocabulary in a similar manner.
-
-Therefore, GS1 Germany's WebVocab is a subset of the global one.
+The GS1 Web Vocabulary (WebVoc), an official extension to schema.org, is a method for describing trade items, companies, locations, and more using linked data concepts. This structured data, often in the form of JSON-LD documents, enables IT applications to understand the contained information semantically. All globally defined terms are accessible both in a human-friendly way as well as in machine-readable datasets (see <https://ref.gs1.org/voc/>). To address country-specific demands and to facilitate easier migration, GS1 Germany provides an own Web Vocabulary in a similar manner on <https://voc.gs1.de/>.
 
 ## Business benefits
 
