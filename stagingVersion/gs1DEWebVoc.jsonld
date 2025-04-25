@@ -150,28 +150,6 @@
             "sw:term_status": "testing"
         },
         {
-            "@id": "gs1de:ContainedRegulatedCommodityDetails",
-            "@type": [
-                "owl:Class",
-                "rdfs:Class"
-            ],
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "A set of attributes related to the regulated ingredients within a trade item."
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Contained Regulated Commodity Details"
-            },
-            "rdfs:subClassOf": {
-                "@id": "owl:Thing"
-            },
-            "sw:term_status": "testing"
-        },
-        {
             "@id": "gs1de:LicenceDetails",
             "@type": [
                 "owl:Class",
@@ -348,7 +326,7 @@
                 "@value": "Ingredients within a trade item that are subject to specific regulatory oversight and compliance requirements."
             },
             "rdfs:domain": {
-                "@id": "gs1:Product"
+                "@id": "gs1de:RegulatoryInformation"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -358,7 +336,7 @@
                 "@value": "Has contained regulated commodities"
             },
             "rdfs:range": {
-                "@id": "gs1de:ContainedRegulatedCommodityDetails"
+                "@id": "xsd:string"
             },
             "sw:term_status": "testing"
         },
