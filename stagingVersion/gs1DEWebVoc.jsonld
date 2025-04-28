@@ -36,9 +36,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-04-25"
+                "@value": "2025-04-28"
             },
-            "owl:versionInfo": "0.1.1",
+            "owl:versionInfo": "0.1.2",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
@@ -145,7 +145,7 @@
                 "@value": "Import Classification"
             },
             "rdfs:subClassOf": {
-                "@id": "owl:Thing"
+                "@id": "gs1:Product"
             },
             "sw:term_status": "testing"
         },
