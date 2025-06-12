@@ -81,7 +81,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:RegulatoryInformation",
@@ -103,7 +103,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:OrganismClassification",
@@ -125,7 +125,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ImportClassification",
@@ -147,7 +147,7 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:Product"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:LicenceDetails",
@@ -169,7 +169,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:LicenceID_Details",
@@ -191,7 +191,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:MasterDataSet",
@@ -213,7 +213,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:masterDataAvailableFor",
@@ -238,7 +238,7 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:referenceNumber",
@@ -263,7 +263,7 @@
             "rdfs:range": {
                 "@id": "gs1de:ReferenceNumber"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:referenceNumberVerificationID",
@@ -288,7 +288,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licence",
@@ -313,7 +313,7 @@
             "rdfs:range": {
                 "@id": "gs1de:LicenceDetails"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:containedRegulatedCommodities",
@@ -338,7 +338,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:regulatoryInformation",
@@ -363,7 +363,7 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulatoryInformation"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:importClassification",
@@ -388,7 +388,7 @@
             "rdfs:range": {
                 "@id": "gs1de:ImportClassification"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licenceIdentification",
@@ -413,7 +413,7 @@
             "rdfs:range": {
                 "@id": "gs1de:LicenceID_Details"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:referenceNumberValue",
@@ -438,7 +438,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licenceIdentificationValue",
@@ -463,7 +463,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:importClassificationValue",
@@ -488,7 +488,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:referenceNumberTypeCode",
@@ -513,7 +513,7 @@
             "rdfs:range": {
                 "@id": "gs1de:ReferenceNumberTypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licenceIdentificationTypeCode",
@@ -538,7 +538,7 @@
             "rdfs:range": {
                 "@id": "gs1de:LicenceIdentificationTypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:regulationTypeCode",
@@ -563,7 +563,7 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulationTypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:importClassificationTypeCode",
@@ -588,7 +588,7 @@
             "rdfs:range": {
                 "@id": "gs1de:ImportClassificationTypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:organismClassification",
@@ -613,7 +613,7 @@
             "rdfs:range": {
                 "@id": "gs1de:OrganismClassification"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:commonName",
@@ -638,7 +638,7 @@
             "rdfs:range": {
                 "@id": "rdf:langString"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:productionDateStart",
@@ -671,7 +671,7 @@
                 "@language": "en",
                 "@value": "Production Date Start"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:productionDateEnd",
@@ -704,7 +704,7 @@
                 "@language": "en",
                 "@value": "Production Date End"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:genus",
@@ -729,7 +729,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:species",
@@ -754,7 +754,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:plotOfOrigin",
@@ -779,7 +779,7 @@
             "rdfs:range": {
                 "@id": "gs1:Place"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:organismTypeCodeList",
@@ -805,7 +805,7 @@
             "rdfs:range": {
                 "@id": "gs1de:OrganismCodeListCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:organismTypeCodeValue",
@@ -831,7 +831,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:OrganismCodeListCode",
@@ -842,7 +842,7 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:OrganismCodeListCode-EUROPEAN_TIMBER_CODE",
@@ -856,7 +856,7 @@
                 "@value": "European Timber Code"
             },
             "skos:prefLabel": "EUROPEAN_TIMBER_CODE",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:LicenceIdentificationTypeCode",
@@ -867,7 +867,7 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:LicenceIdentificationTypeCode-FLEGT_LICENCE_NUMBER",
@@ -881,7 +881,7 @@
                 "@value": "FLEGT Licence Number"
             },
             "skos:prefLabel": "FLEGT_LICENCE_NUMBER",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ImportClassificationTypeCode",
@@ -892,7 +892,7 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ImportClassificationTypeCode-INTRASTAT_COMBINED_NOMENCLATURE",
@@ -906,7 +906,7 @@
                 "@value": "Intrastat Combined Nomenclature"
             },
             "skos:prefLabel": "INTRASTAT_COMBINED_NOMENCLATURE",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ImportClassificationTypeCode-HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
@@ -920,7 +920,7 @@
                 "@value": "Harmonized Commodity Description and Coding System"
             },
             "skos:prefLabel": "HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode",
@@ -931,7 +931,7 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
@@ -945,7 +945,7 @@
                 "@value": "EUDR Supplier"
             },
             "skos:prefLabel": "EUDR_SUPPLIER",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
@@ -959,7 +959,7 @@
                 "@value": "EUDR Sender"
             },
             "skos:prefLabel": "EUDR_SENDER",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:RegulationTypeCode",
@@ -970,7 +970,7 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
@@ -984,7 +984,7 @@
                 "@value": "Deforestation Regulation"
             },
             "skos:prefLabel": "DEFORESTATION_REGULATION",
-            "sw:term_status": "testing"
+            "sw:term_status": "stable"
         }
     ]
 }
