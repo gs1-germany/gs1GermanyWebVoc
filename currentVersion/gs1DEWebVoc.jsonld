@@ -215,7 +215,7 @@
             },
             "sw:term_status": "stable"
         },
-         {
+        {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
             "@type": [
                 "rdfs:Class",
@@ -231,6 +231,28 @@
             "rdfs:label": {
                 "@language": "en",
                 "@value": "Greenhouse Gas Emission Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A set of details about the specific goal(s) set by an organisation to reduce its greenhouse gas emissions within a defined timeframe."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Reduction Target Details"
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
