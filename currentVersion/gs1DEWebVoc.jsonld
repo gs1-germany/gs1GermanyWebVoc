@@ -14,7 +14,8 @@
         "voaf": "http://purl.org/vocommons/voaf#",
         "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
-    "@graph": [{
+    "@graph": [
+        {
             "@id": "gs1de:",
             "@type": [
                 "voaf:Vocabulary",
@@ -43,7 +44,8 @@
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
             },
-            "voaf:extends": [{
+            "voaf:extends": [
+                {
                     "@id": "schema:"
                 },
                 {
@@ -53,7 +55,8 @@
             "voaf:hasEquivalencesWith": {
                 "@id": "schema:"
             },
-            "voaf:specializes": [{
+            "voaf:specializes": [
+                {
                     "@id": "schema:"
                 },
                 {
@@ -870,7 +873,8 @@
                 "@language": "en",
                 "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [{
+            "rdfs:domain": [
+                {
                     "@id": "gs1:Product"
                 },
                 {
@@ -899,7 +903,8 @@
                 "@language": "en",
                 "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [{
+            "rdfs:domain": [
+                {
                     "@id": "gs1:Product"
                 },
                 {
@@ -1046,6 +1051,28 @@
             "sw:term_status": "stable"
         },
         {
+            "@id": "gs1de:greenhouseGasEmissionInfo",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information about the greenhouse gas emissions associated with an organisation."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Organization"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Info"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionInformation"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:greenhouseGasEmissionInfoIsExternallyValidated",
             "@type": [
                 "owl:ObjectProperty",
@@ -1070,7 +1097,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:greenhouseGasEmissionReductionTargetVerification",
             "@type": [
                 "owl:ObjectProperty",
@@ -1120,7 +1147,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:greenhouseGasEmissionScope",
             "@type": [
                 "owl:ObjectProperty",
@@ -1170,7 +1197,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:greenhouseGasEmissionTarget",
             "@type": [
                 "owl:ObjectProperty",
@@ -1245,32 +1272,32 @@
             },
             "sw:term_status": "testing"
         },
-          {
+        {
             "@id": "gs1de:codeOfConduct",
             "@type": [
-              "owl:ObjectProperty",
-              "rdf:Property"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
-              "@language": "en",
-              "@value": "Relates to a set of guidelines and rules outlining acceptable behaviors and practices within an organisation or community."
+                "@language": "en",
+                "@value": "Relates to a set of guidelines and rules outlining acceptable behaviors and practices within an organisation or community."
             },
             "rdfs:domain": {
-              "@id": "gs1:Organization"
+                "@id": "gs1:Organization"
             },
             "rdfs:isDefinedBy": {
-              "@id": "gs1de:"
+                "@id": "gs1de:"
             },
             "rdfs:label": {
-              "@language": "en",
-              "@value": "Code Of Conduct"
+                "@language": "en",
+                "@value": "Code Of Conduct"
             },
             "rdfs:range": {
-              "@id": "gs1:ReferencedFileDetails"
+                "@id": "gs1:ReferencedFileDetails"
             },
             "sw:term_status": "testing"
-          },
-          {
+        },
+        {
             "@id": "gs1de:carbonFootprint",
             "@type": [
                 "owl:ObjectProperty",
@@ -1295,7 +1322,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:cfpCountryCode",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1320,7 +1347,7 @@
             },
             "sw:term_status": "testing"
         },
-                 {
+        {
             "@id": "gs1de:cfpDate",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1345,7 +1372,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:cfpValueVerificationCode",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1370,7 +1397,7 @@
             },
             "sw:term_status": "testing"
         },
-          {
+        {
             "@id": "gs1de:carbonFootprintDetails",
             "@type": [
                 "owl:ObjectProperty",
@@ -1395,7 +1422,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:cfpBoundariesCode",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1420,7 +1447,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:cfpValue",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1445,7 +1472,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:cfpMeasurementUnitCode",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1470,7 +1497,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:cfpFunctionalUnit",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1545,7 +1572,7 @@
             },
             "sw:term_status": "testing"
         },
- {
+        {
             "@id": "gs1de:productReparability",
             "@type": [
                 "rdf:Property",
@@ -1570,7 +1597,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:packagingRawMaterialInformation",
             "@type": [
                 "owl:ObjectProperty",
@@ -1595,7 +1622,7 @@
             },
             "sw:term_status": "testing"
         },
-           {
+        {
             "@id": "gs1de:packagingRawMaterialCode",
             "@type": [
                 "rdf:Property",
@@ -1645,7 +1672,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:materialComposition",
             "@type": [
                 "owl:ObjectProperty",
@@ -1670,7 +1697,7 @@
             },
             "sw:term_status": "testing"
         },
-          {
+        {
             "@id": "gs1de:materialCode",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1695,7 +1722,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:materialWeight",
             "@type": [
                 "owl:ObjectProperty",
@@ -1720,7 +1747,7 @@
             },
             "sw:term_status": "testing"
         },
-          {
+        {
             "@id": "gs1de:substancesOfConcern",
             "@type": [
                 "owl:ObjectProperty",
@@ -1745,7 +1772,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:microplasticInformation",
             "@type": [
                 "rdf:Property",
@@ -1770,10 +1797,31 @@
             },
             "sw:term_status": "testing"
         },
-
-
-
-
+         {
+            "@id": "gs1de:microplasticTypeCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Specifies the type of microplastic present in a product, using a standardised code."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:MicroplasticDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:MicroplasticTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
         {
             "@id": "gs1de:OrganismCodeListCode",
             "rdfs:label": {
