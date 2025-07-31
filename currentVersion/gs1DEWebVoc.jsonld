@@ -553,7 +553,7 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Has contained regulated commodities"
+                "@value": "Has Contained Regulated Commodities"
             },
             "rdfs:range": {
                 "@id": "xsd:string"
@@ -1096,7 +1096,7 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Greenhouse gas emission reduction target verification"
+                "@value": "Greenhouse Gas Emission Reduction Target Verification"
             },
             "rdfs:range": {
                 "@id": "gs1:ReferencedFileDetails"
@@ -1125,6 +1125,31 @@
             },
             "rdfs:range": {
                 "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:greenhouseGasEmissionScope",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A classification that categorises an organisation’s greenhouse gas emissions into three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Scope"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:GreenhouseGasEmissionScopeType"
             },
             "sw:term_status": "testing"
         },
