@@ -887,10 +887,6 @@
             "rdfs:range": {
                 "@id": "xsd:date"
             },
-            "skos:altLabel": {
-                "@language": "en",
-                "@value": "Production Date Start"
-            },
             "sw:term_status": "stable"
         },
         {
@@ -919,10 +915,6 @@
             },
             "rdfs:range": {
                 "@id": "xsd:date"
-            },
-            "skos:altLabel": {
-                "@language": "en",
-                "@value": "Production Date End"
             },
             "sw:term_status": "stable"
         },
@@ -1475,6 +1467,31 @@
             },
             "rdfs:range": {
                 "@id": "gs1de:CfpMethodologyCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:cfpAccountingCode",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code indicating which method is used to conduct the lifecycle assessment for carbon footprint calculation."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:CarbonFootPrintDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Accounting Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:CfpAccountingCode"
             },
             "sw:term_status": "testing"
         },
