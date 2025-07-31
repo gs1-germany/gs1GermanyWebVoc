@@ -2012,6 +2012,20 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:ReferencedFileTypeCode-REPARABILITY_INFORMATION",
+            "@type": "gs1de:ReferenceFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Link to a file containing details about a product’s ease of repair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Reparability Information"
+            },
+            "skos:prefLabel": "REPARABILITY_INFORMATION",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:OrganismCodeListCode",
             "rdfs:label": {
                 "@language": "en",
