@@ -1797,7 +1797,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:microplasticTypeCode",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1822,7 +1822,7 @@
             },
             "sw:term_status": "testing"
         },
-          {
+        {
             "@id": "gs1de:microplasticQuantity",
             "@type": [
                 "owl:ObjectProperty",
@@ -1847,7 +1847,7 @@
             },
             "sw:term_status": "testing"
         },
-          {
+        {
             "@id": "gs1de:productDurability",
             "@type": [
                 "rdf:Property",
@@ -1872,7 +1872,7 @@
             },
             "sw:term_status": "testing"
         },
-         {
+        {
             "@id": "gs1de:usageUnitDescription",
             "@type": [
                 "owl:DatatypeProperty",
@@ -1994,6 +1994,20 @@
             },
             "rdfs:range": {
                 "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ReferencedFileTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Referenced File Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "owl:equivalentClass": {
+                "@id": "https://ref.gs1.org/voc/ReferencedFileTypeCode"
             },
             "sw:term_status": "testing"
         },
