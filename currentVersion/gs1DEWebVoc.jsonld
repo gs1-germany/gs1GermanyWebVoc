@@ -2035,6 +2035,20 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:ReferencedFileTypeCode-GREENHOUSE_GAS_EMISSION_REDUCTION_TARGET_PROOF",
+            "@type": "gs1de:ReferencedFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Link to a file that proves the existence and scope of greenhouse gas emission reduction targets."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Reduction Target Proof"
+            },
+            "skos:prefLabel": "GREENHOUSE_GAS_EMISSION_REDUCTION_TARGET_PROOF",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:OrganismCodeListCode",
             "rdfs:label": {
                 "@language": "en",
