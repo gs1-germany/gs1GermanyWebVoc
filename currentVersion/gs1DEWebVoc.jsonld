@@ -2139,7 +2139,7 @@
         },
         {
             "@id": "gs1de:CfpValueVerificationCode-EXTERNAL_VERIFICATION",
-            "@type": "gs1de:",
+            "@type": "gs1de:CfpValueVerificationCode",
             "rdfs:comment": {
                 "@language": "en",
                 "@value": "Confirmation by an independent third party that the reported climate-related data or targets are accurate and credible."
@@ -2151,7 +2151,31 @@
             "skos:prefLabel": "EXTERNAL_VERIFICATION",
             "sw:term_status": "testing"
         },
-
+        {
+            "@id": "gs1de:CfpBoundariesCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Boundaries Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-USE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Emissions associated with the product's use phase."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Use"
+            },
+            "skos:prefLabel": "USE",
+            "sw:term_status": "testing"
+        },
 
 
         {
