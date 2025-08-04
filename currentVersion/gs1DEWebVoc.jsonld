@@ -2176,6 +2176,32 @@
             "skos:prefLabel": "USE",
             "sw:term_status": "testing"
         },
+                {
+            "@id": "gs1de:CfpMeasurementUnitCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Measurement Unit Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMeasurementUnitCode-KG_CO2_EQ_PER_100G",
+            "@type": "gs1de:CfpMeasurementUnitCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Kilogram carbon dioxide equivalent per 100 gram."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "KG CO2 EQ PER 100 G"
+            },
+            "skos:prefLabel": "KG_CO2_EQ_PER_100G",
+            "sw:term_status": "testing"
+        },
+
 
 
         {
