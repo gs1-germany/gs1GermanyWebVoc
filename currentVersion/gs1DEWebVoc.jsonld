@@ -14,8 +14,7 @@
         "voaf": "http://purl.org/vocommons/voaf#",
         "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
-    "@graph": [
-        {
+    "@graph": [{
             "@id": "gs1de:",
             "@type": [
                 "voaf:Vocabulary",
@@ -44,8 +43,7 @@
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
             },
-            "voaf:extends": [
-                {
+            "voaf:extends": [{
                     "@id": "schema:"
                 },
                 {
@@ -55,8 +53,7 @@
             "voaf:hasEquivalencesWith": {
                 "@id": "schema:"
             },
-            "voaf:specializes": [
-                {
+            "voaf:specializes": [{
                     "@id": "schema:"
                 },
                 {
@@ -72,7 +69,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A value representing a document’s reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
+                "@value": "A value representing a document's reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -221,8 +218,8 @@
         {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
             "@type": [
-                "rdfs:Class",
-                "owl:Class"
+                "owl:Class",
+                "rdfs:Class"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -816,8 +813,8 @@
         {
             "@id": "gs1de:organismClassification",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -873,8 +870,7 @@
                 "@language": "en",
                 "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [
-                {
+            "rdfs:domain": [{
                     "@id": "gs1:Product"
                 },
                 {
@@ -903,8 +899,7 @@
                 "@language": "en",
                 "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [
-                {
+            "rdfs:domain": [{
                     "@id": "gs1:Product"
                 },
                 {
@@ -976,8 +971,8 @@
         {
             "@id": "gs1de:plotOfOrigin",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1001,9 +996,9 @@
         {
             "@id": "gs1de:organismTypeCodeList",
             "@type": [
-                "rdf:Property",
                 "owl:ObjectProperty",
-                "owl:FunctionalProperty"
+                "owl:FunctionalProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1027,9 +1022,9 @@
         {
             "@id": "gs1de:organismTypeCodeValue",
             "@type": [
-                "rdf:Property",
                 "owl:DatatypeProperty",
-                "owl:FunctionalProperty"
+                "owl:FunctionalProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1053,8 +1048,8 @@
         {
             "@id": "gs1de:greenhouseGasEmissionInfo",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1125,8 +1120,8 @@
         {
             "@id": "gs1de:greenhouseGasEmissionReductionTarget",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1155,7 +1150,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A classification that categorises an organisation’s greenhouse gas emissions into three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain)."
+                "@value": "A classification that categorises an organisation's greenhouse gas emissions into three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from the generation of purchased electricity, steam, heating, and cooling), and Scope 3 (all other indirect emissions that occur in the value chain)."
             },
             "rdfs:domain": {
                 "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
@@ -1180,7 +1175,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "The reference point representing an organisation’s greenhouse gas emissions before implementing any reduction measures, used to measure progress over time."
+                "@value": "The reference point representing an organisation's greenhouse gas emissions before implementing any reduction measures, used to measure progress over time."
             },
             "rdfs:domain": {
                 "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
@@ -1205,7 +1200,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "The specific goal set by an organisation to reduce its greenhouse gas emissions from a defined baseline level."
+                "@value": "The specific goal set by an organisation to reduce its greenhouse gas emissions from a defined base line level."
             },
             "rdfs:domain": {
                 "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
@@ -1225,12 +1220,12 @@
         {
             "@id": "gs1de:greenhouseGasEmissionYear",
             "@type": [
-                "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:DatatypeProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "The year associated with an organisation’s greenhouse gas emissions, whether measured or projected."
+                "@value": "The year associated with an organisation's greenhouse gas emissions, whether measured or projected."
             },
             "rdfs:domain": {
                 "@id": "gs1de:GreenhouseGasEmissionStatement"
@@ -1250,8 +1245,8 @@
         {
             "@id": "gs1de:greenhouseGasEmissionQuantityTCO2e",
             "@type": [
-                "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:DatatypeProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1358,7 +1353,7 @@
                 "@value": "The date on which the product carbon footprint assessment was conducted."
             },
             "rdfs:domain": {
-                "@id": "gs1de:Carbonprint"
+                "@id": "gs1de:CarbonFootprint"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -1575,8 +1570,8 @@
         {
             "@id": "gs1de:productReparability",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1625,8 +1620,8 @@
         {
             "@id": "gs1de:packagingRawMaterialCode",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1775,8 +1770,8 @@
         {
             "@id": "gs1de:microplasticInformation",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1850,8 +1845,8 @@
         {
             "@id": "gs1de:productDurability",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1930,7 +1925,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Information regarding the evaluation of an item’s packaging recyclability, assessed at the packaging level."
+                "@value": "Information regarding the evaluation of an item's packaging recyclability, assessed at the packaging level."
             },
             "rdfs:domain": {
                 "@id": "gs1:Product"
@@ -1950,8 +1945,8 @@
         {
             "@id": "gs1de:packagingRecyclabilityAssessmentSpecificationCode",
             "@type": [
-                "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:ObjectProperty",
+                "rdf:Property"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -2016,7 +2011,7 @@
             "@type": "gs1de:ReferenceFileTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Link to a file containing details about a product’s ease of repair."
+                "@value": "Link to a file containing details about a product's ease of repair."
             },
             "rdfs:label": {
                 "@language": "en",
@@ -2030,7 +2025,7 @@
             "@type": "gs1de:ReferenceFileTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Link to a file containing an organisation’s code of conduct for suppliers."
+                "@value": "Link to a file containing an organisation's code of conduct for suppliers."
             },
             "rdfs:label": {
                 "@language": "en",
@@ -2144,7 +2139,7 @@
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the supplier’s Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "Reference number of the supplier's Due Diligence Statement as provided by the European Deforestation Information System."
             },
             "rdfs:label": {
                 "@language": "en",
@@ -2158,7 +2153,7 @@
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the sender’s Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "Reference number of the sender's Due Diligence Statement as provided by the European Deforestation Information System."
             },
             "rdfs:label": {
                 "@language": "en",
