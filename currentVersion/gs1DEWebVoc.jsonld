@@ -2008,7 +2008,7 @@
         },
         {
             "@id": "gs1de:ReferencedFileTypeCode-REPARABILITY_INFORMATION",
-            "@type": "gs1de:ReferenceFileTypeCode",
+            "@type": "gs1de:ReferencedFileTypeCode",
             "rdfs:comment": {
                 "@language": "en",
                 "@value": "Link to a file containing details about a product's ease of repair."
@@ -2022,7 +2022,7 @@
         },
         {
             "@id": "gs1de:ReferencedFileTypeCode-CODE_OF_CONDUCT_SUPPLIER",
-            "@type": "gs1de:ReferenceFileTypeCode",
+            "@type": "gs1de:ReferencedFileTypeCode",
             "rdfs:comment": {
                 "@language": "en",
                 "@value": "Link to a file containing an organisation's code of conduct for suppliers."
