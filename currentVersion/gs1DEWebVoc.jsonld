@@ -1075,7 +1075,7 @@
         {
             "@id": "gs1de:greenhouseGasEmissionInfoIsExternallyValidated",
             "@type": [
-                "owl:ObjectProperty",
+                "owl:DatatypeProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1251,7 +1251,7 @@
             "@id": "gs1de:greenhouseGasEmissionQuantityTCO2e",
             "@type": [
                 "rdf:Property",
-                "owl:ObjectProperty"
+                "owl:DatatypeProperty"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1325,7 +1325,7 @@
         {
             "@id": "gs1de:cfpCountryCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1375,7 +1375,7 @@
         {
             "@id": "gs1de:cfpValueVerificationCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1425,7 +1425,7 @@
         {
             "@id": "gs1de:cfpBoundariesCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1475,7 +1475,7 @@
         {
             "@id": "gs1de:cfpMeasurementUnitCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1525,7 +1525,7 @@
         {
             "@id": "gs1de:cfpMethodologyCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1550,7 +1550,7 @@
         {
             "@id": "gs1de:cfpAccountingCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1593,7 +1593,7 @@
                 "@value": "Product Reparability"
             },
             "rdfs:range": {
-                "@id": "gs1de:"
+                "@id": "gs1:ReferencedFileDetails"
             },
             "sw:term_status": "testing"
         },
@@ -1626,7 +1626,7 @@
             "@id": "gs1de:packagingRawMaterialCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1700,7 +1700,7 @@
         {
             "@id": "gs1de:materialCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1800,7 +1800,7 @@
         {
             "@id": "gs1de:microplasticTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1851,7 +1851,7 @@
             "@id": "gs1de:productDurability",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1951,7 +1951,7 @@
             "@id": "gs1de:packagingRecyclabilityAssessmentSpecificationCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:comment": {
                 "@language": "en",
@@ -1975,7 +1975,7 @@
         {
             "@id": "gs1de:packagingRecyclabilityValue",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
