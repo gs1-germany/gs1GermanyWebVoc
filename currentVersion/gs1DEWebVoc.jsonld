@@ -2127,6 +2127,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:CfpValueVerificationCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Value Verification Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpValueVerificationCode-EXTERNAL_VERIFICATION",
+            "@type": "gs1de:",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Confirmation by an independent third party that the reported climate-related data or targets are accurate and credible."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "External Verification"
+            },
+            "skos:prefLabel": "EXTERNAL_VERIFICATION",
+            "sw:term_status": "testing"
+        },
+
+
+
+        {
             "@id": "gs1de:LicenceIdentificationTypeCode",
             "rdfs:label": {
                 "@language": "en",
