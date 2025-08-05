@@ -2176,7 +2176,7 @@
             "skos:prefLabel": "USE",
             "sw:term_status": "testing"
         },
-                {
+        {
             "@id": "gs1de:CfpMeasurementUnitCode",
             "rdfs:label": {
                 "@language": "en",
@@ -2226,11 +2226,33 @@
             "skos:prefLabel": "CARBON_FOOTPRINT_STANDARD",
             "sw:term_status": "testing"
         },
+                {
+            "@id": "gs1de:CfpAccountingCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Accounting Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:",
+            "@type": "gs1de:CfpAccountingCode-ATTRIBUTIONAL",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lifecycle assessment conducted using the attributional method."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Attributional"
+            },
+            "skos:prefLabel": "ATTRIBUTIONAL",
+            "sw:term_status": "testing"
+        },
 
 
-
-
-         
 
 
         {
