@@ -2242,13 +2242,27 @@
             "@type": "gs1de:CfpAccountingCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Lifecycle assessment conducted using the attributional method."
+                "@value": "An attributional life cycle assessment (ALCA) is focusing on describing, assessing and quantifying environmentally relevant physical flows of specific life cycle(s) and its subsystems. An ALCA gives an estimate of what part of the global environmental burdens belongs to the study object. An ALCA does not include environmental benefits or other indirect consequences that arise outside the life cycle of the investigated product."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "Attributional"
             },
             "skos:prefLabel": "ATTRIBUTIONAL",
+            "sw:term_status": "testing"
+        },
+                {
+            "@id": "gs1de:CfpAccountingCode-CONSEQUENTIAL",
+            "@type": "gs1de:CfpAccountingCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A consequential life cycle assessment (CLCA) is focusing on describing, assessing and quantifying environmentally relevant flows and how they will change in response to possible decisions. A CLCA gives an estimate of how the production and use of the study object affect the global environmental burdens. For example, an increased use of a material in the studied system can lead to less material being used in other systems."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Consequential"
+            },
+            "skos:prefLabel": "CONSEQUENTIAL",
             "sw:term_status": "testing"
         },
                 {
