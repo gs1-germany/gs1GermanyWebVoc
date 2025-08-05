@@ -2167,13 +2167,111 @@
             "@type": "gs1de:CfpBoundariesCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Emissions associated with the product's use phase."
+                "@value": "The emissions of the product when used by the consumer."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "Use"
             },
             "skos:prefLabel": "USE",
+            "sw:term_status": "testing"
+        },
+                {
+            "@id": "gs1de:CfpBoundariesCode-TRANSPORT_FINAL_PRODUCT",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions resulting from the distribution of the product to the retail network or to downstream stakeholders. This stage includes transport of the final product and its packaging, storage and warehousing."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Transport of final product"
+            },
+            "skos:prefLabel": "TRANSPORT_FINAL_PRODUCT",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:CfpBoundariesCode-CRADLE_TO_GATE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Total amount of CO2 emission from a life cycle assessment (LCA) model that assesses a product's environmental footprint from raw materials extraction until it leaves the factory gate."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cradle to gate"
+            },
+            "skos:prefLabel": "CRADLE_TO_GATE",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:CfpBoundariesCode-CRADLE_TO_GRAVE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Total amount of CO2 emission from a life cycle assessment (LCA) model that assesses a product's environmental footprint from raw materials extraction until its disposal, including manufacturing, transportation, product use."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cradle to grave"
+            },
+            "skos:prefLabel": "CRADLE_TO_GRAVE",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:CfpBoundariesCode-RAW_MATERIALS",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions resulting from the production/extraction, packaging, storage, warehousing and transportation of raw materials."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Raw materials"
+            },
+            "skos:prefLabel": "RAW_MATERIALS",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:CfpBoundariesCode-END_OF_LIFE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emission of the product when it is disposed, recycled, recovered after use."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "End of life"
+            },
+            "skos:prefLabel": "END_OF_LIFE",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:CfpBoundariesCode-MANUFACTURING",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions resulting from the manufacturing/production of the product."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Manufacturing"
+            },
+            "skos:prefLabel": "MANUFACTURING",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:CfpBoundariesCode-CRADLE_TO_CONSUMPTION",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Total amount of CO2 emission from a life cycle assessment (LCA) model that assesses a product's environmental footprint from raw materials extraction until it is consumed. (PEF guidance, the European Commission 2021b)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cradle to consumption"
+            },
+            "skos:prefLabel": "CRADLE_TO_CONSUMPTION",
             "sw:term_status": "testing"
         },
         {
