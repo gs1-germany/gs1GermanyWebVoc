@@ -2255,7 +2255,7 @@
             "@id": "gs1de:PackagingRawMaterialCode",
             "rdfs:label": {
                 "@language": "en",
-                "@value": ""
+                "@value": "Packaging Raw Material Code"
             },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
@@ -2267,7 +2267,7 @@
             "@type": "gs1de:PackagingRawMaterialCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Packaging material sourced from recycled input."
+                "@value": "The packaging material is made from post consumer recycled content."
             },
             "rdfs:label": {
                 "@language": "en",
@@ -2276,7 +2276,84 @@
             "skos:prefLabel": "RECYCLED",
             "sw:term_status": "testing"
         },
+                {
+            "@id": "gs1de:PackagingRawMaterialCode-NEW_RAW_MATERIAL_OTHER",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from new, non-sustainable, materials not listed in the code list."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "New raw material other"
+            },
+            "skos:prefLabel": "NEW_RAW_MATERIAL_OTHER",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:PackagingRawMaterialCode-BIOLOGICAL_PLASTIC",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from bio-based/bio-sourced plastics whole or partially from renewable biological resources, like sugar cane, starch."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Bio-based/Bio-sourced plastic"
+            },
+            "skos:prefLabel": "BIOLOGICAL_PLASTIC",
+            "sw:term_status": "testing"
+        },
+                       {
+            "@id": "gs1de:PackagingRawMaterialCode-CRUDE_OIL",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from crude oil."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Crude Oil"
+            },
+            "skos:prefLabel": "CRUDE_OIL",
+            "sw:term_status": "testing"
+        },
+
+
+
+
+
+
+
+                {
+            "@id": "gs1de:MaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLASTIC_BIO_PLASTIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Plastic materials made from biomass, but may have exactly the same properties as ordinary plastic. Sometimes these plastics are biodegradable."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Bioplastic"
+            },
+            "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
+            "sw:term_status": "testing"
+        },
+
        
+
+        
 
 
         {
