@@ -2238,8 +2238,8 @@
             "sw:term_status": "testing"
         },
         {
-            "@id": "gs1de:",
-            "@type": "gs1de:CfpAccountingCode-ATTRIBUTIONAL",
+            "@id": "gs1de:CfpAccountingCode-ATTRIBUTIONAL",
+            "@type": "gs1de:CfpAccountingCode",
             "rdfs:comment": {
                 "@language": "en",
                 "@value": "Lifecycle assessment conducted using the attributional method."
@@ -2251,8 +2251,32 @@
             "skos:prefLabel": "ATTRIBUTIONAL",
             "sw:term_status": "testing"
         },
-
-
+                {
+            "@id": "gs1de:PackagingRawMaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": ""
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode-RECYCLED",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Packaging material sourced from recycled input."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Recycled"
+            },
+            "skos:prefLabel": "RECYCLED",
+            "sw:term_status": "testing"
+        },
+       
 
 
         {
