@@ -2142,13 +2142,41 @@
             "@type": "gs1de:CfpValueVerificationCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Confirmation by an independent third party that the reported climate-related data or targets are accurate and credible."
+                "@value": "The values have been verified by an external party."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "External Verification"
             },
             "skos:prefLabel": "EXTERNAL_VERIFICATION",
+            "sw:term_status": "testing"
+        },
+                {
+            "@id": "gs1de:CfpValueVerificationCode-PEER_REVIEWED",
+            "@type": "gs1de:CfpValueVerificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The values and methodology have been reviewed internally or by 3rd party."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Peer reviewed"
+            },
+            "skos:prefLabel": "PEER_REVIEWED",
+            "sw:term_status": "testing"
+        },
+                        {
+            "@id": "gs1de:CfpValueVerificationCode-NOT_VERIFIED",
+            "@type": "gs1de:CfpValueVerificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The values have been calculated according to the reported calculation method, but have not been verified."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Not verified"
+            },
+            "skos:prefLabel": "NOT_VERIFIED",
             "sw:term_status": "testing"
         },
         {
