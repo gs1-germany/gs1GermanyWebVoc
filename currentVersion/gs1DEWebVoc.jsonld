@@ -2217,7 +2217,7 @@
             "@type": "gs1de:CfpMethodologyCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Carbon footprint calculated using the Carbon Footprint Standard methodology."
+                "@value": "Product-specific value, based on carbon footprint standard (ISO 14067)."
             },
             "rdfs:label": {
                 "@language": "en",
@@ -2227,6 +2227,132 @@
             "sw:term_status": "testing"
         },
                 {
+            "@id": "gs1de:CfpMethodologyCode-PCR_EDF",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Product-specific value, based on Product Category Rule (PCR) of an Environmental Product Declaration (EPD) system."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PCR EDF"
+            },
+            "skos:prefLabel": "PCR_EDF",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-PCR",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Product Category Rules."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PCR"
+            },
+            "skos:prefLabel": "PCR",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-RECIPE",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Based on National Institute for Public Health and the Environment (RIVM), Institute of Environmental Sciences (CML), Product Category Rule (PCR)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "ReCiPe"
+            },
+            "skos:prefLabel": "RECIPE",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-PEF",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The Product Environmental Footprint (PEF) methodology is performed following the PEF guidelines published by the European Commission and, if available, specific category rules (PEFCRs)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PEF"
+            },
+            "skos:prefLabel": "PEF",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-OTHER",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A standard calculation method, not classified in the codelist."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Not classified"
+            },
+            "skos:prefLabel": "OTHER",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-ISO_14064",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "ISO 14064 specifies requirements for selecting Greenhouse Gas (GHG) validators/verifiers, establishing the level of assurance, objectives, criteria and scope, determining the validation/verification approach, assessing GHG data, information, information systems and controls, evaluating GHG assertions and preparing validation/verification statements."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "ISO 14064"
+            },
+            "skos:prefLabel": "ISO_14064",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-ENVIMAT",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Value for the product-group from an input-output study, based on ENVIMAT in Finland (Nissinen et al. 2019, SYKEra 15/2019)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "ENVIMAT"
+            },
+            "skos:prefLabel": "ENVIMAT",
+            "sw:term_status": "testing"
+        },
+         {
+            "@id": "gs1de:CfpMethodologyCode-GHG_PROTOCOL",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The Product Life Cycle Accounting and Reporting Standard can be used to understand the full life cycle emissions of a product and focus efforts on the greatest Greenhouse Gas (GHG) reduction opportunities."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas (GHG) Protocol"
+            },
+            "skos:prefLabel": "GHG_PROTOCOL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-EPD",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Environmental Product Declaration (EPD)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EPD"
+            },
+            "skos:prefLabel": "EPD",
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:CfpAccountingCode",
             "rdfs:label": {
                 "@language": "en",
@@ -2251,7 +2377,7 @@
             "skos:prefLabel": "ATTRIBUTIONAL",
             "sw:term_status": "testing"
         },
-                {
+        {
             "@id": "gs1de:CfpAccountingCode-CONSEQUENTIAL",
             "@type": "gs1de:CfpAccountingCode",
             "rdfs:comment": {
@@ -2265,7 +2391,7 @@
             "skos:prefLabel": "CONSEQUENTIAL",
             "sw:term_status": "testing"
         },
-                {
+        {
             "@id": "gs1de:PackagingRawMaterialCode",
             "rdfs:label": {
                 "@language": "en",
@@ -2290,7 +2416,7 @@
             "skos:prefLabel": "RECYCLED",
             "sw:term_status": "testing"
         },
-                {
+        {
             "@id": "gs1de:PackagingRawMaterialCode-NEW_RAW_MATERIAL_OTHER",
             "@type": "gs1de:PackagingRawMaterialCode",
             "rdfs:comment": {
@@ -2304,7 +2430,7 @@
             "skos:prefLabel": "NEW_RAW_MATERIAL_OTHER",
             "sw:term_status": "testing"
         },
-                       {
+        {
             "@id": "gs1de:PackagingRawMaterialCode-BIOLOGICAL_PLASTIC",
             "@type": "gs1de:PackagingRawMaterialCode",
             "rdfs:comment": {
@@ -2318,7 +2444,7 @@
             "skos:prefLabel": "BIOLOGICAL_PLASTIC",
             "sw:term_status": "testing"
         },
-                       {
+        {
             "@id": "gs1de:PackagingRawMaterialCode-CRUDE_OIL",
             "@type": "gs1de:PackagingRawMaterialCode",
             "rdfs:comment": {
@@ -2339,7 +2465,7 @@
 
 
 
-                {
+        {
             "@id": "gs1de:MaterialCode",
             "rdfs:label": {
                 "@language": "en",
@@ -2365,9 +2491,9 @@
             "sw:term_status": "testing"
         },
 
-       
 
-        
+
+
 
 
         {
