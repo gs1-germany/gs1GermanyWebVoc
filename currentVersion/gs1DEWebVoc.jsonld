@@ -2584,13 +2584,6 @@
             "skos:prefLabel": "CRUDE_OIL",
             "sw:term_status": "testing"
         },
-
-
-
-
-
-
-
         {
             "@id": "gs1de:MaterialCode",
             "rdfs:label": {
@@ -2614,6 +2607,59 @@
                 "@value": "Bioplastic"
             },
             "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
+            "sw:term_status": "testing"
+        },
+                {
+            "@id": "gs1de:MicroplasticTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MicroplasticTypeCode-PRIMARY_TYPE_A",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Primary microplastics type A are already produced during the manufacturing of a product. The release of primary microplastics type A can be intentional, knowingly accepted, or caused by an accident. Examples include abrasive particles in cosmetics, polymer blasting media, laser sinter powder for 3D printing, or plastic pellets."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type A"
+            },
+            "skos:prefLabel": "PRIMARY_TYPE_A",
+            "sw:term_status": "testing"
+        },
+            {
+            "@id": "gs1de:MicroplasticTypeCode-PRIMARY_TYPE_B",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Primary microplastics type B are formed during the usage phase. Examples are tire wear, synthetic fibers released during washing, or weathering of paints."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type B"
+            },
+            "skos:prefLabel": "PRIMARY_TYPE_B",
+            "sw:term_status": "testing"
+        },
+            {
+            "@id": "gs1de:MicroplasticTypeCode-SECONDARY_MICROPLASTIC",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Secondary microplastics are formed through the weathering and fragmentation of macroplastics in the environment."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Secondary Microplastic"
+            },
+            "skos:prefLabel": "SECONDARY_MICROPLASTIC",
             "sw:term_status": "testing"
         },
 
