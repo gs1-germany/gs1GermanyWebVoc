@@ -4619,13 +4619,31 @@
             "skos:prefLabel": "MINERAL_QUARTZ",
             "sw:term_status": "testing"
         },
-
-
-
-
-
-
-
+        {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Specification Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode-DEUTSCHER_MINDESTSTANDARD",
+            "@type": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The German minimum standard for determining the recyclability of packaging, subject to system packaging pursuant to section 21 (3) VerpackG (Verpackungsgesetz - Packaging Act)."
+            },
+            "rdfs:label": {
+                "@language": "de",
+                "@value": "Deutscher Mindeststandard"
+            },
+            "skos:prefLabel": "DEUTSCHER_MINDESTSTANDARD",
+            "sw:term_status": "testing"
+        },
         {
             "@id": "gs1de:LicenceIdentificationTypeCode",
             "rdfs:label": {
