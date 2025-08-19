@@ -458,6 +458,9 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
+            "skos:closeMatch": {
+                "@id": "gs1:masterDataAvailableFor"
+            },
             "sw:term_status": "unstable"
         },
         {
