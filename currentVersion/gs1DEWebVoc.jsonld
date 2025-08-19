@@ -213,7 +213,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "unstable"
         },
         {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
@@ -458,7 +458,7 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "unstable"
         },
         {
             "@id": "gs1de:referenceNumber",
@@ -521,7 +521,7 @@
                 "@value": "Licence information about an organisation."
             },
             "rdfs:domain": {
-                "@id": "owl:Thing"
+                "@id": "gs1:Organization"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
