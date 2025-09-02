@@ -69,7 +69,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A value representing a document’s reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
+                "@value": "A value representing a document's reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -938,7 +938,7 @@
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the supplier’s Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "Reference number of the supplier's Due Diligence Statement as provided by the European Deforestation Information System."
             },
             "rdfs:label": {
                 "@language": "en",
@@ -952,7 +952,7 @@
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the sender’s Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "Reference number of the sender's Due Diligence Statement as provided by the European Deforestation Information System."
             },
             "rdfs:label": {
                 "@language": "en",

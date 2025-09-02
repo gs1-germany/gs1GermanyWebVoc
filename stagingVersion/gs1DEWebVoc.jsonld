@@ -36,9 +36,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-08-04"
+                "@value": "2025-09-04"
             },
-            "owl:versionInfo": "0.1.4",
+            "owl:versionInfo": "0.1.5",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
@@ -81,7 +81,10 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "stable",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifier"
+            }
         },
         {
             "@id": "gs1de:RegulatoryInformation",
@@ -213,7 +216,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "unstable"
         },
         {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
@@ -458,7 +461,10 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
-            "sw:term_status": "stable"
+            "skos:closeMatch": {
+                "@id": "gs1:masterDataAvailableFor"
+            },
+            "sw:term_status": "unstable"
         },
         {
             "@id": "gs1de:referenceNumber",
@@ -521,7 +527,7 @@
                 "@value": "Licence information about an organisation."
             },
             "rdfs:domain": {
-                "@id": "owl:Thing"
+                "@id": "gs1:Organization"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -538,7 +544,7 @@
         {
             "@id": "gs1de:containedRegulatedCommodities",
             "@type": [
-                "owl:ObjectProperty",
+                "owl:DatatypeProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -558,7 +564,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "testing"
         },
         {
             "@id": "gs1de:regulatoryInformation",
@@ -738,7 +744,7 @@
         {
             "@id": "gs1de:licenceIdentificationTypeCode",
             "@type": [
-                "owl:ObjectProperty",
+                "owl:DatatypeProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -788,7 +794,7 @@
         {
             "@id": "gs1de:importClassificationTypeCode",
             "@type": [
-                "owl:ObjectProperty",
+                "owl:DatatypeProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -2008,7 +2014,7 @@
         },
         {
             "@id": "gs1de:ReferencedFileTypeCode-REPARABILITY_INFORMATION",
-            "@type": "gs1de:ReferenceFileTypeCode",
+            "@type": "gs1de:ReferencedFileTypeCode",
             "rdfs:comment": {
                 "@language": "en",
                 "@value": "Link to a file containing details about a product's ease of repair."
@@ -2022,7 +2028,7 @@
         },
         {
             "@id": "gs1de:ReferencedFileTypeCode-CODE_OF_CONDUCT_SUPPLIER",
-            "@type": "gs1de:ReferenceFileTypeCode",
+            "@type": "gs1de:ReferencedFileTypeCode",
             "rdfs:comment": {
                 "@language": "en",
                 "@value": "Link to a file containing an organisation's code of conduct for suppliers."
@@ -2032,6 +2038,20 @@
                 "@value": "Code of conduct supplier"
             },
             "skos:prefLabel": "CODE_OF_CONDUCT_SUPPLIER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:ReferencedFileTypeCode-GREENHOUSE_GAS_EMISSION_REDUCTION_TARGET_PROOF",
+            "@type": "gs1de:ReferencedFileTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Link to a file that proves the existence and scope of greenhouse gas emission reduction targets."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Reduction Target Proof"
+            },
+            "skos:prefLabel": "GREENHOUSE_GAS_EMISSION_REDUCTION_TARGET_PROOF",
             "sw:term_status": "testing"
         },
         {
@@ -2058,6 +2078,2577 @@
             },
             "skos:prefLabel": "EUROPEAN_TIMBER_CODE",
             "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Emission Scope Type"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_1",
+            "@type": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Direct emissions from sources owned or controlled by the reporting entity."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Protocol Scope 1"
+            },
+            "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_1",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_2",
+            "@type": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indirect emissions from the generation of energy purchased by the reporting entity."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Protocol Scope 2"
+            },
+            "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_2",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_3",
+            "@type": "gs1de:GreenhouseGasEmissionScopeType",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indirect emissions occurring across the value chain of the reporting entity."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas Protocol Scope 3"
+            },
+            "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_3",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpValueVerificationCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Value Verification Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpValueVerificationCode-EXTERNAL_VERIFICATION",
+            "@type": "gs1de:CfpValueVerificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The values have been verified by an external party."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "External Verification"
+            },
+            "skos:prefLabel": "EXTERNAL_VERIFICATION",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpValueVerificationCode-PEER_REVIEWED",
+            "@type": "gs1de:CfpValueVerificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The values and methodology have been reviewed internally or by 3rd party."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Peer reviewed"
+            },
+            "skos:prefLabel": "PEER_REVIEWED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpValueVerificationCode-NOT_VERIFIED",
+            "@type": "gs1de:CfpValueVerificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The values have been calculated according to the reported calculation method, but have not been verified."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Not verified"
+            },
+            "skos:prefLabel": "NOT_VERIFIED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Boundaries Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-USE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions of the product when used by the consumer."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Use"
+            },
+            "skos:prefLabel": "USE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-TRANSPORT_FINAL_PRODUCT",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions resulting from the distribution of the product to the retail network or to downstream stakeholders. This stage includes transport of the final product and its packaging, storage and warehousing."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Transport of final product"
+            },
+            "skos:prefLabel": "TRANSPORT_FINAL_PRODUCT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-CRADLE_TO_GATE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Total amount of CO2 emission from a life cycle assessment (LCA) model that assesses a product's environmental footprint from raw materials extraction until it leaves the factory gate."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cradle to gate"
+            },
+            "skos:prefLabel": "CRADLE_TO_GATE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-CRADLE_TO_GRAVE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Total amount of CO2 emission from a life cycle assessment (LCA) model that assesses a product's environmental footprint from raw materials extraction until its disposal, including manufacturing, transportation, product use."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cradle to grave"
+            },
+            "skos:prefLabel": "CRADLE_TO_GRAVE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-RAW_MATERIALS",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions resulting from the production/extraction, packaging, storage, warehousing and transportation of raw materials."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Raw materials"
+            },
+            "skos:prefLabel": "RAW_MATERIALS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-END_OF_LIFE",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emission of the product when it is disposed, recycled, recovered after use."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "End of life"
+            },
+            "skos:prefLabel": "END_OF_LIFE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-MANUFACTURING",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The emissions resulting from the manufacturing/production of the product."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Manufacturing"
+            },
+            "skos:prefLabel": "MANUFACTURING",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpBoundariesCode-CRADLE_TO_CONSUMPTION",
+            "@type": "gs1de:CfpBoundariesCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Total amount of CO2 emission from a life cycle assessment (LCA) model that assesses a product's environmental footprint from raw materials extraction until it is consumed. (PEF guidance, the European Commission 2021b)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cradle to consumption"
+            },
+            "skos:prefLabel": "CRADLE_TO_CONSUMPTION",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMeasurementUnitCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Measurement Unit Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMeasurementUnitCode-KG_CO2_EQ_PER_100G",
+            "@type": "gs1de:CfpMeasurementUnitCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Kilogram carbon dioxide equivalent per 100 gram."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "KG CO2 EQ PER 100 G"
+            },
+            "skos:prefLabel": "KG_CO2_EQ_PER_100G",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Methodology Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-CARBON_FOOTPRINT_STANDARD",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Product-specific value, based on carbon footprint standard (ISO 14067)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Footprint Standard"
+            },
+            "skos:prefLabel": "CARBON_FOOTPRINT_STANDARD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-PCR_EDF",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Product-specific value, based on Product Category Rule (PCR) of an Environmental Product Declaration (EPD) system."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PCR EDF"
+            },
+            "skos:prefLabel": "PCR_EDF",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-PCR",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Product Category Rules."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PCR"
+            },
+            "skos:prefLabel": "PCR",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-RECIPE",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Based on National Institute for Public Health and the Environment (RIVM), Institute of Environmental Sciences (CML), Product Category Rule (PCR)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "ReCiPe"
+            },
+            "skos:prefLabel": "RECIPE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-PEF",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The Product Environmental Footprint (PEF) methodology is performed following the PEF guidelines published by the European Commission and, if available, specific category rules (PEFCRs)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PEF"
+            },
+            "skos:prefLabel": "PEF",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-OTHER",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A standard calculation method, not classified in the codelist."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Not classified"
+            },
+            "skos:prefLabel": "OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-ISO_14064",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "ISO 14064 specifies requirements for selecting Greenhouse Gas (GHG) validators/verifiers, establishing the level of assurance, objectives, criteria and scope, determining the validation/verification approach, assessing GHG data, information, information systems and controls, evaluating GHG assertions and preparing validation/verification statements."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "ISO 14064"
+            },
+            "skos:prefLabel": "ISO_14064",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-ENVIMAT",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Value for the product-group from an input-output study, based on ENVIMAT in Finland (Nissinen et al. 2019, SYKEra 15/2019)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "ENVIMAT"
+            },
+            "skos:prefLabel": "ENVIMAT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-GHG_PROTOCOL",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The Product Life Cycle Accounting and Reporting Standard can be used to understand the full life cycle emissions of a product and focus efforts on the greatest Greenhouse Gas (GHG) reduction opportunities."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Greenhouse Gas (GHG) Protocol"
+            },
+            "skos:prefLabel": "GHG_PROTOCOL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpMethodologyCode-EPD",
+            "@type": "gs1de:CfpMethodologyCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Environmental Product Declaration (EPD)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EPD"
+            },
+            "skos:prefLabel": "EPD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpAccountingCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cfp Accounting Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpAccountingCode-ATTRIBUTIONAL",
+            "@type": "gs1de:CfpAccountingCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An attributional life cycle assessment (ALCA) is focusing on describing, assessing and quantifying environmentally relevant physical flows of specific life cycle(s) and its subsystems. An ALCA gives an estimate of what part of the global environmental burdens belongs to the study object. An ALCA does not include environmental benefits or other indirect consequences that arise outside the life cycle of the investigated product."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Attributional"
+            },
+            "skos:prefLabel": "ATTRIBUTIONAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:CfpAccountingCode-CONSEQUENTIAL",
+            "@type": "gs1de:CfpAccountingCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A consequential life cycle assessment (CLCA) is focusing on describing, assessing and quantifying environmentally relevant flows and how they will change in response to possible decisions. A CLCA gives an estimate of how the production and use of the study object affect the global environmental burdens. For example, an increased use of a material in the studied system can lead to less material being used in other systems."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Consequential"
+            },
+            "skos:prefLabel": "CONSEQUENTIAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Raw Material Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode-RECYCLED",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from post consumer recycled content."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Recycled"
+            },
+            "skos:prefLabel": "RECYCLED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode-NEW_RAW_MATERIAL_OTHER",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from new, non-sustainable, materials not listed in the code list."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "New raw material other"
+            },
+            "skos:prefLabel": "NEW_RAW_MATERIAL_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode-BIOLOGICAL_PLASTIC",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from bio-based/bio-sourced plastics whole or partially from renewable biological resources, like sugar cane, starch."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Bio-based/Bio-sourced plastic"
+            },
+            "skos:prefLabel": "BIOLOGICAL_PLASTIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRawMaterialCode-CRUDE_OIL",
+            "@type": "gs1de:PackagingRawMaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The packaging material is made from crude oil."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Crude Oil"
+            },
+            "skos:prefLabel": "CRUDE_OIL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLASTIC_BIO_PLASTIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Plastic materials made from biomass, but may have exactly the same properties as ordinary plastic. Sometimes these plastics are biodegradable."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Bioplastic"
+            },
+            "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MicroplasticTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MicroplasticTypeCode-PRIMARY_TYPE_A",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Primary microplastics type A are already produced during the manufacturing of a product. The release of primary microplastics type A can be intentional, knowingly accepted, or caused by an accident. Examples include abrasive particles in cosmetics, polymer blasting media, laser sinter powder for 3D printing, or plastic pellets."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type A"
+            },
+            "skos:prefLabel": "PRIMARY_TYPE_A",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MicroplasticTypeCode-PRIMARY_TYPE_B",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Primary microplastics type B are formed during the usage phase. Examples are tire wear, synthetic fibers released during washing, or weathering of paints."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Microplastic Type B"
+            },
+            "skos:prefLabel": "PRIMARY_TYPE_B",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MicroplasticTypeCode-SECONDARY_MICROPLASTIC",
+            "@type": "gs1de:MicroplasticTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Secondary microplastics are formed through the weathering and fragmentation of macroplastics in the environment."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Secondary Microplastic"
+            },
+            "skos:prefLabel": "SECONDARY_MICROPLASTIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Material Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ABACA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the sheathing leaf of Musa textilis."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Abaca (Manila hemp)"
+            },
+            "skos:prefLabel": "FIBRE_ABACA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ACRYLIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules comprising at least 85% (by mass) in the chain of the acrylonitrilic pattern."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Acrylic"
+            },
+            "skos:prefLabel": "FIBRE_ACRYLIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ALFA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the leaves of Stipa tenacissima (esparto, esparto grass, halfah grass, alfa grass, or needle grass)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Alfa"
+            },
+            "skos:prefLabel": "FIBRE_ALFA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ALGINATE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from metallic salts of alginic acid."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Alginate"
+            },
+            "skos:prefLabel": "FIBRE_ALGINATE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_ALPACA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alpaca hair specifically refers to the fur from the body of a alpaca, but more generally refers to the fibre (and cloth)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Alpaca wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_ALPACA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_ANGORA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Angora hair or Angora fibre refers to the downy coat produced by the Angora rabbit."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Angora wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_ANGORA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ARAMID",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed from synthetic linear macromolecules made up of aromatic groups joined by amide or imide linkages, of which at least 85% are joined directly to two aromatic rings and with the number of imide linkages, if present, not exceeding the number of amide linkages."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Aramid"
+            },
+            "skos:prefLabel": "FIBRE_ARAMID",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-BAMBOO",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Any of various woody or arborescent grasses (as of the genera Bambusa, Arundinaria, and Dendrocalamus of the subfamily Bambusoideae) of tropical and temperate regions having hollow stems, thick rhizomes, and shoots. The packaging may be in the form of paper, wood or leaves."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Bamboo"
+            },
+            "skos:prefLabel": "BAMBOO",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_BROOM",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the base of Cytisus scoparius and/or Spartium Junceum."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Broom fibre"
+            },
+            "skos:prefLabel": "FIBRE_BROOM",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_CAMEL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Camel hair specifically refers to the fur from the body of a camel, but more generally refers to the fibre (and cloth)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Camel wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_CAMEL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_CASHMERE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Wool obtained from cashmere goats, pashmina goats and some other breeds of goat."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cashmere wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_CASHMERE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CELLULOSE_HYDRATE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A class of materials manufactured by the conversion of natural cellulose to a soluble cellulosic derivative and subsequent regeneration, typically forming a film (e.g., cellophane)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cellulose hydrate"
+            },
+            "skos:prefLabel": "CELLULOSE_HYDRATE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CERAMIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non-specific material made from clay and hardened by firing at a high temperatures. Examples can include terra-cotta, earthenware, stoneware, porcelain, and high-tech ceramics."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Ceramic"
+            },
+            "skos:prefLabel": "CERAMIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_CHLOROFIBRE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules having in their chain more than 50% by mass of chlorinated vinyl or chlorinated vinylidene monomeric units."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Chlorofibre"
+            },
+            "skos:prefLabel": "FIBRE_CHLOROFIBRE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CLOTH_OR_FABRIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non specific material made by weaving, felting, knitting, or crocheting natural and/or synthetic fibres."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cloth or fabric"
+            },
+            "skos:prefLabel": "CLOTH_OR_FABRIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_COIR",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the fruit of Cocos nucifera."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Coir (coconut)"
+            },
+            "skos:prefLabel": "FIBRE_COIR",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-COMPOSITE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A material that is made from multiple materials."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Composite"
+            },
+            "skos:prefLabel": "COMPOSITE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CORK_NATURAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Cork is an impermeable buoyant material, the phellem layer of bark tissue that is harvested for commercial use primarily from Quercus suber (the cork oak)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Natural cork"
+            },
+            "skos:prefLabel": "CORK_NATURAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CORRUGATED_BOARD_DOUBLE_WALL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A structure formed by two layers of corrugated cardboard (flutes), with a linerboard facing between them."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Double wall corrugated board"
+            },
+            "skos:prefLabel": "CORRUGATED_BOARD_DOUBLE_WALL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CORRUGATED_BOARD_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of corrugated boards. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Corrugated board other"
+            },
+            "skos:prefLabel": "CORRUGATED_BOARD_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CORRUGATED_BOARD_SINGLE_WALL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A structure formed by three layers of paper that are glued using starch into one single, sturdy sheet; also termed double faced."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Single wall corrugated board"
+            },
+            "skos:prefLabel": "CORRUGATED_BOARD_SINGLE_WALL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-CORRUGATED_BOARD_TRIPLE_WALL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A structure formed by an inner and outer liner with three fluted sheets in between, each separated by a layer of paper."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Triple wall corrugated board"
+            },
+            "skos:prefLabel": "CORRUGATED_BOARD_TRIPLE_WALL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_CUPRO",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Regenerated cellulose fibre obtained by the cuprammonium process."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cupro"
+            },
+            "skos:prefLabel": "FIBRE_CUPRO",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ELASTANE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Elastofibre composed of at least 85% (by mass) of a segmented polyurethane, and which, when stretched to three times its original length and released, recovers rapidly and substantially to its initial length."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Elastane"
+            },
+            "skos:prefLabel": "FIBRE_ELASTANE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ELASTODIENE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Elastofibre composed of natural or synthetic polyisoprene, or composed of one or more dienes polymerised with or without one or more vinyl monomers, and which, when stretched to three times its original length and released, recovers rapidly and substantially to its initial length."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Elastodiene"
+            },
+            "skos:prefLabel": "FIBRE_ELASTODIENE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ELASTOMULTIESTER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed by interaction of two or more chemically distinct linear macromolecules in two or more distinct phases (of which none exceeds 85% by mass) which contains ester groups as the dominant functional unit (at least 85%) and which, after suitable treatment when stretched to one and half times its original length and released, recovers rapidly and substantially to its initial length."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Elastomultiester"
+            },
+            "skos:prefLabel": "FIBRE_ELASTOMULTIESTER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_BURLAP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The American name for cloth woven from jute plant skins and other vegetable fibres. In other parts of the world it is known as Hessian, Hessian cloth, or gunny from the Indian gain."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Burlap fibre"
+            },
+            "skos:prefLabel": "FIBRE_BURLAP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_COTTON",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A natural cellulosic seed-hair fibre, obtained from the seed pod of the cotton plant."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Cotton"
+            },
+            "skos:prefLabel": "FIBRE_COTTON",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_FLAX",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The plant from the stem of which bast fibre is extracted by retting to produce linen. An erroneous term for linen fibre, particularly in blends."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Flax"
+            },
+            "skos:prefLabel": "FIBRE_FLAX",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_HEMP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hemp is a commonly used term for varieties of the Cannabis plant. Hemp can yield fibre which can be used in ropes, cloths, weaves, as a reinforcement of polymer composites as well as pulps for paper making."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Hemp"
+            },
+            "skos:prefLabel": "FIBRE_HEMP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_JUTE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A bast fibre obtained from the round pod jute or the long pod jute of the family Tiliaceae. Jute ribbon is purely made from the jute plant. Grown extensively in Pakistan and India, mainly in the Bengal district of Pakistan."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Jute"
+            },
+            "skos:prefLabel": "FIBRE_JUTE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of fibre. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Fibre other"
+            },
+            "skos:prefLabel": "FIBRE_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_FLUOROFIBRE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules made from fluorocarbon aliphatic monomers."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Fluorofibre"
+            },
+            "skos:prefLabel": "FIBRE_FLUOROFIBRE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FOAM",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non specific material in a lightweight cellular form resulting from introduction of gas bubbles during manufacture, used to reduce shock and vibration or abrasion."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Solidified foam"
+            },
+            "skos:prefLabel": "FOAM",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-GLASS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A substance mainly consisting of sand, lime and soda, fused at high temperatures and cooled quickly so that it solidifies to a vitreous or noncrystalline condition. This term applies to transparent clear glass or as a generic term if distinction with coloured glass is not desired."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Glass"
+            },
+            "skos:prefLabel": "GLASS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_GLASS_FIBRE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre made of glass."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Glass fibre"
+            },
+            "skos:prefLabel": "FIBRE_GLASS_FIBRE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-GLASS_COLOURED",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Glass containing external colouring or glass that has been coloured by the addition of colouring agents/particles in its creation."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Coloured glass"
+            },
+            "skos:prefLabel": "GLASS_COLOURED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_GOAT",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Wool obtained from goats."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Goat wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_GOAT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_HENEQUEN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre from the bast of Agave fourcroydes."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Henequen"
+            },
+            "skos:prefLabel": "FIBRE_HENEQUEN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_HORSE_HAIR",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre made from hair of horses."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Horse hair"
+            },
+            "skos:prefLabel": "FIBRE_HORSE_HAIR",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_KAPOK",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the inside of the kapok fruit (Ceiba pentandra)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Kapok"
+            },
+            "skos:prefLabel": "FIBRE_KAPOK",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-LAMINATED_CARTON",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A material made up of laminates of paperboard, foil and polyethylene which combined form a sheet suitable for asceptic processing."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Laminated carton"
+            },
+            "skos:prefLabel": "LAMINATED_CARTON",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_LLAMA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "LIama hair specifically refers to the fur from the body of a llama, but more generally refers to the fibre (and cloth)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Llama wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_LLAMA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_LYOCELL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A regenerated cellulose fibre obtained by dissolution, and an organic solvent (mixture of organic chemicals and water) spinning process, without formation of derivatives."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lyocell"
+            },
+            "skos:prefLabel": "FIBRE_LYOCELL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_MAGUEY",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre from the bast of Agave cantala."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Maguey"
+            },
+            "skos:prefLabel": "FIBRE_MAGUEY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_MELAMINE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of at least 85% by mass of cross-linked macromolecules made up of melamine derivatives."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Melamine"
+            },
+            "skos:prefLabel": "FIBRE_MELAMINE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_ALUMINUM",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non specific material made from aluminium or aluminium alloy."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Aluminium"
+            },
+            "skos:prefLabel": "METAL_ALUMINUM",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_BRASS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Brass is an alloy of copper and zinc."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Brass"
+            },
+            "skos:prefLabel": "METAL_BRASS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_COMPOSITE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Refers to an object that is composed of two separate metals joined together. Instead of being a mixture of two or more metals, like alloys, metal composites consist of layers of different metals."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Metal composite"
+            },
+            "skos:prefLabel": "METAL_COMPOSITE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_IRON",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A heavy metallic element (Fe) capable of being fashioned into a variety of forms."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Iron"
+            },
+            "skos:prefLabel": "METAL_IRON",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_LEAD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A bluish-white soft malleable ductile plastic but inelastic heavy metallic element (Pb)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lead"
+            },
+            "skos:prefLabel": "METAL_LEAD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of metal or metal alloy material. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Metal other"
+            },
+            "skos:prefLabel": "METAL_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_STAINLESS_STEEL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An alloy of steel with chromium and sometimes another element (as nickel or molybdenum) that is practically immune to rusting and ordinary corrosion."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Stainless steel"
+            },
+            "skos:prefLabel": "METAL_STAINLESS_STEEL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_STEEL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Commercial iron that contains carbon in any amount up to about 1.7 percent as an essential alloying constituent, is malleable when under suitable conditions, and is distinguished from cast iron by its malleability and lower carbon content."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Steel"
+            },
+            "skos:prefLabel": "METAL_STEEL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-METAL_TIN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Tin is a chemical element that is obtained chiefly from the mineral cassiterite, where it occurs as an oxide, SnO2. This silvery, malleable poor metal is not easily oxidized in air, and is used to coat other metals to prevent corrosion. It is used in many alloys, most notably bronze."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Tin"
+            },
+            "skos:prefLabel": "METAL_TIN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_METAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Manufactured fibers composed of pure metals and metallic alloys which can be processed into textile products, porous media, plastic-coated metals, etc."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Metal fibre/Metallic fibre"
+            },
+            "skos:prefLabel": "FIBRE_METAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-MINERAL_CALCIUM_CARBONATE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Ground calcium carbonate and precipitated calcium carbonate products serve as functional fillers in plastic and rubber applications. Calcium carbonate is widely used as in polyvinyl chloride (PVC), polyolefin, polypropylene (PP), polyethylene (PE) and unsaturated polyester resins applications."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Calcium carbonate"
+            },
+            "skos:prefLabel": "MINERAL_CALCIUM_CARBONATE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-MINERAL_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of mineral. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mineral other"
+            },
+            "skos:prefLabel": "MINERAL_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-MINERAL_TALC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Talc is used to stiffen thermoplastics, mainly polypropylene but also polyethylene and polyamide (Nylon)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Talc"
+            },
+            "skos:prefLabel": "MINERAL_TALC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_MODACRYLIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules having in the chain more than 50% and less than 85% (by mass) of the acrylonitrilic pattern."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Modacrylic"
+            },
+            "skos:prefLabel": "FIBRE_MODACRYLIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_MODAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A regenerated cellulose fibre obtained by a modified viscose process having a high breaking force and high wet modulus."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Modal"
+            },
+            "skos:prefLabel": "FIBRE_MODAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL_MOHAIR",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Mohair is wool made from the hair of the Angora goat."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mohair wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL_MOHAIR",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-RUBBER_NATURAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A strong elastic material made by drying the sap from various tropical trees, especially the American rubber tree."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Natural rubber"
+            },
+            "skos:prefLabel": "RUBBER_NATURAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code values and definitions. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Other"
+            },
+            "skos:prefLabel": "OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_OTHER_FROM_ANIMAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of fibre from animals. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Other animal fibre"
+            },
+            "skos:prefLabel": "FIBRE_OTHER_FROM_ANIMAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_CORRUGATED",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Heavy paper with ridges and grooves, used in packing fragile articles."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Corrugated paper"
+            },
+            "skos:prefLabel": "PAPER_CORRUGATED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_KRAFT",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Kraft paper is the paper grade with the highest strength. It is used for the production of e.g. paper bags, emery paper or shopping bags."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Kraft paper"
+            },
+            "skos:prefLabel": "PAPER_KRAFT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_KRAFT_WET_STRENGTH",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The wet-strength kraft paper has a certain tear strength when wet due to special additives. It is used for the production of e.g. paper bags, emery paper or shopping bags."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Kraft paper (wet strength)"
+            },
+            "skos:prefLabel": "PAPER_KRAFT_WET_STRENGTH",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_MOLDED_PULP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Used for producing pulp-based or fibrous products by pressing; example products: egg packages, trays and boxes for fruits and vegetables."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Molded pulp"
+            },
+            "skos:prefLabel": "PAPER_MOLDED_PULP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of paper-based material. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Paper other"
+            },
+            "skos:prefLabel": "PAPER_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_PAPER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non-specific sheet material produced by the matting of fibres from wood, rags, or other fibrous materials. Generally, paper is of a lesser thickness or weight than paperboard."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Paper"
+            },
+            "skos:prefLabel": "PAPER_PAPER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_PAPERBOARD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non specific material, generally made from cotton or wood, that describe a variety or of board materials used in the production of boxes, folding cartons, and solid fibre and corrugated shipping containers; also termed cardboard."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Paperboard"
+            },
+            "skos:prefLabel": "PAPER_PAPERBOARD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PAPER_RAYON",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Generic term for a manmade fibre derived from regenerated cellulose."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Rayon paper"
+            },
+            "skos:prefLabel": "PAPER_RAYON",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLANT_LEAVES",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Plant leaves, such as banana leaves, including wet or dry leaves. In some cases, leaves are pre-softened by steaming."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Plant leaves"
+            },
+            "skos:prefLabel": "PLANT_LEAVES",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLASTIC_BIO_PLASTIC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Plastic materials made from biomass, but may have exactly the same properties as ordinary plastic. Sometimes these plastics are biodegradable."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Bioplastic"
+            },
+            "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLASTIC_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non-specific material made of any of numerous organic synthetic or processed materials that are mostly thermoplastic or thermosetting polymers of high molecular weight and that can be made into objects, films, or filaments."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Plastic other"
+            },
+            "skos:prefLabel": "PLASTIC_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-PLASTIC_THERMOPLASTICS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non-specific substance that becomes soft and pliable when heated, without a change in its intrinsic properties. Polystyrene and polyethylene are thermoplastics."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Thermoplastics"
+            },
+            "skos:prefLabel": "PLASTIC_THERMOPLASTICS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_APET",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyethylene Terephthalate, amorphous (APET) has a very high transparency, is flame retardant and suitable for direct food contact."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyethylene terephthalate, amorphous (APET)"
+            },
+            "skos:prefLabel": "POLYMER_APET",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_BOPP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Biaxially oriented PP (BOPP) films are characterized by their tear, impact and puncture resistance. The film is mainly used in food packaging, e.g. as candy wrap or wrapping for chocolate bars."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polypropylene, longitudinally and laterally stretched (BOPP)"
+            },
+            "skos:prefLabel": "POLYMER_BOPP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_CELLULOSE_ACETATE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Cellulose acetate is one of the most important esters of cellulose. Depending on the way it has been processed cellulose acetate can be used for a wide variety of applications, e.g. films, membranes or fibres."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Acetate"
+            },
+            "skos:prefLabel": "POLYMER_CELLULOSE_ACETATE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_CPET",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Crystallized polyethylene terephthalate (CPET) is a variation of standard PET which has been crystallized for heat resistance, rigidity, and toughness."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Crystallized polyethylene terephthalate (CPET)"
+            },
+            "skos:prefLabel": "POLYMER_CPET",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_EPOXY",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Epoxy resins are thermoset polymers which are frequently used as coatings for metal packaging such as soft-drink cans."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Epoxy"
+            },
+            "skos:prefLabel": "POLYMER_EPOXY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_EPS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Expanded polystyrene is a rigid, tough, closed cell and lightweight thermoplastic foam material. It is manufactured by expanding spherical beads in a mold, using heat and pressure to fuse the beads together. While each individual bead is a closed cell environment, there are significant open spaces between each bead."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Expanded polystyrene (EPS)"
+            },
+            "skos:prefLabel": "POLYMER_EPS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_EVA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Ethylene vinyl acetate, a copolymer of 60 to 90% ethylene and 40 to 10% vinyl acetate. Packaging applications include soft films, coatings, hot melt adhesives, wine cork substitutes, and closure seals for plastic and metal container caps."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Ethylene vinyl acetate (EVA)"
+            },
+            "skos:prefLabel": "POLYMER_EVA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_EVOH",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Ethylene vinyl alcohol, a copolymer of ethylene and vinyl alcohol. A plastic resin commonly used in food applications to provide barrier to oxygen and other gases."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Ethylene vinyl alcohol (EVOH)"
+            },
+            "skos:prefLabel": "POLYMER_EVOH",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_HDPE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "High-Density PolyEthylene (HDPE) is a polyethylene thermoplastic made from petroleum. A strong, relatively opaque form of polyethylene having a dense structure with few side branches off the main carbon backbone. Can be applied to bottles, flasks and caps."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "High density polyethylene (HDPE)"
+            },
+            "skos:prefLabel": "POLYMER_HDPE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_LDPE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Low-density polyethylene (LDPE) is a polyethylene thermoplastic made from petroleum. A strong form of polyethylene having a less dense structure with more side branches off the main carbon backbone (on about 2% of the carbon atoms) than HDPE; therefore its tensile strength is lower, and its resilience is higherMade in translucent or opaque variations, it is quite flexible, and tough to the degree of being almost unbreakable. It is widely used for manufacturing various containers, dispensing bottles, wash bottles, tubing, plastic bags for computer components, and various moulded laboratory equipment. Its most common use is in plastic bags."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Low-density polyethylene (LDPE)"
+            },
+            "skos:prefLabel": "POLYMER_LDPE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_LLDPE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Linear low density polyethylene is a linear polyethylene with a significant number of short branches on the polymer backbone. It is commonly made by copolymerization of ethylene with longer-chain olefins. It is different from LDPE due to the absence of long chain branches which gives it higher tensile strength, impact and puncture resistance than LDPE. Common uses of LLDPE are plastic bags, wraps, stretch wraps, pouches, covers and lids."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Linear low density polyethylene"
+            },
+            "skos:prefLabel": "POLYMER_LLDPE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_MDPE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Medium-density polyethylene is a type of polyethylene defined by a density range of 0.926-0.940 g/cm3. MDPE is typically used in shrink films, sacks, packaging film and carrier bags."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Medium-density polyethylene"
+            },
+            "skos:prefLabel": "POLYMER_MDPE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_NYLON",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Packaging applications include oven-baking bags (nylon 6 and nylon 66) and barrier layers (MXD6 and nylon 6) for PET and HDPE bottles. Very occasionally, bottles can be made of nylon."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nylon"
+            },
+            "skos:prefLabel": "POLYMER_NYLON",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_OPP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Oriented polypropylene (OPP) is made of a soft polypropylene material which is stretched in a transverse or longitudinal direction (monoaxial) and becomes therefore brittle. Also known as: biaxially oriented polypropylene (BOPP), CAS Registry Number: 9003-07-0"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Oriented polypropylene (OPP)"
+            },
+            "skos:prefLabel": "POLYMER_OPP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of polymer. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polymers Other"
+            },
+            "skos:prefLabel": "POLYMER_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A polymer with repeating units linked by amide bonds. Polyamides (PA) occur both naturally and artificially, examples of naturally occurring polyamides are proteins, such as wool and silk. Artificially made polyamides can be nylons, aramids, and sodium poly(aspartate)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyamide (PA)"
+            },
+            "skos:prefLabel": "POLYMER_PA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PAN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyacrylonitril is a organic polymer which is frequently used in fibres for textiles. As fibres the material is frequently referred to as acrylic."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyacrylonitril (PAN)"
+            },
+            "skos:prefLabel": "POLYMER_PAN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PB",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules having in the chain the recurring ureylene (NH-CO-NH) functional group."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polycarbamide (PB)"
+            },
+            "skos:prefLabel": "POLYMER_PB",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polycarbonate, a transparent thermoplastic which is used in a wide variety of applications including CDs and DVDs, eyeglasses, cell phone covers, laptops as well as packaging applications such as bottles."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polycarbonate (PC)"
+            },
+            "skos:prefLabel": "POLYMER_PC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PCL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polycaprolactone is a biodegradable polyester which is also used in in the manufacturing of polyurethanes. It is also used in blends with thermoplastic starch to improve properties and can also be used as a plasticizer to PVC."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polycaprolactone (PCL)"
+            },
+            "skos:prefLabel": "POLYMER_PCL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A thermoplastic composed of the polymers of ethylene."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyethylene (PE)"
+            },
+            "skos:prefLabel": "POLYMER_PE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PEN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyethylene naphthalate is a polymer with good barrier properties (unlike Polyethylene terephthalate). It is well-suited for production of the amber-coloured bottles meant for packing beverages like beer."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyethylene naphthalate (PEN)"
+            },
+            "skos:prefLabel": "POLYMER_PEN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_POLYESTER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules comprising at least 85% (by mass) in the chain of an ester of a diol and terephthalic acid."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyester (PES)"
+            },
+            "skos:prefLabel": "FIBRE_POLYESTER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PET",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyethylene terephthalate is a thermoplastic polymer resin of the polyester family and is used in synthetic fibres. Can be applied to bottles, flasks and caps."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyethylene terephthalate (PET)"
+            },
+            "skos:prefLabel": "POLYMER_PET",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PETG",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyethylene Terephthalate Glycol (PETG) is a PET modified with glycol, which is characterized by its aqueous properties (viscosity). Applications are found in injection molding."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyethylene terephthalate glycol (PETG)"
+            },
+            "skos:prefLabel": "POLYMER_PETG",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PHA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyhydroxyalkanoates are linear polyesters produced in nature by bacterial fermentation of sugar or lipids."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyhydroxyalkanoates (PHA)"
+            },
+            "skos:prefLabel": "POLYMER_PHA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PI",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed from synthetic linear macromolecules having in the chain recurring imide units."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyimide (PI)"
+            },
+            "skos:prefLabel": "POLYMER_PI",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PLA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polylactic acid or Polylactide is a biodegradable, thermoplastic, aliphatic polyester derived from lactic acid."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polylactic acid or Polylactide (PLA)"
+            },
+            "skos:prefLabel": "POLYMER_PLA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PMMA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polymethyl Methacrylate (PMMA) is often used as a lightweight and shatterproof alternative to glass, due to its transparency, brilliance and scratch resistance, PMMA is therefore often referred to as acrylic glass."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polymethyl methacrylate (PMMA)"
+            },
+            "skos:prefLabel": "POLYMER_PMMA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_POM",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyoxymethylene (POM) is a thermoplastic with good mechanical properties and high dimensional stability. Fields of application are the automotive industry and electrical engineering, in packaging it is used for e.g. spray cans, gas lighter tanks, gas ampoules. Also known as acetal, polyacetal, and polyformaldehyde."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyoxymethylene (POM)"
+            },
+            "skos:prefLabel": "POLYMER_POM",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non-specific material made of various thermoplastic plastics or fibres that are polymers of propylene."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polypropylene (PP)"
+            },
+            "skos:prefLabel": "POLYMER_PP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A polymer prepared by the polymerization of styrene as the sole monomer."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polystyrene (PS)"
+            },
+            "skos:prefLabel": "POLYMER_PS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PU",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyurethanes are primarily thermoset resins which are used in the manufacture of flexible and rigid foams, microcellular foam seals and gaskets, as well as high performance adhesives, surface coatings and sealants. Polyurethane can also be used to make synthetic fibres."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyurethane (PU)"
+            },
+            "skos:prefLabel": "POLYMER_PU",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PVA",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyvinyl alcohol (PVA or PVOH) is a biodegradable and highly water soluble polymer with high gas and grease barrier. Common uses for PVA are paper adhesives, paper coatings, as a self-standing water soluble films as well as blends to improve processability of thermoplastic starch."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyvinyl alcohol (PVA)"
+            },
+            "skos:prefLabel": "POLYMER_PVA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PVC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A polymer of vinyl chloride used especially for electrical insulation, films, and pipes."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyvinyl chloride (PVC)"
+            },
+            "skos:prefLabel": "POLYMER_PVC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_PVDC",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Polyvinylidene chloride is primarily used as a barrier coating to provide barrier against fat, vapour and gases."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Polyvinylidene chloride (PVDC)"
+            },
+            "skos:prefLabel": "POLYMER_PVDC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_SAN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Styrene acrylonitrile (SAN) is a copolymer transparent and rigid plastic. Examples of applications are kitchenware and cosmetic packaging."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Styrene acrylonitrile (SAN)"
+            },
+            "skos:prefLabel": "POLYMER_SAN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_TPS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Thermoplastic starch is obtained through destructurization of natural starch through exposure to shear and heat. TPS is most frequently used in blends with biodegradable synthetic polymers such as PCL and PVA."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Thermoplastic starch (TPS)"
+            },
+            "skos:prefLabel": "POLYMER_TPS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-POLYMER_XPS",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Extruded polystyrene is a rigid, tough, closed cell and lightweight thermoplastic foam material. It is manufactured using a process of extrusion that produces a homogeneous 'closed cell' matrix with each cell fully enclosed by polystyrene walls."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Extruded polystyrene (XPS)"
+            },
+            "skos:prefLabel": "POLYMER_XPS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_PROTEIN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from natural protein substances regenerated and stabilised through the action of chemical agents."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Protein"
+            },
+            "skos:prefLabel": "FIBRE_PROTEIN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_RAMIE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the bast of Boehmeria nivea and Boehmeria tenacissima."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Ramie"
+            },
+            "skos:prefLabel": "FIBRE_RAMIE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-RUBBER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A strong elastic synthetic substance made either by improving the qualities of natural rubber or by an industrial process using petroleum and coal products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Rubber"
+            },
+            "skos:prefLabel": "RUBBER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_SILK",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained exclusively from silk-secreting insects."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silk"
+            },
+            "skos:prefLabel": "FIBRE_SILK",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_SISAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the leaves of Agave sisalana."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Sisal"
+            },
+            "skos:prefLabel": "FIBRE_SISAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_SUNN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre from the bast of Crotalaria juncea."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Sunn hemp"
+            },
+            "skos:prefLabel": "FIBRE_SUNN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_TRIACETATE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Cellulose acetate fibre wherein at least 92% of the hydroxyl groups are acetylated."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Triacetate"
+            },
+            "skos:prefLabel": "FIBRE_TRIACETATE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_TRIVINYL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of acrylonitrile terpolymer, a chlorinated vinyl monomer and a third vinyl monomer, none of which represents as much as 50% of the total mass."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Trivinyl"
+            },
+            "skos:prefLabel": "FIBRE_TRIVINYL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_TRUE_HEMP",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre obtained from the bast of hemp (Cannabis sativa)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "True hemp"
+            },
+            "skos:prefLabel": "FIBRE_TRUE_HEMP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-VINYL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A non-specific polymer of a vinyl compound or a product (as a resin or a textile fibre) made from such a polymer."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Vinyl"
+            },
+            "skos:prefLabel": "VINYL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_VINYLAL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre formed of linear macromolecules whose chain is constituted by poly(vinyl alcohol) with differing levels of acetalisation."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Vinylal"
+            },
+            "skos:prefLabel": "FIBRE_VINYLAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_VISCOSE",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Regenerated cellulose fibre obtained by the viscose process for filament and discontinuous fibre."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Viscose"
+            },
+            "skos:prefLabel": "FIBRE_VISCOSE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_HARDBOARD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hardboard (not to be confused with hardwood), also called High-Density Fiberboard (HDF), is a type of fibreboard, which is similar to particle board and medium-density fiberboard, but is denser, much stronger and harder because it is made out of exploded wood fibres which have been highly compressed. Consequently, the density of hardboard is 31 lbs or more per cubic foot (500 kg/m³ and is usually about 50-65 lbs per cubic foot (800-1040 kg/m³). It differs from particle board in that the bonding of the wood fibers requires no additional materials, although resin is often added. Unlike particle board, it will not split or crack."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Hardboard"
+            },
+            "skos:prefLabel": "WOOD_HARDBOARD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_HARDWOOD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A general term referring to any variety of broad-leaved, deciduous trees, and the wood from those trees. The term has nothing to do with the actual hardness of the wood; some hardwoods are softer than certain softwood (evergreen) species."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Hardwood"
+            },
+            "skos:prefLabel": "WOOD_HARDWOOD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_MEDIUM_DENSITY_FIBREBOARD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Medium-Density Fibreboard (MDF) is an engineered wood product made by breaking down hardwood or softwood residuals into wood fibres, combining them with wax and a resin binder, and forming panels by applying high temperature and pressure. MDF is generally denser than plywood. It is made up of separated fibres, but can be used as a building material similar in application to plywood. It is stronger and much more dense than particle board."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Medium density fibreboard"
+            },
+            "skos:prefLabel": "WOOD_MEDIUM_DENSITY_FIBREBOARD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_ORIENTED_STRANDBOARD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Oriented Strand Board (OSB), also known as sterling board, sterling OSB, aspenite, and smartply, is an engineered wood particle board formed by adding adhesives and then compressing layers of wood strands (flakes) in specific orientations. OSB may have a rough and variegated surface with the individual strips of around 2.5 x 15 cm (1\\\" x 6\\\"), lying unevenly across each other and comes in a variety of types."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Oriented strand board (OSB)"
+            },
+            "skos:prefLabel": "WOOD_ORIENTED_STRANDBOARD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_OTHER",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list's individual code value and definitions of wood. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Wood other"
+            },
+            "skos:prefLabel": "WOOD_OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_PARTICLE_BOARD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Particle Board, also known as particleboard, chipboard, and Low-Density Fibreboard (LDF), is an engineered wood product manufactured from wood chips, sawmill shavings, or sawdust, and a synthetic resin or other suitable binder, which is pressed and extruded. Particle board is a composite material."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Particle board"
+            },
+            "skos:prefLabel": "WOOD_PARTICLE_BOARD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_PLYWOOD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Plywood, a manufactured wood panel similar to LDF, MDF, and HDF, is made from layering thin sheets of wood. Plywood layers (called veneers or plies) are glued together, with adjacent plies having their wood grain rotated relative to adjacent layers up to 90 degrees. All plywoods bind resin and wood fibre sheets (cellulose cells are long, strong and thin) to form a composite material."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Plywood"
+            },
+            "skos:prefLabel": "WOOD_PLYWOOD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-WOOD_SOFTWOOD",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "General term used to describe lumber produced from needle and/or cone bearing trees (Conifers)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Softwood"
+            },
+            "skos:prefLabel": "WOOD_SOFTWOOD",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_WOOL",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre from sheep's or lambs' fleeces (Ovis aries) or a mixture of fibres from sheep's or lambs' fleeces and the hair of the following animals: alpaca, llama, camel, kashmir goat, angora goat, angora rabbit, vicuna, yak, guanaco, cashgora goat, beaver, otter."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Wool"
+            },
+            "skos:prefLabel": "FIBRE_WOOL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-FIBRE_ELASTOLEFIN",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fibre composed of at least 95% (by mass) of macromolecules partially cross-linked, made up from ethylene and at least one other olefin and which, when stretched to one and a half times its original length and released, recovers rapidly and substantially to its initial length."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Elastolefin"
+            },
+            "skos:prefLabel": "FIBRE_ELASTOLEFIN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:MaterialCode-MINERAL_QUARTZ",
+            "@type": "gs1de:MaterialCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A hard white or colourless mineral consisting of silicon dioxide, found widely in igneous, metamorphic, and sedimentary rocks."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Quartz"
+            },
+            "skos:prefLabel": "MINERAL_QUARTZ",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Packaging Recyclability Assessment Specification Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode-DEUTSCHER_MINDESTSTANDARD",
+            "@type": "gs1de:PackagingRecyclabilityAssessmentSpecificationCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The German minimum standard for determining the recyclability of packaging, subject to system packaging pursuant to section 21 (3) VerpackG (Verpackungsgesetz - Packaging Act)."
+            },
+            "rdfs:label": {
+                "@language": "de",
+                "@value": "Deutscher Mindeststandard"
+            },
+            "skos:prefLabel": "DEUTSCHER_MINDESTSTANDARD",
+            "sw:term_status": "testing"
         },
         {
             "@id": "gs1de:LicenceIdentificationTypeCode",
