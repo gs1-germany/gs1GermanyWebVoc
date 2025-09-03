@@ -76,7 +76,7 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Reference Number"
+                "@value": "Reference Number (deprecated)"
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
@@ -106,7 +106,12 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "stable"
+            "owl:deprecated": true,
+            "sw:term_status": "deprecated",
+            "rdfs:seeAlso": {
+                "@id": "gs1:RegulatoryInformation"
+            }
+
         },
         {
             "@id": "gs1de:OrganismClassification",
