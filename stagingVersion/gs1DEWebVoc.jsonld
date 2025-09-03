@@ -101,12 +101,12 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Regulatory Information"
+                "@value": "Regulatory Information (Under Review)"
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "archaic",
+            "sw:term_status": "unstable",
             "rdfs:seeAlso": {
                 "@id": "gs1:RegulatoryInformation"
             }
