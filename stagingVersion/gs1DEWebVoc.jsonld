@@ -106,8 +106,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "owl:deprecated": true,
-            "sw:term_status": "deprecated",
+            "sw:term_status": "archaic",
             "rdfs:seeAlso": {
                 "@id": "gs1:RegulatoryInformation"
             }
