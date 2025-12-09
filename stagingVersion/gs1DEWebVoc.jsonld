@@ -455,7 +455,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A set of factual claims about a specific entity."
+                "@value": "This term has been deprecated. Please use gs1:masterDataAvailableFor instead."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
