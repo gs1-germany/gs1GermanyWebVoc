@@ -14,7 +14,8 @@
         "voaf": "http://purl.org/vocommons/voaf#",
         "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
-    "@graph": [{
+    "@graph": [
+        {
             "@id": "gs1de:",
             "@type": [
                 "voaf:Vocabulary",
@@ -43,7 +44,8 @@
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
             },
-            "voaf:extends": [{
+            "voaf:extends": [
+                {
                     "@id": "schema:"
                 },
                 {
@@ -53,7 +55,8 @@
             "voaf:hasEquivalencesWith": {
                 "@id": "schema:"
             },
-            "voaf:specializes": [{
+            "voaf:specializes": [
+                {
                     "@id": "schema:"
                 },
                 {
@@ -110,7 +113,6 @@
             "rdfs:seeAlso": {
                 "@id": "gs1:RegulatoryInformation"
             }
-
         },
         {
             "@id": "gs1de:OrganismClassification",
@@ -563,12 +565,15 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Regulatory Information"
+                "@value": "Regulatory Information (DEPRECATED)"
             },
             "rdfs:range": {
                 "@id": "gs1de:RegulatoryInformation"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "unstable",
+            "rdfs:seeAlso": {
+                "@id": "gs1:regulatoryInformation"
+            }
         },
         {
             "@id": "gs1de:importClassification",
@@ -855,7 +860,8 @@
                 "@language": "en",
                 "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [{
+            "rdfs:domain": [
+                {
                     "@id": "gs1:Product"
                 },
                 {
@@ -884,7 +890,8 @@
                 "@language": "en",
                 "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [{
+            "rdfs:domain": [
+                {
                     "@id": "gs1:Product"
                 },
                 {
