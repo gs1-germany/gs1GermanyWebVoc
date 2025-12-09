@@ -72,14 +72,14 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A value representing a document's reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifier instead."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Reference Number (deprecated)"
+                "@value": "Reference Number (DEPRECATED)"
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
