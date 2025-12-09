@@ -574,13 +574,13 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Regulatory Information (DEPRECATED)"
+                "@value": "Regulatory Information"
             },
             "rdfs:range": {
                 "@id": "gs1de:RegulatoryInformation"
             },
             "sw:term_status": "deprecated",
-            "rdfs:seeAlso": {
+            "owl:deprecated": {
                 "@id": "gs1:regulatoryInformation"
             }
         },
