@@ -101,7 +101,7 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Regulatory Information (Under Review)"
+                "@value": "Regulatory Information (DEPRECATED)"
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
@@ -460,7 +460,7 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Master Data Available For"
+                "@value": "Master Data Available For (DEPRECATED)"
             },
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
