@@ -4772,7 +4772,10 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulationType"
+            }
         },
         {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
