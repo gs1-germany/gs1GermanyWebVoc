@@ -4724,7 +4724,10 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifierType"
+            }
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
