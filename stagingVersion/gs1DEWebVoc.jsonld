@@ -555,7 +555,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Information on applicable government regulations a subject is in compliance with."
+                "@value": "This term has been deprecated. Please use gs1:regulatoryInformation instead."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -570,7 +570,7 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulatoryInformation"
             },
-            "sw:term_status": "unstable",
+            "sw:term_status": "deprecated",
             "rdfs:seeAlso": {
                 "@id": "gs1:regulatoryInformation"
             }
