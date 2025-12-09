@@ -546,31 +546,6 @@
             "sw:term_status": "stable"
         },
         {
-            "@id": "gs1de:containedRegulatedCommodities",
-            "@type": [
-                "owl:DatatypeProperty",
-                "rdf:Property"
-            ],
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "Ingredients within a trade item that are subject to specific regulatory oversight and compliance requirements."
-            },
-            "rdfs:domain": {
-                "@id": "gs1de:RegulatoryInformation"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Has Contained Regulated Commodities"
-            },
-            "rdfs:range": {
-                "@id": "xsd:string"
-            },
-            "sw:term_status": "testing"
-        },
-        {
             "@id": "gs1de:regulatoryInformation",
             "@type": [
                 "owl:ObjectProperty",
