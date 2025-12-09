@@ -465,15 +465,15 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Master Data Available For (DEPRECATED)"
+                "@value": "Master Data Available For"
             },
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
-            "skos:closeMatch": {
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
                 "@id": "gs1:masterDataAvailableFor"
-            },
-            "sw:term_status": "unstable"
+            }
         },
         {
             "@id": "gs1de:referenceNumber",
