@@ -4734,14 +4734,17 @@
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the supplier's Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT instead."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "EUDR Supplier"
             },
             "skos:prefLabel": "EUDR_SUPPLIER",
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT"
+            }
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
