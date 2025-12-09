@@ -79,7 +79,7 @@
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Reference Number (DEPRECATED)"
+                "@value": "Reference Number"
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
