@@ -210,7 +210,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A class encapsulating factual claims about a specific entity."
+                "@value": "This term has been deprecated."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -222,7 +222,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "unstable"
+            "sw:term_status": "deprecated"
         },
         {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
