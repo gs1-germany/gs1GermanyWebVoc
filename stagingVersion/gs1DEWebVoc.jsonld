@@ -37,9 +37,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-12-09"
+                "@value": "2025-12-11"
             },
-            "owl:versionInfo": "0.1.5",
+            "owl:versionInfo": "0.1.6",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
