@@ -2249,6 +2249,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:isDangerousSubstance",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is dangerous substance",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "An indicator whether or not a trade item is classified and labelled as containing a dangerous substance.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1:NonbinaryLogicCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
