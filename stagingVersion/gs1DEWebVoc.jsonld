@@ -2027,6 +2027,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:isTradeItemABaseUnit",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a base unit",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "An indicator identifying the trade item as the base unit level of the trade item hierarchy.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
