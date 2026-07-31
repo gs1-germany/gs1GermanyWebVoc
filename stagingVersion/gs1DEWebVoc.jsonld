@@ -4995,6 +4995,253 @@
                 "@id": "gs1de:"
             },
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-DELIVERY_TO_DISTRIBUTION_CENTRE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Delivery To Distribution Centre",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade Item is in transport to the distribution center.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DELIVERY_TO_DISTRIBUTION_CENTRE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-DELIVERY_TO_MARKET",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Delivery To Market",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade Item is in transport to market.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DELIVERY_TO_MARKET",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-DISINFECTION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Disinfection",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at for the process that eliminates many or all pathogenic microorganisms, except bacterial spores, on inanimate objects. In health-care settings, objects can be disinfected by liquid chemicals or wet pasteurisation.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DISINFECTION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-INLET_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Inlet Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature at which a gas or fluid is expected to be when entering a device, e.g., an electric pressure washer. The device may be damaged when the inlet temperature is outside the range of temperatures.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "INLET_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-OPERATING_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Operating Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature at which the product operates effectively. The product will operate effectively within a specified temperature range which varies based on the function and application context, and ranges from the minimum operating temperature to the maximum operating temperature (or peak operating temperature). Outside this range of safe operating temperatures the product may fail or the protective properties are no longer guaranteed.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "OPERATING_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STERILISATION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Sterilisation",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product should be sterilised at in accordance to supplier or local market regulations.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STERILISATION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_AFTER_OPENING",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage After Opening",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at after its seal has been broken and the product has been exposed to the elements.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_AFTER_OPENING",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_AFTER_OVERWRAP",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage After Removing Overwrap",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at after removing a product’s protective overwrap or moisture barrier.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_AFTER_OVERWRAP",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_AFTER_RECONSTITUTION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage After Reconstitution",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at after adding liquid to mix or dilute the product.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_AFTER_RECONSTITUTION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_HANDLING",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage and Handling",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade Item is being stored or handled.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_HANDLING",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-TRANSPORTATION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Transportation",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade item is in process of being transported in the supply chain.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "TRANSPORTATION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-WASHING_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Washing Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Indicates the recommended washing temperature for a product. Examples: detergent, apparel.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "WASHING_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-WORKING_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Working Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Indicates the working temperature or outside temperature where the product can effectively be used or applied.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "WORKING_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
         }
     ]
 }
