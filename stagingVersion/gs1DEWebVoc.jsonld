@@ -447,30 +447,30 @@
             },
             "sw:term_status": "testing"
         },
-         {
-      "@id": "gs1de:ProductTemperatureInformation",
-      "@type": [
-        "owl:Class",
-        "rdfs:Class"
-      ],
-      "rdfs:label": [
         {
-          "@value": "Product Temperature Information",
-          "@language": "en"
-        }
-      ],
-      "rdfs:comment": {
-        "@value": "Details on permissible temperatures of a trade item during various points of the supply chain.",
-        "@language": "en"
-      },
-      "rdfs:subClassOf": {
-        "@id": "owl:Thing"
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "gs1de:"
-      },
-      "sw:term_status": "testing"
-    },
+            "@id": "gs1de:ProductTemperatureInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Product Temperature Information",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Details on permissible temperatures of a trade item during various points of the supply chain.",
+                "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
         {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
@@ -4820,6 +4820,27 @@
             "owl:deprecated": {
                 "@id": "gs1:RegulationTypeCode-DEFORESTATION_REGULATION"
             }
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode",
+            "@type": "owl:Class",
+            "rdfs:label": [
+                {
+                    "@value": "Trade Item Unit Descriptor Code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The condition of the product sold to the end consumer for example thawed or frozen.",
+                "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
         }
     ]
 }
