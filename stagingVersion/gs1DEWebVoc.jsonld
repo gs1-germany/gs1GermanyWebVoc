@@ -37,7 +37,7 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-12-11"
+                "@value": "2026-07-31"
             },
             "owl:versionInfo": "0.1.6",
             "vann:preferredNamespacePrefix": "gs1de",
@@ -447,6 +447,30 @@
             },
             "sw:term_status": "testing"
         },
+         {
+      "@id": "gs1de:ProductTemperatureInformation",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "rdfs:label": [
+        {
+          "@value": "Product Temperature Information",
+          "@language": "en"
+        }
+      ],
+      "rdfs:comment": {
+        "@value": "Details on permissible temperatures of a trade item during various points of the supply chain.",
+        "@language": "en"
+      },
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "gs1de:"
+      },
+      "sw:term_status": "testing"
+    },
         {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
