@@ -2388,6 +2388,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:maximumTemperature",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Maximum temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The maximum temperature that a trade item can not exceed as defined by the manufacturer without affecting product safety or quality.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductTemperatureInformation"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
