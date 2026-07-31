@@ -2055,6 +2055,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:isTradeItemAConsumerUnit",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a consumer unit",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Identifies whether the trade item to be taken possession of ,or to be consumed or used by an end user or both, as determined by the manufacturer. The end user could be, but is not limited to, a consumer as in items sold at retail, or a patient/clinician/technician in a healthcare setting, or an operator for foodservice such as restaurants, airlines, cafeterias, etc.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
