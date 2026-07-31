@@ -2305,6 +2305,33 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:productTemperatureInformation",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Product temperature information",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Links to details of permissible temperatures of a trade item during various points of the supply chain.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ProductTemperatureInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
