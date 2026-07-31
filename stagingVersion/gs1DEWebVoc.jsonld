@@ -2221,6 +2221,34 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:tradeItemUnitDescriptorCode",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Trade item unit descriptor code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Describes the hierarchical level of the trade item. The attribute tradeItemUnitDescriptorCode is mandatory. Examples: 'CASE', 'PALLET'.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:TradeItemUnitDescriptorCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
