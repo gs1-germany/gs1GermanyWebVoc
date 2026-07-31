@@ -4841,6 +4841,139 @@
                 "@id": "gs1de:"
             },
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-BASE_UNIT_OR_EACH",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Base Unit or Each",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The lowest level of the item hierarchy intended or labeled for individual resale.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "BASE_UNIT_OR_EACH",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-CASE",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Case",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A standard trade item shipping unit that contains a single or multiple GTINs. Includes an ½ or ¼ pallet and an ½ or ¼ box pallet.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "CASE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-DISPLAY_SHIPPER",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Display Shipper",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A display or shipper is a special case item that includes both consumer units and packaging materials to be assembled and used to display the product for sale. May contain cases or consumer units. It may be the orderable or dispatchable unit and may be shipped on a pallet.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DISPLAY_SHIPPER",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-MIXED_MODULE",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Display Ready Pallet",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Special pallet item sold as a single unit that is not intended to be broken down to sell the cases individually. It is intended to be displayed directly on the selling floor and shoppable for the consumer and may contain additional packaging materials used to further display the product. It may contain single or multiple GTINs and may be the orderable unit.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "MIXED_MODULE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-PACK_OR_INNER_PACK",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Pack or Inner Pack",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A logistical unit between case and each. This may be a consumable innerpack (i.e. Carton of Cigarettes) or it may be simply a logistical pack (i.e. Dozes of toothbrushes).",
+                "@language": "en"
+            },
+            "skos:prefLabel": "PACK_OR_INNER_PACK",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-PALLET",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Pallet",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A unit load that contains a single or multiple GTINs Includes box pallet",
+                "@language": "en"
+            },
+            "skos:prefLabel": "PALLET",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-TRANSPORT_LOAD",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Transport Load",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade item above the pallet level used for transporting trade items. For example truck load, container, rail car, ship, etc.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "TRANSPORT_LOAD",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
         }
     ]
 }
