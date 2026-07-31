@@ -14,8 +14,7 @@
         "voaf": "http://purl.org/vocommons/voaf#",
         "xsd": "http://www.w3.org/2001/XMLSchema#"
     },
-    "@graph": [
-        {
+    "@graph": [{
             "@id": "gs1de:",
             "@type": [
                 "voaf:Vocabulary",
@@ -37,15 +36,14 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-12-11"
+                "@value": "2025-08-04"
             },
-            "owl:versionInfo": "0.1.5",
+            "owl:versionInfo": "0.1.4",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
             },
-            "voaf:extends": [
-                {
+            "voaf:extends": [{
                     "@id": "schema:"
                 },
                 {
@@ -55,8 +53,7 @@
             "voaf:hasEquivalencesWith": {
                 "@id": "schema:"
             },
-            "voaf:specializes": [
-                {
+            "voaf:specializes": [{
                     "@id": "schema:"
                 },
                 {
@@ -72,7 +69,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifier instead."
+                "@value": "A value representing a document's reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -84,10 +81,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:RegulatoryIdentifier"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:RegulatoryInformation",
@@ -97,7 +91,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:RegulatoryInformation instead."
+                "@value": "Regulation issued by a government which impacts a given subject (Organization, Place, Product)."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -109,10 +103,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:RegulatoryInformation"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:OrganismClassification",
@@ -210,7 +201,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use owl:Thing instead."
+                "@value": "A class encapsulating factual claims about a specific entity."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -222,10 +213,7 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "owl:Thing"
-            }
+            "sw:term_status": "unstable"
         },
         {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
@@ -455,7 +443,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:masterDataAvailableFor instead."
+                "@value": "A set of factual claims about a specific entity."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -470,10 +458,10 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
+            "skos:closeMatch": {
                 "@id": "gs1:masterDataAvailableFor"
-            }
+            },
+            "sw:term_status": "unstable"
         },
         {
             "@id": "gs1de:referenceNumber",
@@ -483,7 +471,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:regulatoryIdentifier instead."
+                "@value": "Unique identifier assigned to a document to facilitate tracking, retrieval, and management across systems."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -498,10 +486,7 @@
             "rdfs:range": {
                 "@id": "gs1de:ReferenceNumber"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulatoryIdentifier"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:referenceNumberVerificationID",
@@ -511,7 +496,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:regulatoryVerificationNumber instead."
+                "@value": "A unique identifier that enables third parties to check or access a database entry associated with the related reference number."
             },
             "rdfs:domain": {
                 "@id": "gs1de:ReferenceNumber"
@@ -526,10 +511,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulatoryVerificationNumber"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licence",
@@ -557,6 +539,31 @@
             "sw:term_status": "stable"
         },
         {
+            "@id": "gs1de:containedRegulatedCommodities",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Ingredients within a trade item that are subject to specific regulatory oversight and compliance requirements."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:RegulatoryInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Has Contained Regulated Commodities"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:regulatoryInformation",
             "@type": [
                 "owl:ObjectProperty",
@@ -564,7 +571,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:regulatoryInformation instead."
+                "@value": "Information on applicable government regulations a subject is in compliance with."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -579,10 +586,7 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulatoryInformation"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulatoryInformation"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:importClassification",
@@ -642,7 +646,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:regulatoryReferenceNumber instead."
+                "@value": "The value of the reference number, associated with a Reference Number Type Code."
             },
             "rdfs:domain": {
                 "@id": "gs1de:ReferenceNumber"
@@ -657,10 +661,7 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulatoryReferenceNumber"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licenceIdentificationValue",
@@ -720,7 +721,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:regulatoryIdentifierType instead."
+                "@value": "Reference Number Type Code"
             },
             "rdfs:domain": {
                 "@id": "gs1de:ReferenceNumber"
@@ -735,10 +736,7 @@
             "rdfs:range": {
                 "@id": "gs1de:ReferenceNumberTypeCode"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulatoryIdentifierType"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:licenceIdentificationTypeCode",
@@ -773,7 +771,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:regulationType instead."
+                "@value": "A code that indicates that a subject is in compliance with specific applicable government regulations."
             },
             "rdfs:domain": {
                 "@id": "gs1de:RegulatoryInformation"
@@ -788,10 +786,7 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulationTypeCode"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulationType"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:importClassificationTypeCode",
@@ -878,8 +873,7 @@
                 "@language": "en",
                 "@value": "The production start date is the production or assembly start date determined by the manufacturer. The start date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [
-                {
+            "rdfs:domain": [{
                     "@id": "gs1:Product"
                 },
                 {
@@ -908,8 +902,7 @@
                 "@language": "en",
                 "@value": "The production end date is the production or assembly end date determined by the manufacturer. The end date may refer to the trade item itself or to items contained."
             },
-            "rdfs:domain": [
-                {
+            "rdfs:domain": [{
                     "@id": "gs1:Product"
                 },
                 {
@@ -4727,44 +4720,35 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:RegulatoryIdentifierType"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT instead."
+                "@value": "Reference number of the supplier's Due Diligence Statement as provided by the European Deforestation Information System."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "EUDR Supplier"
             },
             "skos:prefLabel": "EUDR_SUPPLIER",
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT instead."
+                "@value": "Reference number of the sender's Due Diligence Statement as provided by the European Deforestation Information System."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "EUDR Sender"
             },
             "skos:prefLabel": "EUDR_SENDER",
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:RegulationTypeCode",
@@ -4775,27 +4759,21 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:regulationType"
-            }
+            "sw:term_status": "stable"
         },
         {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "This term has been deprecated. Please use gs1:RegulationTypeCode-DEFORESTATION_REGULATION instead."
+                "@value": "Regulation minimising the contribution to deforestation and forest degradation worldwide, and thereby contributing to a reduction in global deforestation; reducing the contribution to greenhouse gas emissions and global biodiversity loss (e.g. EU regulation 2023/1115)."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "Deforestation Regulation"
             },
             "skos:prefLabel": "DEFORESTATION_REGULATION",
-            "sw:term_status": "deprecated",
-            "owl:deprecated": {
-                "@id": "gs1:RegulationTypeCode-DEFORESTATION_REGULATION"
-            }
+            "sw:term_status": "stable"
         }
     ]
 }
