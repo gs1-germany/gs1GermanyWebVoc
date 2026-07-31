@@ -4974,6 +4974,27 @@
                 "@id": "gs1de:"
             },
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode",
+            "@type": "owl:Class",
+            "rdfs:label": [
+                {
+                    "@value": "Temperature Qualifier Code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Code qualifying the type of a temperature requirement for example Storage.",
+                "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
         }
     ]
 }
