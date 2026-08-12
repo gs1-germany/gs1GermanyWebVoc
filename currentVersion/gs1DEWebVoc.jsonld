@@ -2463,6 +2463,206 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:tradeItemLifespan",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Trade Item Lifespan"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The lifespan and durability characteristics of a trade item, such as its average life, minimum durability, and shelf life from production or arrival."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:averageLife",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Average Life"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The average life of a trade item, expressed as a value and unit of measure."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:itemMinimumDurability",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Item Minimum Durability"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The length of time until which the product will continue to fulfill its initial function and remain safe, i.e. the length of time by which it is best to use the product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:itemPeriodSafeToUseAfterOpening",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Item Period Safe To Use After Opening"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The period after the opening where the product is still safe to be used. the period of time after opening that the product may be used without any harm to the consumer. This mention MUST take the form of number of months or number of years for example 50 MON."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:minimumTradeItemLifespanFromTimeOfArrival",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Minimum Trade Item Lifespan From Time Of Arrival"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The period of days, guaranteed by the manufacturer, before the expiration date of the trade item, based on arrival to a mutually agreed to point in the buyers distribution system."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:minimumTradeItemLifespanFromTimeOfProduction",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Minimum Trade Item Lifespan From Time Of Production"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The period of day, guaranteed by the manufacturer, before the expiration date of the product, based on the production."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:openedTradeItemLifespan",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Opened Trade Item Lifespan"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The number of days the trade item that had been opened can remain on the shelf and must then be removed."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:supplierSpecifiedMinimumConsumerStorageDays",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Supplier Specified Minimum Consumer Storage Days"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Represents the number of days between a product's 'sell by date' and its 'use by date'."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
