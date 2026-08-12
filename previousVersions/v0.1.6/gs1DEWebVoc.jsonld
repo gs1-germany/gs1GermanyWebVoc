@@ -37,9 +37,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2025-08-04"
+                "@value": "2026-07-31"
             },
-            "owl:versionInfo": "0.1.4",
+            "owl:versionInfo": "0.1.6",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
@@ -72,7 +72,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A value representing a document's reference number, consisting of a string value and a reference number type code, optionally accompanied by a verification ID."
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifier instead."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -84,7 +84,10 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifier"
+            }
         },
         {
             "@id": "gs1de:RegulatoryInformation",
@@ -94,7 +97,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Regulation issued by a government which impacts a given subject (Organization, Place, Product)."
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryInformation instead."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -106,7 +109,10 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryInformation"
+            }
         },
         {
             "@id": "gs1de:OrganismClassification",
@@ -204,7 +210,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A class encapsulating factual claims about a specific entity."
+                "@value": "This term has been deprecated. Please use owl:Thing instead."
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -216,7 +222,10 @@
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
             },
-            "sw:term_status": "unstable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "owl:Thing"
+            }
         },
         {
             "@id": "gs1de:GreenhouseGasEmissionInformation",
@@ -439,6 +448,30 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:ProductTemperatureInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Product Temperature Information",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Details on permissible temperatures of a trade item during various points of the supply chain.",
+                "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
                 "owl:ObjectProperty",
@@ -446,7 +479,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A set of factual claims about a specific entity."
+                "@value": "This term has been deprecated. Please use gs1:masterDataAvailableFor instead."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -461,10 +494,10 @@
             "rdfs:range": {
                 "@id": "gs1de:MasterDataSet"
             },
-            "skos:closeMatch": {
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
                 "@id": "gs1:masterDataAvailableFor"
-            },
-            "sw:term_status": "unstable"
+            }
         },
         {
             "@id": "gs1de:referenceNumber",
@@ -474,7 +507,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Unique identifier assigned to a document to facilitate tracking, retrieval, and management across systems."
+                "@value": "This term has been deprecated. Please use gs1:regulatoryIdentifier instead."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -489,7 +522,10 @@
             "rdfs:range": {
                 "@id": "gs1de:ReferenceNumber"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulatoryIdentifier"
+            }
         },
         {
             "@id": "gs1de:referenceNumberVerificationID",
@@ -499,7 +535,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A unique identifier that enables third parties to check or access a database entry associated with the related reference number."
+                "@value": "This term has been deprecated. Please use gs1:regulatoryVerificationNumber instead."
             },
             "rdfs:domain": {
                 "@id": "gs1de:ReferenceNumber"
@@ -514,7 +550,10 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulatoryVerificationNumber"
+            }
         },
         {
             "@id": "gs1de:licence",
@@ -542,31 +581,6 @@
             "sw:term_status": "stable"
         },
         {
-            "@id": "gs1de:containedRegulatedCommodities",
-            "@type": [
-                "owl:DatatypeProperty",
-                "rdf:Property"
-            ],
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "Ingredients within a trade item that are subject to specific regulatory oversight and compliance requirements."
-            },
-            "rdfs:domain": {
-                "@id": "gs1de:RegulatoryInformation"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Has Contained Regulated Commodities"
-            },
-            "rdfs:range": {
-                "@id": "xsd:string"
-            },
-            "sw:term_status": "testing"
-        },
-        {
             "@id": "gs1de:regulatoryInformation",
             "@type": [
                 "owl:ObjectProperty",
@@ -574,7 +588,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Information on applicable government regulations a subject is in compliance with."
+                "@value": "This term has been deprecated. Please use gs1:regulatoryInformation instead."
             },
             "rdfs:domain": {
                 "@id": "owl:Thing"
@@ -589,7 +603,10 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulatoryInformation"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulatoryInformation"
+            }
         },
         {
             "@id": "gs1de:importClassification",
@@ -649,7 +666,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "The value of the reference number, associated with a Reference Number Type Code."
+                "@value": "This term has been deprecated. Please use gs1:regulatoryReferenceNumber instead."
             },
             "rdfs:domain": {
                 "@id": "gs1de:ReferenceNumber"
@@ -664,7 +681,10 @@
             "rdfs:range": {
                 "@id": "xsd:string"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulatoryReferenceNumber"
+            }
         },
         {
             "@id": "gs1de:licenceIdentificationValue",
@@ -724,7 +744,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference Number Type Code"
+                "@value": "This term has been deprecated. Please use gs1:regulatoryIdentifierType instead."
             },
             "rdfs:domain": {
                 "@id": "gs1de:ReferenceNumber"
@@ -739,7 +759,10 @@
             "rdfs:range": {
                 "@id": "gs1de:ReferenceNumberTypeCode"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulatoryIdentifierType"
+            }
         },
         {
             "@id": "gs1de:licenceIdentificationTypeCode",
@@ -774,7 +797,7 @@
             ],
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "A code that indicates that a subject is in compliance with specific applicable government regulations."
+                "@value": "This term has been deprecated. Please use gs1:regulationType instead."
             },
             "rdfs:domain": {
                 "@id": "gs1de:RegulatoryInformation"
@@ -789,7 +812,10 @@
             "rdfs:range": {
                 "@id": "gs1de:RegulationTypeCode"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulationType"
+            }
         },
         {
             "@id": "gs1de:importClassificationTypeCode",
@@ -1997,6 +2023,395 @@
             },
             "rdfs:range": {
                 "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isTradeItemABaseUnit",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a base unit",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "An indicator identifying the trade item as the base unit level of the trade item hierarchy.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isTradeItemAConsumerUnit",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a consumer unit",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Identifies whether the trade item to be taken possession of ,or to be consumed or used by an end user or both, as determined by the manufacturer. The end user could be, but is not limited to, a consumer as in items sold at retail, or a patient/clinician/technician in a healthcare setting, or an operator for foodservice such as restaurants, airlines, cafeterias, etc.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isTradeItemADespatchUnit",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a despatch unit",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "An indicator identifying that the information provider considers the trade item as a despatch (shipping) unit. This may be relationship dependent based on channel of trade or other point to point agreement.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isTradeItemAService",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a service",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "An indicator that the trade item is a service for example a receipt that can be used for upgrading a pre-paid phone balance, an entrance ticket to an amusement park, sporting event, theatre, service maintenance, installation service, repairs.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isTradeItemAVariableUnit",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is trade item a variable unit",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Indicates that an article is not a fixed quantity, but that the quantity is variable. Can be weight, length, volume. trade item is used or traded in continuous rather than discrete quantities.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:productKeyWords",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Product key words",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Words or phrases that enables web search engines to find trade items on the internet for example Shampoo, Lather, Baby.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:descriptionShort",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Description short",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A free form short length description of the trade item that can be used to identify the trade item at point of sale.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:tradeItemUnitDescriptorCode",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Trade item unit descriptor code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Describes the hierarchical level of the trade item. The attribute tradeItemUnitDescriptorCode is mandatory. Examples: 'CASE', 'PALLET'.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:TradeItemUnitDescriptorCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isDangerousSubstance",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Is dangerous substance",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "An indicator whether or not a trade item is classified and labelled as containing a dangerous substance.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1:NonbinaryLogicCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:minimumTradeItemLifespanFromTimeOfProduction",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Minimum trade item lifespan from time of production",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The period of day, guaranteed by the manufacturer, before the expiration date of the product, based on the production.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:productTemperatureInformation",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Product temperature information",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Links to details of permissible temperatures of a trade item during various points of the supply chain.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:ProductTemperatureInformation"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:temperatureQualifierCode",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Temperature qualifier code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Code qualifying the type of a temperature requirement for example Storage.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductTemperatureInformation"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:TemperatureQualifierCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:minimumTemperature",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Minimum temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The minimum temperature that a trade item can be held below defined by the manufacturer without affecting product safety or quality.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductTemperatureInformation"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:maximumTemperature",
+            "@type": [
+                "owl:FunctionalProperty",
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": [
+                {
+                    "@value": "Maximum temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The maximum temperature that a trade item can not exceed as defined by the manufacturer without affecting product safety or quality.",
+                "@language": "en"
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:ProductTemperatureInformation"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
             },
             "sw:term_status": "testing"
         },
@@ -4725,35 +5140,44 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifierType"
+            }
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the supplier's Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT instead."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "EUDR Supplier"
             },
             "skos:prefLabel": "EUDR_SUPPLIER",
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT"
+            }
         },
         {
             "@id": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
             "@type": "gs1de:ReferenceNumberTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Reference number of the sender's Due Diligence Statement as provided by the European Deforestation Information System."
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT instead."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "EUDR Sender"
             },
             "skos:prefLabel": "EUDR_SENDER",
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryIdentifierType-DUE_DILIGENCE_STATEMENT"
+            }
         },
         {
             "@id": "gs1de:RegulationTypeCode",
@@ -4764,21 +5188,449 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:regulationType"
+            }
         },
         {
             "@id": "gs1de:RegulationTypeCode-DEFORESTATION_REGULATION",
             "@type": "gs1de:RegulationTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Regulation minimising the contribution to deforestation and forest degradation worldwide, and thereby contributing to a reduction in global deforestation; reducing the contribution to greenhouse gas emissions and global biodiversity loss (e.g. EU regulation 2023/1115)."
+                "@value": "This term has been deprecated. Please use gs1:RegulationTypeCode-DEFORESTATION_REGULATION instead."
             },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "Deforestation Regulation"
             },
             "skos:prefLabel": "DEFORESTATION_REGULATION",
-            "sw:term_status": "stable"
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulationTypeCode-DEFORESTATION_REGULATION"
+            }
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode",
+            "@type": "owl:Class",
+            "rdfs:label": [
+                {
+                    "@value": "Trade Item Unit Descriptor Code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The condition of the product sold to the end consumer for example thawed or frozen.",
+                "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-BASE_UNIT_OR_EACH",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Base Unit or Each",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "The lowest level of the item hierarchy intended or labeled for individual resale.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "BASE_UNIT_OR_EACH",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-CASE",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Case",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A standard trade item shipping unit that contains a single or multiple GTINs. Includes an ½ or ¼ pallet and an ½ or ¼ box pallet.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "CASE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-DISPLAY_SHIPPER",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Display Shipper",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A display or shipper is a special case item that includes both consumer units and packaging materials to be assembled and used to display the product for sale. May contain cases or consumer units. It may be the orderable or dispatchable unit and may be shipped on a pallet.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DISPLAY_SHIPPER",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-MIXED_MODULE",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Display Ready Pallet",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Special pallet item sold as a single unit that is not intended to be broken down to sell the cases individually. It is intended to be displayed directly on the selling floor and shoppable for the consumer and may contain additional packaging materials used to further display the product. It may contain single or multiple GTINs and may be the orderable unit.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "MIXED_MODULE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-PACK_OR_INNER_PACK",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Pack or Inner Pack",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A logistical unit between case and each. This may be a consumable innerpack (i.e. Carton of Cigarettes) or it may be simply a logistical pack (i.e. Dozes of toothbrushes).",
+                "@language": "en"
+            },
+            "skos:prefLabel": "PACK_OR_INNER_PACK",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-PALLET",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Pallet",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "A unit load that contains a single or multiple GTINs Includes box pallet",
+                "@language": "en"
+            },
+            "skos:prefLabel": "PALLET",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemUnitDescriptorCode-TRANSPORT_LOAD",
+            "@type": "gs1de:TradeItemUnitDescriptorCode",
+            "rdfs:label": [
+                {
+                    "@value": "Transport Load",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade item above the pallet level used for transporting trade items. For example truck load, container, rail car, ship, etc.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "TRANSPORT_LOAD",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode",
+            "@type": "owl:Class",
+            "rdfs:label": [
+                {
+                    "@value": "Temperature Qualifier Code",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Code qualifying the type of a temperature requirement for example Storage.",
+                "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-DELIVERY_TO_DISTRIBUTION_CENTRE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Delivery To Distribution Centre",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade Item is in transport to the distribution center.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DELIVERY_TO_DISTRIBUTION_CENTRE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-DELIVERY_TO_MARKET",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Delivery To Market",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade Item is in transport to market.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DELIVERY_TO_MARKET",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-DISINFECTION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Disinfection",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at for the process that eliminates many or all pathogenic microorganisms, except bacterial spores, on inanimate objects. In health-care settings, objects can be disinfected by liquid chemicals or wet pasteurisation.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "DISINFECTION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-INLET_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Inlet Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature at which a gas or fluid is expected to be when entering a device, e.g., an electric pressure washer. The device may be damaged when the inlet temperature is outside the range of temperatures.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "INLET_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-OPERATING_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Operating Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature at which the product operates effectively. The product will operate effectively within a specified temperature range which varies based on the function and application context, and ranges from the minimum operating temperature to the maximum operating temperature (or peak operating temperature). Outside this range of safe operating temperatures the product may fail or the protective properties are no longer guaranteed.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "OPERATING_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STERILISATION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Sterilisation",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product should be sterilised at in accordance to supplier or local market regulations.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STERILISATION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_AFTER_OPENING",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage After Opening",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at after its seal has been broken and the product has been exposed to the elements.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_AFTER_OPENING",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_AFTER_OVERWRAP",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage After Removing Overwrap",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at after removing a product’s protective overwrap or moisture barrier.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_AFTER_OVERWRAP",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_AFTER_RECONSTITUTION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage After Reconstitution",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Specifies the temperature the product is to be maintained at after adding liquid to mix or dilute the product.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_AFTER_RECONSTITUTION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-STORAGE_HANDLING",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Storage and Handling",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade Item is being stored or handled.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "STORAGE_HANDLING",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-TRANSPORTATION",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Transportation",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Trade item is in process of being transported in the supply chain.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "TRANSPORTATION",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-WASHING_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Washing Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Indicates the recommended washing temperature for a product. Examples: detergent, apparel.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "WASHING_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TemperatureQualifierCode-WORKING_TEMPERATURE",
+            "@type": "gs1de:TemperatureQualifierCode",
+            "rdfs:label": [
+                {
+                    "@value": "Working Temperature",
+                    "@language": "en"
+                }
+            ],
+            "rdfs:comment": {
+                "@value": "Indicates the working temperature or outside temperature where the product can effectively be used or applied.",
+                "@language": "en"
+            },
+            "skos:prefLabel": "WORKING_TEMPERATURE",
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
         }
     ]
 }
