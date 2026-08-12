@@ -2416,6 +2416,31 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:targetConsumerGender",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Target Consumer Gender"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Identifies the target consumer gender for which a product has been designed for example MALE"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1:TargetConsumerGenderCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
