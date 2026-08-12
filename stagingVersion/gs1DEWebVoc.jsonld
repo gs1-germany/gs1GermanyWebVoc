@@ -37,9 +37,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2026-07-31"
+                "@value": "2026-08-12"
             },
-            "owl:versionInfo": "0.1.6",
+            "owl:versionInfo": "0.1.7",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
@@ -462,6 +462,28 @@
             "rdfs:comment": {
                 "@value": "Details on permissible temperatures of a trade item during various points of the supply chain.",
                 "@language": "en"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TradeItemLifespan",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Trade Item Lifespan"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information on the amount of time the item can or should be used, sold, etc."
             },
             "rdfs:subClassOf": {
                 "@id": "owl:Thing"
@@ -2409,6 +2431,231 @@
             },
             "rdfs:range": {
                 "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:targetConsumerGender",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Target Consumer Gender"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Identifies the target consumer gender for which a product has been designed for example MALE"
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1:TargetConsumerGenderCode"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:tradeItemLifespan",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Trade Item Lifespan"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The lifespan and durability characteristics of a trade item, such as its average life, minimum durability, and shelf life from production or arrival."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:averageLife",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Average Life"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The average life of a trade item, expressed as a value and unit of measure."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:itemMinimumDurability",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Item Minimum Durability"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The length of time until which the product will continue to fulfill its initial function and remain safe, i.e. the length of time by which it is best to use the product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:itemPeriodSafeToUseAfterOpening",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Item Period Safe To Use After Opening"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The period after the opening where the product is still safe to be used. the period of time after opening that the product may be used without any harm to the consumer. This mention MUST take the form of number of months or number of years for example 50 MON."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:minimumTradeItemLifespanFromTimeOfArrival",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Minimum Trade Item Lifespan From Time Of Arrival"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The period of days, guaranteed by the manufacturer, before the expiration date of the trade item, based on arrival to a mutually agreed to point in the buyers distribution system."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:minimumTradeItemLifespanFromTimeOfProduction",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Minimum Trade Item Lifespan From Time Of Production"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The period of day, guaranteed by the manufacturer, before the expiration date of the product, based on the production."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:openedTradeItemLifespan",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Opened Trade Item Lifespan"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The number of days the trade item that had been opened can remain on the shelf and must then be removed."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:supplierSpecifiedMinimumConsumerStorageDays",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Supplier Specified Minimum Consumer Storage Days"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Represents the number of days between a product's 'sell by date' and its 'use by date'."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:TradeItemLifespan"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -5104,17 +5351,59 @@
             "sw:term_status": "stable"
         },
         {
-            "@id": "gs1de:ImportClassificationTypeCode-INTRASTAT_COMBINED_NOMENCLATURE",
+            "@id": "gs1de:ImportClassificationTypeCode-CTCURBK",
             "@type": "gs1de:ImportClassificationTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "Collection of commodity codes used with the European Union."
+                "@value": "Customs Tariff Of The Customs Union Between Russia Belarus And Kazakhstan."
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Intrastat Combined Nomenclature"
+                "@value": "CTCURBK"
             },
-            "skos:prefLabel": "INTRASTAT_COMBINED_NOMENCLATURE",
+            "skos:prefLabel": "CTCURBK",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-CUSTOMS_TARIFF_NUMBER",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The 11-digit code number based on the EU Combined Nomenclature (CN) coding system. It is for national use only, and is used, for example, to encode VAT rates, national bans or restrictions."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Customs Tariff Number"
+            },
+            "skos:prefLabel": "CUSTOMS_TARIFF_NUMBER",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-EU_EXCISE_PRODUCT_CODE",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "EU classification of the products that are subjected to excise duties."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EU Excise Product Code"
+            },
+            "skos:prefLabel": "EU_EXCISE_PRODUCT_CODE",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-FEACNRF",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Foreign Economic Activity Commodity Nomenclature of Russian Federation."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "FEACNRF"
+            },
+            "skos:prefLabel": "FEACNRF",
             "sw:term_status": "stable"
         },
         {
@@ -5122,13 +5411,139 @@
             "@type": "gs1de:ImportClassificationTypeCode",
             "rdfs:comment": {
                 "@language": "en",
-                "@value": "An internationally standardized system of names and numbers for classifying traded products developed and maintained by the World Customs Organization (WCO)."
+                "@value": "An internationally standardized system of names and numbers for classifying traded products, developed and maintained by the World Customs Organization (WCO)."
             },
             "rdfs:label": {
                 "@language": "en",
-                "@value": "Harmonized Commodity Description and Coding System"
+                "@value": "Harmonized Commodity Description And Coding System"
             },
             "skos:prefLabel": "HARMONIZED_COMMODITY_DESCRIPTION_AND_CODING_SYSTEM",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-HARMONIZED_TARIFF_SCHEDULE_OF_THE_US",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Tariff classifications for goods imported into the United States."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Harmonized Tariff Schedule Of The US"
+            },
+            "skos:prefLabel": "HARMONIZED_TARIFF_SCHEDULE_OF_THE_US",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-INTRASTAT",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A system for collecting information and producing statistics on the trade in goods between countries of the European Union (EU)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Intrastat"
+            },
+            "skos:prefLabel": "INTRASTAT",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-MERCOSUR",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A regional trade agreement created in 1991, integrated by Brazil, Argentina, Uruguay, Paraguay and Venezuela."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mercosur"
+            },
+            "skos:prefLabel": "MERCOSUR",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-MEURSING",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A commodity code for the import or export of goods under European Union regulation containing certain ingredients, e.g. types of milk and sugars."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Meursing"
+            },
+            "skos:prefLabel": "MEURSING",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-NETHERLANDS",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The Netherlands-specific import classification code."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Netherlands"
+            },
+            "skos:prefLabel": "NETHERLANDS",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-NOMENCLATURE_GENERALE_DES_PRODUITS",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A French supplement to the European Combined Nomenclature."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nomenclature Generale Des Produits"
+            },
+            "skos:prefLabel": "NOMENCLATURE_GENERALE_DES_PRODUITS",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-TARIF_INTEGRE_DE_LA_COMMUNAUTE",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Integrated Tariff of the European Community."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Tarif Integre De La Communaute"
+            },
+            "skos:prefLabel": "TARIF_INTEGRE_DE_LA_COMMUNAUTE",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-TN_VED",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A commodity nomenclature of foreign-economic activity in the Commonwealth of Independent States."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "TN VED"
+            },
+            "skos:prefLabel": "TN_VED",
+            "sw:term_status": "stable"
+        },
+        {
+            "@id": "gs1de:ImportClassificationTypeCode-UKT_ZED",
+            "@type": "gs1de:ImportClassificationTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The Ukrainian classification of goods of foreign economic activity (UCG FEA, or UKT ZED in Ukrainian) is built on the basis of the Harmonised Commodity Description and Coding System and the Combined Nomenclature of the European Union, and is used by the customs authorities of Ukraine for the classification of goods during customs clearance."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "UKT ZED"
+            },
+            "skos:prefLabel": "UKT_ZED",
             "sw:term_status": "stable"
         },
         {
