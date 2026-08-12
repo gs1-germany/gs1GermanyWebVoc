@@ -472,6 +472,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:TradeItemLifespan",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Trade Item Lifespan"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Information on the amount of time the item can or should be used, sold, etc."
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
                 "owl:ObjectProperty",
