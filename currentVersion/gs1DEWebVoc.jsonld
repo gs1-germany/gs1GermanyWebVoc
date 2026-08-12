@@ -494,6 +494,25 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:HealthRelatedInformation",
+            "@type": [
+                "rdfs:Class",
+                "owl:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Marketing or regulatory information specific to health or safety."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Health Related Information"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
                 "owl:ObjectProperty",
