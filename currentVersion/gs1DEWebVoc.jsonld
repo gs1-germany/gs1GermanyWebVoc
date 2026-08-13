@@ -5765,22 +5765,14 @@
         },
         {
             "@id": "gs1de:TradeItemUnitDescriptorCode",
-            "@type": "owl:Class",
             "rdfs:label": [
                 {
                     "@value": "Trade Item Unit Descriptor Code",
                     "@language": "en"
                 }
             ],
-            "rdfs:comment": {
-                "@value": "The condition of the product sold to the end consumer for example thawed or frozen.",
-                "@language": "en"
-            },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
             },
             "sw:term_status": "testing"
         },
@@ -5798,9 +5790,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "BASE_UNIT_OR_EACH",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5817,9 +5806,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "CASE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5836,9 +5822,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DISPLAY_SHIPPER",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5855,9 +5838,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "MIXED_MODULE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5874,9 +5854,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "PACK_OR_INNER_PACK",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5893,9 +5870,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "PALLET",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5912,9 +5886,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "TRANSPORT_LOAD",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5933,9 +5904,6 @@
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5952,9 +5920,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DELIVERY_TO_DISTRIBUTION_CENTRE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5971,9 +5936,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DELIVERY_TO_MARKET",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5990,9 +5952,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DISINFECTION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6009,9 +5968,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "INLET_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6028,9 +5984,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "OPERATING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6047,9 +6000,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STERILISATION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6066,9 +6016,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_OPENING",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6085,9 +6032,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_OVERWRAP",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6104,9 +6048,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_RECONSTITUTION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6123,9 +6064,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_HANDLING",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6142,9 +6080,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "TRANSPORTATION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6161,9 +6096,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "WASHING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6180,9 +6112,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "WORKING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
