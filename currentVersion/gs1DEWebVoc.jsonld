@@ -2266,12 +2266,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:label": [
-                {
-                    "@value": "Trade item unit descriptor code",
-                    "@language": "en"
-                }
-            ],
+            "rdfs:label": {
+                "@value": "Trade item unit descriptor code",
+                "@language": "en"
+            },
             "rdfs:comment": {
                 "@value": "Describes the hierarchical level of the trade item. The attribute tradeItemUnitDescriptorCode is mandatory. Examples: 'CASE', 'PALLET'.",
                 "@language": "en"
