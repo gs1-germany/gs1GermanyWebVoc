@@ -2804,6 +2804,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:targetHairTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Target Hair Type Code"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The type or types of hair for which a product is intended, suitable, or specifically designed."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:TargetHairTypeCode"
+            },
+            "sw:term_status": "testing"
+        }
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
