@@ -1678,7 +1678,7 @@
                 "@value": "Information detailing the raw material(s) used in a specific packaging material."
             },
             "rdfs:domain": {
-                "@id": "gs1:Product"
+                "@id": "gs1:PackagingMaterialDetails"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
@@ -3393,31 +3393,6 @@
                 "@value": "Crude Oil"
             },
             "skos:prefLabel": "CRUDE_OIL",
-            "sw:term_status": "testing"
-        },
-        {
-            "@id": "gs1de:MaterialCode",
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Material Code"
-            },
-            "rdfs:subClassOf": {
-                "@id": "gs1:TypeCode"
-            },
-            "sw:term_status": "testing"
-        },
-        {
-            "@id": "gs1de:MaterialCode-PLASTIC_BIO_PLASTIC",
-            "@type": "gs1de:MaterialCode",
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "Plastic materials made from biomass, but may have exactly the same properties as ordinary plastic. Sometimes these plastics are biodegradable."
-            },
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Bioplastic"
-            },
-            "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
             "sw:term_status": "testing"
         },
         {
