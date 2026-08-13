@@ -2824,7 +2824,7 @@
                 "@id": "gs1de:TargetHairTypeCode"
             },
             "sw:term_status": "testing"
-        }
+        },
         {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
@@ -6120,13 +6120,527 @@
                 "@language": "en",
                 "@value": "Target Hair Type Code"
             },
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "A type of hair for which a product is intended, suitable, or specifically designed."
-            },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
             },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-ALL_TYPES",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The product is intended to be used on all types of hair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "All hair types"
+            },
+            "skos:prefLabel": "ALL_TYPES",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-CHEMICALLY_TREATED",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair that has been chemically treated, often during the process of perming, straightening or curling."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Chemically treated"
+            },
+            "skos:prefLabel": "CHEMICALLY_TREATED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-COARSE",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Naturally coarse hair has strands that are thicker and wider in circumference than other hair types."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Coarse"
+            },
+            "skos:prefLabel": "COARSE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-COLOURED_DYED",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The practice of changing the hair colour."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Coloured/Dyed"
+            },
+            "skos:prefLabel": "COLOURED_DYED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-CURLY",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Curly is wavy, coiled, or spiral-shaped."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Curly"
+            },
+            "skos:prefLabel": "CURLY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-DAMAGED",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair damage occurs when parts of the hair structure are altered, which weakens hair and sets off a domino effect of noticeable results that look and feel like unhealthy hair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Damaged"
+            },
+            "skos:prefLabel": "DAMAGED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-DANDRUFF",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Small pieces of dead skin in a person's hair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Dandruff"
+            },
+            "skos:prefLabel": "DANDRUFF",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-DRY",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Dry hair is hair that does not have enough moisture and oil to maintain its normal sheen and texture."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Dry"
+            },
+            "skos:prefLabel": "DRY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-DULL",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Dull means that your hair is matte in texture instead of shiny+reflective. Each strand of hair has little scales (like roof tiles) designed to keep moisture in."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Dull"
+            },
+            "skos:prefLabel": "DULL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-FALSE_HUMAN",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A covering or bunch of human hair used for disguise or adornment. hairpiece, postiche."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "False human"
+            },
+            "skos:prefLabel": "FALSE_HUMAN",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-FINE",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Fine hair the individual strands are smaller in diameter"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Fine"
+            },
+            "skos:prefLabel": "FINE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-FRAGILE",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair fragility is hair that is dry, brittle, and breaks easily with minimal amount of handling."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Fragile"
+            },
+            "skos:prefLabel": "FRAGILE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-FRIZZY",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Frizz is hair that does not align with the surrounding hairs, but stands up or curls independently, creating a fuzzy or irregular texture."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Frizzy"
+            },
+            "skos:prefLabel": "FRIZZY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-HIGHLIGHTS",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair highlighting/lowlighting is changing a person's hair colour, using lightener or hair colour to lift the level or brightness of hair strands."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Highlights"
+            },
+            "skos:prefLabel": "HIGHLIGHTS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-LOCS_DREADS",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair that has been styled into fused units, often varying in thickness. Referred to as dreadlocks, dreads, or as Jaṭā in Sanskrit and often associated with Rastafarianism, locs are formed by a continual process of twisting or curling wet hair into rope-like strands."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Locs / Dreads"
+            },
+            "skos:prefLabel": "LOCS_DREADS",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-LONG",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A person with long hair, usually consider past your shoulders. There is no standard guideline."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Long"
+            },
+            "skos:prefLabel": "LONG",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-NATURAL",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Natural hair hasn't been altered by chemical straighteners, including relaxers and texturizers."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Natural"
+            },
+            "skos:prefLabel": "NATURAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-NO_VOLUME",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The hair has a lack of fullness or volume."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "No volume"
+            },
+            "skos:prefLabel": "NO_VOLUME",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-NORMAL",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Normal hair is neither too dry, nor too oily. The sebum levels are balanced and the sebum naturally protects the hair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Normal"
+            },
+            "skos:prefLabel": "NORMAL",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-OILY",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Oily hair is the result of the oil (sebaceous) glands in the scalp producing large amounts of oil."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Oily"
+            },
+            "skos:prefLabel": "OILY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-OTHER",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The value needed is not listed or is not defined within this list’s individual code values and definitions. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Other"
+            },
+            "skos:prefLabel": "OTHER",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-PERMANENT_WAVE",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A hairstyle produced by setting the hair in waves or curls and then treating it with chemicals so that the style lasts for several months."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Permanent wave"
+            },
+            "skos:prefLabel": "PERMANENT_WAVE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-SEMI_LONG",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A person with semi-long or medium hair, usually consider from chin to about shoulder length. There is no standard guideline."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Semi-long"
+            },
+            "skos:prefLabel": "SEMI_LONG",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-SENSITIVE_SCALP",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Scalp skin prone to reactions or discomfort necessitating gentle formulas with soothing properties."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Sensitive, itchy scalp"
+            },
+            "skos:prefLabel": "SENSITIVE_SCALP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-SHORT",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A person with short hair, usually consider from buzz to scalp to about chin length. There is no standard guideline."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Short"
+            },
+            "skos:prefLabel": "SHORT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-STRAIGHT",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Straight hair has no curls or waves in it."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Straight"
+            },
+            "skos:prefLabel": "STRAIGHT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-STYLED",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Style of cutting, arranging, or combing the hair; hairdo; coiffure."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Styled"
+            },
+            "skos:prefLabel": "STYLED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-SYNTHETIC",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A covering or bunch of artificial hair used for disguise or adornment. Examples hairpiece, postiche."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Synthetic"
+            },
+            "skos:prefLabel": "SYNTHETIC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-THICK",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Thick hair refers to the density of hair follicles you have on your head."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Thick"
+            },
+            "skos:prefLabel": "THICK",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-THINNING",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair loss is the thinning of hair on the scalp. The medical term for hair loss is alopecia."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Thinning"
+            },
+            "skos:prefLabel": "THINNING",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-UNRULY",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Unruly hair is messy hair."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Unruly"
+            },
+            "skos:prefLabel": "UNRULY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-WAVY",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Wavy hair is not straight or curly, but curves slightly."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Wavy"
+            },
+            "skos:prefLabel": "WAVY",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-AGING",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A product that is designed specifically for older/senior life stage."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Aging"
+            },
+            "skos:prefLabel": "AGING",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-BLONDE_BLEACHED",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Hair that has undergone specific treatments to achieve a lighter or more varied colour effect."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Blond, bleached/highlighted"
+            },
+            "skos:prefLabel": "BLONDE_BLEACHED",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-COMBINATION",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Excess sebum production leading to oiliness at roots while sometimes having dry ends needing balancing care."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Combination to oily hair"
+            },
+            "skos:prefLabel": "COMBINATION",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-GREY_WHITE",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Grey and white hair are the result of the natural aging process or other factors that cause a reduction or absence of melanin, the pigment responsible for hair colour."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Grey and white hair"
+            },
+            "skos:prefLabel": "GREY_WHITE",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode-UNSPECIFIED",
+            "@type": "gs1de:TargetHairTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Used when a product does not specify any particular hair type compatibility or when such categorisation is irrelevant."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Unspecified"
+            },
+            "skos:prefLabel": "UNSPECIFIED",
             "sw:term_status": "testing"
         }
     ]
