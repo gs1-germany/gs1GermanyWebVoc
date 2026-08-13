@@ -6184,6 +6184,21 @@
                 "@id": "gs1de:"
             },
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:TargetHairTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Target Hair Type Code"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of hair for which a product is intended, suitable, or specifically designed."
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
         }
     ]
 }
