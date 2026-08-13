@@ -453,12 +453,10 @@
                 "owl:Class",
                 "rdfs:Class"
             ],
-            "rdfs:label": [
-                {
-                    "@value": "Product Temperature Information",
-                    "@language": "en"
-                }
-            ],
+            "rdfs:label": {
+                "@value": "Product Temperature Information",
+                "@language": "en"
+            },
             "rdfs:comment": {
                 "@value": "Details on permissible temperatures of a trade item during various points of the supply chain.",
                 "@language": "en"
