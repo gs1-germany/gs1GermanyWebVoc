@@ -1678,7 +1678,7 @@
                 "@value": "Information detailing the raw material(s) used in a specific packaging material."
             },
             "rdfs:domain": {
-                "@id": "gs1:Product"
+                "@id": "gs1:PackagingMaterialDetails"
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
