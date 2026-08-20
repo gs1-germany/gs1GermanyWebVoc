@@ -2729,6 +2729,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:powerSupplyTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "Indicate the type of power supply the trade item is provided with for example a USB power supply or mains. A power supply is a hardware component that supplies power to an electrical device.",
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Power Supply Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PowerSupplyTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
