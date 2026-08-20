@@ -2817,6 +2817,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:batteryTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "Type of battery required to operate the game. If 'Are Batteries Required' or if 'Quantity of Batteries' is populated or if 'Are Batteries Included' = 'Yes' this attribute is required.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
