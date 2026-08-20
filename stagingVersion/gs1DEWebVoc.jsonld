@@ -6615,6 +6615,59 @@
             },
             "skos:prefLabel": "Vehicle DC Adapter",
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Qualifier Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode-BATTERY",
+            "@type": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An electrochemical device used to store energy. The term is usually applied to a group of two or more electric cells connected electrically. In common usage, the term \"battery\" is also applied to a single cell, such as an AA battery."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery"
+            },
+            "skos:prefLabel": "Battery",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode-CELL",
+            "@type": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An electrochemical device, composed of positive and negative plates and electrolyte, which is capable of storing electrical energy. It is the basic 'building block' of a battery."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Energy Cell"
+            },
+            "skos:prefLabel": "Energy Cell",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode-BATTERY_PACK",
+            "@type": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Two or more electrochemical cells electrically interconnected in an appropriate series/parallel arrangement to provide the required operating current and voltage levels."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery pack"
+            },
+            "skos:prefLabel": "Battery pack",
+            "sw:term_status": "testing"
         }
     ]
 }
