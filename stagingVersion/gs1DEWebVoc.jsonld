@@ -6534,6 +6534,87 @@
                 "@id": "gs1de:"
             },
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Power Supply Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-BATTERY",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with batteries"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery"
+            },
+            "skos:prefLabel": "Battery",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-MAINS",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a mains power connection devices"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mains"
+            },
+            "skos:prefLabel": "Mains",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-SOLAR",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a solar power system"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Solar"
+            },
+            "skos:prefLabel": "Solar",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-USB",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a USB power connection device"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "USB"
+            },
+            "skos:prefLabel": "USB",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-VEHICLE_DC_ADAPTER",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a vehicle DC Adapter"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Vehicle DC Adapter"
+            },
+            "skos:prefLabel": "Vehicle DC Adapter",
+            "sw:term_status": "testing"
         }
     ]
 }
