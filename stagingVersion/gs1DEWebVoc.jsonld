@@ -2662,7 +2662,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "Indicates if batteries are either included or not included with the trade item.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates if batteries are either included or not included with the trade item."
+            },
             "rdfs:domain": {
                 "@id": "gs1:Product"
             },
@@ -2684,7 +2687,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "Indicates if batteries are required to operate the trade item.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates if batteries are required to operate the trade item."
+            },
             "rdfs:domain": {
                 "@id": "gs1:Product"
             },
@@ -2706,7 +2712,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "Indicate the type of power supply the trade item is provided with for example a USB power supply or mains. A power supply is a hardware component that supplies power to an electrical device.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicate the type of power supply the trade item is provided with for example a USB power supply or mains. A power supply is a hardware component that supplies power to an electrical device."
+            },
             "rdfs:domain": {
                 "@id": "gs1:Product"
             },
@@ -2728,7 +2737,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "Links to a logical grouping of information related to the type of battery required for a trade item.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Links to a logical grouping of information related to the type of battery required for a trade item."
+            },
             "rdfs:domain": {
                 "@id": "gs1:Product"
             },
@@ -2750,7 +2762,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "This code is defined as an indicator whether or not any batteries included with the trade item are built into the trade item during manufacturing. and cannot be changed or removed.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This code is defined as an indicator whether or not any batteries included with the trade item are built into the trade item during manufacturing. and cannot be changed or removed."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2772,7 +2787,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "The type of battery family (e.g. Lithium, NiMH) of batteries used by the product.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The type of battery family (e.g. Lithium, NiMH) of batteries used by the product."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2794,7 +2812,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "Type of battery required to operate the game. If 'Are Batteries Required' or if 'Quantity of Batteries' is populated or if 'Are Batteries Included' = 'Yes' this attribute is required.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Type of battery required to operate the game. If 'Are Batteries Required' or if 'Quantity of Batteries' is populated or if 'Are Batteries Included' = 'Yes' this attribute is required."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2816,7 +2837,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "Qualifier to denote the rating and material information are in reference to a battery or cell.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Qualifier to denote the rating and material information are in reference to a battery or cell."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2838,7 +2862,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The code that indicates the shape of the battery.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code that indicates the shape of the battery."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2864,7 +2891,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "The weight of each battery included with or built into the trade item.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The weight of each battery included with or built into the trade item."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2886,7 +2916,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The quantity of batteries built into the trade item during manufacturing. This includes batteries that can or cannot be changed or removed.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The quantity of batteries built into the trade item during manufacturing. This includes batteries that can or cannot be changed or removed."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2908,7 +2941,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The number of batteries required to operate the trade item.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The number of batteries required to operate the trade item."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2930,7 +2966,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "To identify the number of the specified batteries in the package and/or built in the product.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "To identify the number of the specified batteries in the package and/or built in the product."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2952,7 +2991,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "The capacity of a battery represents the maximum amount of energy that can be extracted from the battery under certain specified conditions. This capacity is a measure of the charge stored by the battery, and is determined by the mass of active material contained in the battery. Example Ampere per hour, Milliampere per hour, etc.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The capacity of a battery represents the maximum amount of energy that can be extracted from the battery under certain specified conditions. This capacity is a measure of the charge stored by the battery, and is determined by the mass of active material contained in the battery. Example Ampere per hour, Milliampere per hour, etc."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2974,7 +3016,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "The voltage of a battery is the difference in electric potential between the positive and negative terminals of the battery and is measured in volts.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The voltage of a battery is the difference in electric potential between the positive and negative terminals of the battery and is measured in volts."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -2996,7 +3041,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "An indicator to show if the battery can be recharged. A rechargeable battery is a type of battery which can be charged, discharged, and recharged many times.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An indicator to show if the battery can be recharged. A rechargeable battery is a type of battery which can be charged, discharged, and recharged many times."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -3018,7 +3066,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The statement that describes the compatibility of the battery to the type of the device.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The statement that describes the compatibility of the battery to the type of the device."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -3040,7 +3091,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The watt rating for the specified battery material qualifier as specified by the manufacturer of the item.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The watt rating for the specified battery material qualifier as specified by the manufacturer of the item."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -3062,7 +3116,10 @@
                 "rdf:Property",
                 "owl:ObjectProperty"
             ],
-            "rdfs:comment": "The maximum capacity of the battery, before it decreases with time and usage. It should be associated to the Battery Type in case a trade item has 2 different types of batteries. The different batteries could have different battery life.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The maximum capacity of the battery, before it decreases with time and usage. It should be associated to the Battery Type in case a trade item has 2 different types of batteries. The different batteries could have different battery life."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -3084,7 +3141,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The category of battery required for a trade item (e.g. PORTABLE_BATTERY).",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The category of battery required for a trade item (e.g. PORTABLE_BATTERY)."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -3106,7 +3166,10 @@
                 "rdf:Property",
                 "owl:DatatypeProperty"
             ],
-            "rdfs:comment": "The registration number under which the battery (or the product containing it) is registered with a national battery take-back register.",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The registration number under which the battery (or the product containing it) is registered with a national battery take-back register."
+            },
             "rdfs:domain": {
                 "@id": "gs1de:BatteryDetails"
             },
@@ -6062,7 +6125,6 @@
         },
         {
             "@id": "gs1de:TradeItemUnitDescriptorCode",
-            "@type": "owl:Class",
             "rdfs:label": [
                 {
                     "@value": "Trade Item Unit Descriptor Code",
@@ -6075,9 +6137,6 @@
             },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
             },
             "sw:term_status": "testing"
         },
@@ -6095,9 +6154,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "BASE_UNIT_OR_EACH",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6114,9 +6170,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "CASE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6133,9 +6186,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DISPLAY_SHIPPER",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6152,9 +6202,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "MIXED_MODULE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6171,9 +6218,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "PACK_OR_INNER_PACK",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6190,9 +6234,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "PALLET",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6209,14 +6250,10 @@
                 "@language": "en"
             },
             "skos:prefLabel": "TRANSPORT_LOAD",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
             "@id": "gs1de:TemperatureQualifierCode",
-            "@type": "owl:Class",
             "rdfs:label": [
                 {
                     "@value": "Temperature Qualifier Code",
@@ -6229,9 +6266,6 @@
             },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
             },
             "sw:term_status": "testing"
         },
@@ -6249,9 +6283,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DELIVERY_TO_DISTRIBUTION_CENTRE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6268,9 +6299,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DELIVERY_TO_MARKET",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6287,9 +6315,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DISINFECTION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6306,9 +6331,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "INLET_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6325,9 +6347,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "OPERATING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6344,9 +6363,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STERILISATION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6363,9 +6379,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_OPENING",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6382,9 +6395,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_OVERWRAP",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6401,9 +6411,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_RECONSTITUTION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6420,9 +6427,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_HANDLING",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6439,9 +6443,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "TRANSPORTATION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6458,9 +6459,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "WASHING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6477,9 +6475,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "WORKING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
