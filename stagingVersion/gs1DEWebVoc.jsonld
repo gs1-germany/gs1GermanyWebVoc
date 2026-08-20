@@ -6668,6 +6668,395 @@
             },
             "skos:prefLabel": "Battery pack",
             "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Technology Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-ALKALINE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Battery dependent upon the reaction between zinc and manganese dioxide."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Alkaline"
+            },
+            "skos:prefLabel": "Alkaline",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-CARBON_MONOFLUORIDE_LITHIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The lithium-carbon monofluoride system has been among the more successful early commercial lithium miniature batteries. It has been used extensively in cameras and smaller devices, providing about 3.2 volts per cell, high power density, and long shelf life."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon monofluoride lithium"
+            },
+            "skos:prefLabel": "Carbon monofluoride lithium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-CARBON_ZINC",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc carbon batteries are dry cell primary batteries that deliver about 1.5 volts of direct current from the electrochemical reaction between zinc and manganese dioxide."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Zinc"
+            },
+            "skos:prefLabel": "Carbon Zinc",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LEAD_CALCIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Calcium batteries are a form of lead acid battery which are usually sealed and maintenance free. Calcium replaces antimony in the plates of the battery to give it improved resistance to corrosion, excessive gassing, less water usage and lower self discharge."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lead calcium"
+            },
+            "skos:prefLabel": "Lead calcium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LEAD_ACID",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Batteries which use sponge lead and lead peroxide for the conversion of the chemical energy into electrical power, are called lead acid batteries. They are most commonly used in power stations and substations because they have higher cell voltage and lower cost."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lead acid"
+            },
+            "skos:prefLabel": "Lead acid",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_AIR",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium air batteries are described as the \"ultimate\" batteries because they provide a high theoretical energy density of up to ten times the energy offered by regular lithium ion batteries."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium air"
+            },
+            "skos:prefLabel": "Lithium air",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_COBALT",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing cobalt are primary used in laptop computers."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium cobalt"
+            },
+            "skos:prefLabel": "Lithium cobalt",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_ION",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A lithium-ion battery or Li-ion battery (abbreviated as LIB) is a type of rechargeable battery. Lithium-ion batteries are commonly used for portable electronics and electric vehicles and are growing in popularity for military and aerospace applications."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium ion"
+            },
+            "skos:prefLabel": "Lithium ion",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_ION_POLYMER",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of battery in which lithium ions move from the anode to the cathode during discharge, and from the cathode to the anode when charged."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium Ion Polymer"
+            },
+            "skos:prefLabel": "Lithium Ion Polymer",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_MANGANESE_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium batteries are primary batteries that have metallic lithium as an anode. These types of batteries are also referred to as lithium manganese batteries. They stand apart from other batteries in their high charge density (long life) and high cost per unit. Depending on the design and chemical compounds used, lithium cells can produce voltages from 1.5 V (comparable to a zinc–carbon or alkaline battery) to about 3.7 V."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium manganese oxide"
+            },
+            "skos:prefLabel": "Lithium manganese oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_NICKEL",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing nickel and cobalt are primary used in automotive and power tool products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium nickel"
+            },
+            "skos:prefLabel": "Lithium nickel",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_PHOSPHATE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing phosphate are primary use in automotive and power tool products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium phosphate"
+            },
+            "skos:prefLabel": "Lithium phosphate",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_THIONYL_CHLORIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium metal batteries utilizing thionyl chloride are primary used in portable electronics and memory backup."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium thionyl chloride"
+            },
+            "skos:prefLabel": "Lithium thionyl chloride",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_TITANATE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing titanate are primary used in automotive products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium titanate"
+            },
+            "skos:prefLabel": "Lithium titanate",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-MERCURY_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Mercury batteries (also called mercuric oxide battery, mercury cell, button cell, or Ruben-Mallory) are non-rechargeable electrochemical batteries, primary cells with primary uses in portable devices."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mercury oxide"
+            },
+            "skos:prefLabel": "Mercury oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-METAL_LITHIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A lithium battery that used metallic lithium as anode."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Metal Lithium"
+            },
+            "skos:prefLabel": "Metal Lithium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_CADMIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of rechargeable battery using nickel oxide hydroxide and metallic cadmium as electrodes."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel Cadmium"
+            },
+            "skos:prefLabel": "Nickel Cadmium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_METAL_HYDRIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of secondary electrochemical cell similar to nickel hydrogen cell."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel Metal Hydride"
+            },
+            "skos:prefLabel": "Nickel Metal Hydride",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel oxide, made from iron, batteries are a rechargeable battery having nickel(III) oxide hydroxide positive and iron negative plates, with an electrolyte of potassium hydroxide."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel oxide"
+            },
+            "skos:prefLabel": "Nickel oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_OXYHYDROXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel oxyhydroxide batteries are a type of primary cell. It is not rechargeable and must be disposed after a single use. They can be used in high-drain applications such as digital cameras."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel oxyhydroxide"
+            },
+            "skos:prefLabel": "Nickel oxyhydroxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_ZINC",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel zinc batteries are a type of rechargeable batteries similar to nickel metal hydride batteries."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel zinc"
+            },
+            "skos:prefLabel": "Nickel zinc",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-OTHER",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A battery technology not on otherwise on this list."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Other"
+            },
+            "skos:prefLabel": "Other",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-SILVER_CALCIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver calcium alloy batteries are a type of lead-acid batteries with grids made from lead calcium silver alloy, instead of the traditional lead antimony alloy or newer lead calcium alloy. They stand out for its resistance to corrosion and the destructive effects of high temperatures."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silver calcium"
+            },
+            "skos:prefLabel": "Silver calcium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-SILVER_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide batteries are common low capacity button cells with a nominal voltage of 1.55V. They have a higher open-circuit voltage than mercury batteries, and a flatter discharge curve than standard alkaline batteries"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silver Oxide"
+            },
+            "skos:prefLabel": "Silver Oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-SILVER_ZINC_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver zinc oxide batteries share most of the characteristics of silver oxide batteries, and in addition, are able to deliver one of the highest specific energies of all presently known electro-chemical power sources. This type of battery has silver oxide as the positive electrode (cathode), zinc as the negative electrode (anode), plus an alkaline electrolyte, usually sodium hydroxide or potassium hydroxide metallic silver."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silver zinc oxide"
+            },
+            "skos:prefLabel": "Silver zinc oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-ZINC_AIR",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air batteries (non-rechargeable) are metal air batteries powered by oxidizing zinc with oxygen from the air. They have high energy densities and are relatively inexpensive to produce."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Zinc air"
+            },
+            "skos:prefLabel": "Zinc air",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-ZINC_CHLORIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc chloride batteries are an improved version of zinc carbon batteries. Zinc chloride batteries are generally labelled as a heavy duty battery. These batteries contain only zinc chloride paste as electrolyte and provide more current, more voltage and more life than general purpose zinc carbon batteries."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Zinc chloride"
+            },
+            "skos:prefLabel": "Zinc chloride",
+            "sw:term_status": "testing"
         }
     ]
 }
