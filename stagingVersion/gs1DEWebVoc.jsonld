@@ -25,21 +25,21 @@
             "dc:creator": {
                 "@id": "https://www.gs1.de/"
             },
-            "dc:description:": {
+            "dc:description": {
                 "@language": "en",
                 "@value": "The GS1 Germany RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language. The vocabulary builds on and refers to https://schema.org/ and https://ref.gs1.org/voc/ where appropriate."
             },
-            "dc:identifier:": "GS1 Germany Web Vocabulary",
-            "dc11:title": "GS1 Germany Web Vocabulary",
-            "dc:issued:": {
+            "dc:identifier": "GS1 Germany Web Vocabulary",
+            "dc:title": "GS1 Germany Web Vocabulary",
+            "dc:issued": {
                 "@type": "xsd:date",
                 "@value": "2025-01-09"
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2026-08-12"
+                "@value": "2026-08-21"
             },
-            "owl:versionInfo": "0.1.7",
+            "owl:versionInfo": "0.1.8",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
@@ -494,6 +494,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:BatteryDetails",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Logical grouping of information related to the type of battery required for a trade item."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Details"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:masterDataAvailableFor",
             "@type": [
                 "owl:ObjectProperty",
@@ -524,7 +546,7 @@
         {
             "@id": "gs1de:referenceNumber",
             "@type": [
-                "owl:ObjectProperty ",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -789,7 +811,7 @@
         {
             "@id": "gs1de:licenceIdentificationTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -814,7 +836,7 @@
         {
             "@id": "gs1de:regulationTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -842,7 +864,7 @@
         {
             "@id": "gs1de:importClassificationTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1126,7 +1148,7 @@
         {
             "@id": "gs1de:greenhouseGasEmissionInfoIsExternallyValidated",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -2299,34 +2321,6 @@
             "sw:term_status": "testing"
         },
         {
-            "@id": "gs1de:minimumTradeItemLifespanFromTimeOfProduction",
-            "@type": [
-                "owl:FunctionalProperty",
-                "rdf:Property",
-                "owl:ObjectProperty"
-            ],
-            "rdfs:label": [
-                {
-                    "@value": "Minimum trade item lifespan from time of production",
-                    "@language": "en"
-                }
-            ],
-            "rdfs:comment": {
-                "@value": "The period of day, guaranteed by the manufacturer, before the expiration date of the product, based on the production.",
-                "@language": "en"
-            },
-            "rdfs:domain": {
-                "@id": "gs1:Product"
-            },
-            "rdfs:range": {
-                "@id": "gs1:QuantitativeValue"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
-            "sw:term_status": "testing"
-        },
-        {
             "@id": "gs1de:productTemperatureInformation",
             "@type": [
                 "rdf:Property",
@@ -2659,6 +2653,535 @@
             },
             "rdfs:isDefinedBy": {
                 "@id": "gs1de:"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:areBatteriesIncluded",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates if batteries are either included or not included with the trade item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Are Batteries Included"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:areBatteriesRequired",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicates if batteries are required to operate the trade item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Are Batteries Required"
+            },
+            "rdfs:range": {
+                "@id": "xsd:boolean"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:powerSupplyTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Indicate the type of power supply the trade item is provided with for example a USB power supply or mains. A power supply is a hardware component that supplies power to an electrical device."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Power Supply Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:PowerSupplyTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryDetail",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Links to a logical grouping of information related to the type of battery required for a trade item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Detail"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:areBatteriesBuiltIn",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This code is defined as an indicator whether or not any batteries included with the trade item are built into the trade item during manufacturing. and cannot be changed or removed."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Are Batteries Built In"
+            },
+            "rdfs:range": {
+                "@id": "gs1:NonbinaryLogicCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryTechnologyTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The type of battery family (e.g. Lithium, NiMH) of batteries used by the product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Technology Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryTechnologyTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Type of battery required to operate the game. If 'Are Batteries Required' or if 'Quantity of Batteries' is populated or if 'Are Batteries Included' = 'Yes' this attribute is required."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryTypeQualifierCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Qualifier to denote the rating and material information are in reference to a battery or cell."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Qualifier Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryTypeQualifierCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryShapeTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The code that indicates the shape of the battery."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Shape Type Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing",
+            "skos:note": {
+                "@language": "en",
+                "@value": "Modelled provisionally as xsd:string: the GS1 Navigator lists BatteryShapeTypeCode as a formal code list (generalisation GS1Code) but currently shows no defined code values."
+            }
+        },
+        {
+            "@id": "gs1de:batteryWeight",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The weight of each battery included with or built into the trade item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Weight"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:quantityOfBatteriesBuiltIn",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The quantity of batteries built into the trade item during manufacturing. This includes batteries that can or cannot be changed or removed."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Quantity Of Batteries Built In"
+            },
+            "rdfs:range": {
+                "@id": "xsd:integer"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:quantityOfBatteriesRequired",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The number of batteries required to operate the trade item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Quantity Of Batteries Required"
+            },
+            "rdfs:range": {
+                "@id": "xsd:integer"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:quantityOfBatteriesIncluded",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "To identify the number of the specified batteries in the package and/or built in the product."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Quantity Of Batteries Included"
+            },
+            "rdfs:range": {
+                "@id": "xsd:integer"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryCapacity",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The capacity of a battery represents the maximum amount of energy that can be extracted from the battery under certain specified conditions. This capacity is a measure of the charge stored by the battery, and is determined by the mass of active material contained in the battery. Example Ampere per hour, Milliampere per hour, etc."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Capacity"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryVoltage",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The voltage of a battery is the difference in electric potential between the positive and negative terminals of the battery and is measured in volts."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Voltage"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:isBatteryRechargeable",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An indicator to show if the battery can be recharged. A rechargeable battery is a type of battery which can be charged, discharged, and recharged many times."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Is Battery Rechargeable"
+            },
+            "rdfs:range": {
+                "@id": "gs1:NonbinaryLogicCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryDeviceCompatibilityStatement",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The statement that describes the compatibility of the battery to the type of the device."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Device Compatibility Statement"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryWattHourRating",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The watt rating for the specified battery material qualifier as specified by the manufacturer of the item."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Watt Hour Rating"
+            },
+            "rdfs:range": {
+                "@id": "xsd:float"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:maximumBatteryLife",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The maximum capacity of the battery, before it decreases with time and usage. It should be associated to the Battery Type in case a trade item has 2 different types of batteries. The different batteries could have different battery life."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Maximum Battery Life"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryIndustryCategory",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The category of battery required for a trade item (e.g. PORTABLE_BATTERY)."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Industry Category"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:batteryRegistrationNumber",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The registration number under which the battery (or the product containing it) is registered with a national battery take-back register."
+            },
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Registration Number"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
             },
             "sw:term_status": "testing"
         },
@@ -3252,31 +3775,6 @@
                 "@value": "Crude Oil"
             },
             "skos:prefLabel": "CRUDE_OIL",
-            "sw:term_status": "testing"
-        },
-        {
-            "@id": "gs1de:MaterialCode",
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Material Code"
-            },
-            "rdfs:subClassOf": {
-                "@id": "gs1:TypeCode"
-            },
-            "sw:term_status": "testing"
-        },
-        {
-            "@id": "gs1de:MaterialCode-PLASTIC_BIO_PLASTIC",
-            "@type": "gs1de:MaterialCode",
-            "rdfs:comment": {
-                "@language": "en",
-                "@value": "Plastic materials made from biomass, but may have exactly the same properties as ordinary plastic. Sometimes these plastics are biodegradable."
-            },
-            "rdfs:label": {
-                "@language": "en",
-                "@value": "Bioplastic"
-            },
-            "skos:prefLabel": "PLASTIC_BIO_PLASTIC",
             "sw:term_status": "testing"
         },
         {
@@ -5627,7 +6125,6 @@
         },
         {
             "@id": "gs1de:TradeItemUnitDescriptorCode",
-            "@type": "owl:Class",
             "rdfs:label": [
                 {
                     "@value": "Trade Item Unit Descriptor Code",
@@ -5640,9 +6137,6 @@
             },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
             },
             "sw:term_status": "testing"
         },
@@ -5660,9 +6154,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "BASE_UNIT_OR_EACH",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5679,9 +6170,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "CASE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5698,9 +6186,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DISPLAY_SHIPPER",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5717,9 +6202,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "MIXED_MODULE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5736,9 +6218,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "PACK_OR_INNER_PACK",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5755,9 +6234,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "PALLET",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5774,14 +6250,10 @@
                 "@language": "en"
             },
             "skos:prefLabel": "TRANSPORT_LOAD",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
             "@id": "gs1de:TemperatureQualifierCode",
-            "@type": "owl:Class",
             "rdfs:label": [
                 {
                     "@value": "Temperature Qualifier Code",
@@ -5794,9 +6266,6 @@
             },
             "rdfs:subClassOf": {
                 "@id": "gs1:TypeCode"
-            },
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
             },
             "sw:term_status": "testing"
         },
@@ -5814,9 +6283,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DELIVERY_TO_DISTRIBUTION_CENTRE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5833,9 +6299,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DELIVERY_TO_MARKET",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5852,9 +6315,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "DISINFECTION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5871,9 +6331,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "INLET_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5890,9 +6347,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "OPERATING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5909,9 +6363,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STERILISATION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5928,9 +6379,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_OPENING",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5947,9 +6395,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_OVERWRAP",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5966,9 +6411,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_AFTER_RECONSTITUTION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -5985,9 +6427,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "STORAGE_HANDLING",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6004,9 +6443,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "TRANSPORTATION",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6023,9 +6459,6 @@
                 "@language": "en"
             },
             "skos:prefLabel": "WASHING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
-            },
             "sw:term_status": "testing"
         },
         {
@@ -6042,9 +6475,2822 @@
                 "@language": "en"
             },
             "skos:prefLabel": "WORKING_TEMPERATURE",
-            "rdfs:isDefinedBy": {
-                "@id": "gs1de:"
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Power Supply Type Code"
             },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-BATTERY",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with batteries"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery"
+            },
+            "skos:prefLabel": "Battery",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-MAINS",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a mains power connection devices"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mains"
+            },
+            "skos:prefLabel": "Mains",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-SOLAR",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a solar power system"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Solar"
+            },
+            "skos:prefLabel": "Solar",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-USB",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a USB power connection device"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "USB"
+            },
+            "skos:prefLabel": "USB",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:PowerSupplyTypeCode-VEHICLE_DC_ADAPTER",
+            "@type": "gs1de:PowerSupplyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Trade Item is provided with a vehicle DC Adapter"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Vehicle DC Adapter"
+            },
+            "skos:prefLabel": "Vehicle DC Adapter",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Qualifier Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode-BATTERY",
+            "@type": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An electrochemical device used to store energy. The term is usually applied to a group of two or more electric cells connected electrically. In common usage, the term \"battery\" is also applied to a single cell, such as an AA battery."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery"
+            },
+            "skos:prefLabel": "Battery",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode-CELL",
+            "@type": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "An electrochemical device, composed of positive and negative plates and electrolyte, which is capable of storing electrical energy. It is the basic 'building block' of a battery."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Energy Cell"
+            },
+            "skos:prefLabel": "Energy Cell",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeQualifierCode-BATTERY_PACK",
+            "@type": "gs1de:BatteryTypeQualifierCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Two or more electrochemical cells electrically interconnected in an appropriate series/parallel arrangement to provide the required operating current and voltage levels."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery pack"
+            },
+            "skos:prefLabel": "Battery pack",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Technology Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-ALKALINE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Battery dependent upon the reaction between zinc and manganese dioxide."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Alkaline"
+            },
+            "skos:prefLabel": "Alkaline",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-CARBON_MONOFLUORIDE_LITHIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The lithium-carbon monofluoride system has been among the more successful early commercial lithium miniature batteries. It has been used extensively in cameras and smaller devices, providing about 3.2 volts per cell, high power density, and long shelf life."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon monofluoride lithium"
+            },
+            "skos:prefLabel": "Carbon monofluoride lithium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-CARBON_ZINC",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc carbon batteries are dry cell primary batteries that deliver about 1.5 volts of direct current from the electrochemical reaction between zinc and manganese dioxide."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Carbon Zinc"
+            },
+            "skos:prefLabel": "Carbon Zinc",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LEAD_CALCIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Calcium batteries are a form of lead acid battery which are usually sealed and maintenance free. Calcium replaces antimony in the plates of the battery to give it improved resistance to corrosion, excessive gassing, less water usage and lower self discharge."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lead calcium"
+            },
+            "skos:prefLabel": "Lead calcium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LEAD_ACID",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Batteries which use sponge lead and lead peroxide for the conversion of the chemical energy into electrical power, are called lead acid batteries. They are most commonly used in power stations and substations because they have higher cell voltage and lower cost."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lead acid"
+            },
+            "skos:prefLabel": "Lead acid",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_AIR",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium air batteries are described as the \"ultimate\" batteries because they provide a high theoretical energy density of up to ten times the energy offered by regular lithium ion batteries."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium air"
+            },
+            "skos:prefLabel": "Lithium air",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_COBALT",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing cobalt are primary used in laptop computers."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium cobalt"
+            },
+            "skos:prefLabel": "Lithium cobalt",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_ION",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A lithium-ion battery or Li-ion battery (abbreviated as LIB) is a type of rechargeable battery. Lithium-ion batteries are commonly used for portable electronics and electric vehicles and are growing in popularity for military and aerospace applications."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium ion"
+            },
+            "skos:prefLabel": "Lithium ion",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_ION_POLYMER",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of battery in which lithium ions move from the anode to the cathode during discharge, and from the cathode to the anode when charged."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium Ion Polymer"
+            },
+            "skos:prefLabel": "Lithium Ion Polymer",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_MANGANESE_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium batteries are primary batteries that have metallic lithium as an anode. These types of batteries are also referred to as lithium manganese batteries. They stand apart from other batteries in their high charge density (long life) and high cost per unit. Depending on the design and chemical compounds used, lithium cells can produce voltages from 1.5 V (comparable to a zinc–carbon or alkaline battery) to about 3.7 V."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium manganese oxide"
+            },
+            "skos:prefLabel": "Lithium manganese oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_NICKEL",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing nickel and cobalt are primary used in automotive and power tool products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium nickel"
+            },
+            "skos:prefLabel": "Lithium nickel",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_PHOSPHATE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing phosphate are primary use in automotive and power tool products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium phosphate"
+            },
+            "skos:prefLabel": "Lithium phosphate",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_THIONYL_CHLORIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium metal batteries utilizing thionyl chloride are primary used in portable electronics and memory backup."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium thionyl chloride"
+            },
+            "skos:prefLabel": "Lithium thionyl chloride",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-LITHIUM_TITANATE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium ion batteries utilizing titanate are primary used in automotive products."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lithium titanate"
+            },
+            "skos:prefLabel": "Lithium titanate",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-MERCURY_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Mercury batteries (also called mercuric oxide battery, mercury cell, button cell, or Ruben-Mallory) are non-rechargeable electrochemical batteries, primary cells with primary uses in portable devices."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Mercury oxide"
+            },
+            "skos:prefLabel": "Mercury oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-METAL_LITHIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A lithium battery that used metallic lithium as anode."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Metal Lithium"
+            },
+            "skos:prefLabel": "Metal Lithium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_CADMIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of rechargeable battery using nickel oxide hydroxide and metallic cadmium as electrodes."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel Cadmium"
+            },
+            "skos:prefLabel": "Nickel Cadmium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_METAL_HYDRIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A type of secondary electrochemical cell similar to nickel hydrogen cell."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel Metal Hydride"
+            },
+            "skos:prefLabel": "Nickel Metal Hydride",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel oxide, made from iron, batteries are a rechargeable battery having nickel(III) oxide hydroxide positive and iron negative plates, with an electrolyte of potassium hydroxide."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel oxide"
+            },
+            "skos:prefLabel": "Nickel oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_OXYHYDROXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel oxyhydroxide batteries are a type of primary cell. It is not rechargeable and must be disposed after a single use. They can be used in high-drain applications such as digital cameras."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel oxyhydroxide"
+            },
+            "skos:prefLabel": "Nickel oxyhydroxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-NICKEL_ZINC",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel zinc batteries are a type of rechargeable batteries similar to nickel metal hydride batteries."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nickel zinc"
+            },
+            "skos:prefLabel": "Nickel zinc",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-OTHER",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A battery technology not on otherwise on this list."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Other"
+            },
+            "skos:prefLabel": "Other",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-SILVER_CALCIUM",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver calcium alloy batteries are a type of lead-acid batteries with grids made from lead calcium silver alloy, instead of the traditional lead antimony alloy or newer lead calcium alloy. They stand out for its resistance to corrosion and the destructive effects of high temperatures."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silver calcium"
+            },
+            "skos:prefLabel": "Silver calcium",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-SILVER_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide batteries are common low capacity button cells with a nominal voltage of 1.55V. They have a higher open-circuit voltage than mercury batteries, and a flatter discharge curve than standard alkaline batteries"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silver Oxide"
+            },
+            "skos:prefLabel": "Silver Oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-SILVER_ZINC_OXIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver zinc oxide batteries share most of the characteristics of silver oxide batteries, and in addition, are able to deliver one of the highest specific energies of all presently known electro-chemical power sources. This type of battery has silver oxide as the positive electrode (cathode), zinc as the negative electrode (anode), plus an alkaline electrolyte, usually sodium hydroxide or potassium hydroxide metallic silver."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Silver zinc oxide"
+            },
+            "skos:prefLabel": "Silver zinc oxide",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-ZINC_AIR",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air batteries (non-rechargeable) are metal air batteries powered by oxidizing zinc with oxygen from the air. They have high energy densities and are relatively inexpensive to produce."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Zinc air"
+            },
+            "skos:prefLabel": "Zinc air",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTechnologyTypeCode-ZINC_CHLORIDE",
+            "@type": "gs1de:BatteryTechnologyTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc chloride batteries are an improved version of zinc carbon batteries. Zinc chloride batteries are generally labelled as a heavy duty battery. These batteries contain only zinc chloride paste as electrolyte and provide more current, more voltage and more life than general purpose zinc carbon batteries."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Zinc chloride"
+            },
+            "skos:prefLabel": "Zinc chloride",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode",
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Code"
+            },
+            "rdfs:subClassOf": {
+                "@id": "gs1:TypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-15F15",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zn/MnO2 battery also identified by IEC name 15F15 and other common names: NEDA 221 BLR155"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "15F15"
+            },
+            "skos:prefLabel": "15F15",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-15F20",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zn/MnO2 non-round multiple cell Battery identified by IEC name 15F20 and other common names: 22½-volt"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "15F20"
+            },
+            "skos:prefLabel": "15F20",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-20F20",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zn/MnO2 non-round multiple cell Battery identified by the common name 30-volt"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "20F20"
+            },
+            "skos:prefLabel": "20F20",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-2CR1_3N",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells - coin, watch, micro, miniature identified by IEC name 2CR1/3N with no other common name."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "2CR1_3N"
+            },
+            "skos:prefLabel": "2CR1_3N",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-2CR11108",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "6V round Lithium Battery identified by the IEC name 2CR11108 and other common names : PX28LBPK, PX-28LB,28L, L28PX"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "2CR11108"
+            },
+            "skos:prefLabel": "2CR11108",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-2CR5",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium camera Cell/Batteries identified by IEC name 2CR5 and those other common names EL2CR5, DL245, RL2CR5, 6135-99-577-2940"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "2CR5"
+            },
+            "skos:prefLabel": "2CR5",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-2HRM14_57",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel Cadmium (Ni-CD) cells identifed by IEC name 2HRM14/57"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "2HRM14/57"
+            },
+            "skos:prefLabel": "2HRM14/57",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-2R10",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon‑zinc round multiple cell identified by IEC name 2R10 and those other common names Duplex, Ever Ready No. 8"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "2R10"
+            },
+            "skos:prefLabel": "2R10",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-3LR12",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline non-round batteries, identified by IEC name 3LR12 and those other common names : 4.5-volt, Pocketable Battery, 1203, 4.5 V, Type 3336 (Soviet Union/Russian Federation), 6135-99-738-4038"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "3LR12"
+            },
+            "skos:prefLabel": "3LR12",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-3R12",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon‑zinc non-round batteries, identified by IEC name 3R12 and those other common names 4.5-volt, Pocketable Battery, 1203, 4.5 V, Type 3336 (Soviet Union/Russian Federation), 6135-99-738-4038"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "3R12"
+            },
+            "skos:prefLabel": "3R12",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-4LR44",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline Round multiple cell identified by IEC name 4LR44 and those other common names 4SR44, PX28A, A544, K28A, V34PX"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "4LR44"
+            },
+            "skos:prefLabel": "4LR44",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-6F22",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon‑zinc non-round batteries identified by IEC name 6F22 and those other common names : 4LR449-volt, PP3, Radio battery, Smoke Alarm (UK/US), MN1604, Square battery, Krona (Soviet Union/Russian Federation), Transistor, 6135-99-634-8080"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "6F22"
+            },
+            "skos:prefLabel": "6F22",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-8LR932",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline round multiple cell identified by IEC name 8LR932 and those other common names : A23, V23GA, 23A, 23AE, MN21, L1028, 8LR23, LRV08"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "8LR932"
+            },
+            "skos:prefLabel": "8LR932",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-9_VOLT",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A rectangular prism shape with rounded edges and a polarized snap connector at the top identified by IEC names 6LR61 (alkaline), 6F22 (Carbon-Zinc), 6KR61 (NiCd), 6HR61(NiMh)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "9_VOLT"
+            },
+            "skos:prefLabel": "9_VOLT",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-A",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "More common as a NiCd or NiMH cell size than a primary size, popular in older laptop batteries and hobby battery packs"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "A"
+            },
+            "skos:prefLabel": "A",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-AA",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A standard size of battery. Batteries of this size are the most commonly used type of in portable electronic devices"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "AA"
+            },
+            "skos:prefLabel": "AA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-AAA",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A standard size of dry cell battery commonly used in portable electronic devices"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "AAA"
+            },
+            "skos:prefLabel": "AAA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-AAAA",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "AAAA batteries are sometimes used in pen flashlights, laser pointers, powered styluses, calculators, fishing lures, or electronic glucose meters."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "AAAA"
+            },
+            "skos:prefLabel": "AAAA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-B",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Battery used to provide the plate voltage of a vacuum tube."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "B"
+            },
+            "skos:prefLabel": "B",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-C",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A standard size of battery typically used in medium-drain applications such as toys and musical instruments"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "C"
+            },
+            "skos:prefLabel": "C",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1025",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR1025 and common name 5033LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1025"
+            },
+            "skos:prefLabel": "CR1025",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1216",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR1216 and common name 5034LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1216"
+            },
+            "skos:prefLabel": "CR1216",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1220",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR1220 and common name 5012LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1220"
+            },
+            "skos:prefLabel": "CR1220",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1225",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR1225 and common name 5020LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1225"
+            },
+            "skos:prefLabel": "CR1225",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR123A",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Camera Battery identifed by IEC name CR17345 and the other common names: 2/3A, 123, CR123, 17345, 16340, CR123A, 6135-99-851-1379 (NSN)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR123A"
+            },
+            "skos:prefLabel": "CR123A",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1616",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identified by IEC name CR1616"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1616"
+            },
+            "skos:prefLabel": "CR1616",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1620",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR1620 and common name 5009LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1620"
+            },
+            "skos:prefLabel": "CR1620",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1632",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR1632"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1632"
+            },
+            "skos:prefLabel": "CR1632",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium camera Cell/Batteries identifed by IEC name CR17355 and those other common names : 15270 (Li-Ion Rechargeable), 6135-99-606-3982 (NSN)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2"
+            },
+            "skos:prefLabel": "CR2",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2012",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2012"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2012"
+            },
+            "skos:prefLabel": "CR2012",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2016",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2016 and common name 5000LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2016"
+            },
+            "skos:prefLabel": "CR2016",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2025",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2025 and common name 5003LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2025"
+            },
+            "skos:prefLabel": "CR2025",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2032",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2032 and common name 5004LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2032"
+            },
+            "skos:prefLabel": "CR2032",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2330",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2330"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2330"
+            },
+            "skos:prefLabel": "CR2330",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2354",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2354"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2354"
+            },
+            "skos:prefLabel": "CR2354",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2430",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2430 and other common name 5011LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2430"
+            },
+            "skos:prefLabel": "CR2430",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2450",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2450 and other common name 5029LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2450"
+            },
+            "skos:prefLabel": "CR2450",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2477",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR2477"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2477"
+            },
+            "skos:prefLabel": "CR2477",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR3032",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR3032"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR3032"
+            },
+            "skos:prefLabel": "CR3032",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR6362",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR636-2"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR6362"
+            },
+            "skos:prefLabel": "CR6362",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR7362",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR736-2"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR7362"
+            },
+            "skos:prefLabel": "CR7362",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR927",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cells identifed by IEC name CR927"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR927"
+            },
+            "skos:prefLabel": "CR927",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CRP2",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium camera Cell/Batteries identifed by IEC name CR-P2 and other common names : CR927, BR-P2, 223A, CR17-33, 5024LC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CRP2"
+            },
+            "skos:prefLabel": "CRP2",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CRV3",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium camera Cell/Batteries identifed by IEC name CRV3"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CRV3"
+            },
+            "skos:prefLabel": "CRV3",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-D",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "A cylindrical battery with electrical contacts at each end; the positive end having a nub or bump. D cells are typically used in high current drain applications."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "D"
+            },
+            "skos:prefLabel": "D",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR11_43",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride (rechargeable) cells identifed by IEC name HR11/43"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR11/43"
+            },
+            "skos:prefLabel": "HR11/43",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR11_44",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride (rechargeable) cells identifed by IEC name HR11/44"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR11/44"
+            },
+            "skos:prefLabel": "HR11/44",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR11_45",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride (rechargeable) cells identifed by IEC name HR11/45"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR11/45"
+            },
+            "skos:prefLabel": "HR11/45",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR15_43",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR15/43"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR15/43"
+            },
+            "skos:prefLabel": "HR15/43",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR15_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR15/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR15/50"
+            },
+            "skos:prefLabel": "HR15/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR15_51_071P2",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR15/51 071P2"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR15/51 071P2"
+            },
+            "skos:prefLabel": "HR15/51 071P2",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR15_51_70AA",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR15/51 70AA"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR15/51 70AA"
+            },
+            "skos:prefLabel": "HR15/51 70AA",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR15_51_AAUB",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR15/51 AAUB"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR15/51 AAUB"
+            },
+            "skos:prefLabel": "HR15/51 AAUB",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR15_51_AAUV",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR15/51 AAUV"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR15/51 AAUV"
+            },
+            "skos:prefLabel": "HR15/51 AAUV",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR17_43",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cells identifed by IEC name HR17/43"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR17/43"
+            },
+            "skos:prefLabel": "HR17/43",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-IMR14_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium-Ion Manganese Rechargeable (also known as Li-MN) cells identifed by IEC name IMR14/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "IMR14/50"
+            },
+            "skos:prefLabel": "IMR14/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-IMR19_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium-Ion Manganese Rechargeable (also known as Li-MN) cells identifed by IEC name IMR19/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "IMR19/50"
+            },
+            "skos:prefLabel": "IMR19/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-INR14_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Nickel Manganese Cobalt Oxide cells identified by IEC name INR14/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "INR14/50"
+            },
+            "skos:prefLabel": "INR14/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-INR15_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Nickel Manganese Cobalt Oxide cells identified by IEC name INR15/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "INR15/50"
+            },
+            "skos:prefLabel": "INR15/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-INR15_65",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Nickel Manganese Cobalt Oxide cells identified by IEC name INR15/65"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "INR15/65"
+            },
+            "skos:prefLabel": "INR15/65",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-J",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline non-round multiple cell identifed by IEC name 4LR61, ANSI Name J and other common name 7K67"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "J"
+            },
+            "skos:prefLabel": "J",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-KR15_51",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel Cadmium (Ni-CD) or Nickel metal hydride (Ni-MH) cells identifed by IEC name KR15/51"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "KR15/51"
+            },
+            "skos:prefLabel": "KR15/51",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-KR6",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel Cadmium (Ni-CD) or Nickel metal hydride (Ni-MH) cells identifed by IEC name KR6"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "KR6"
+            },
+            "skos:prefLabel": "KR6",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LANTERN_BIG",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Common Non-round batteries identified by IEC name 4R25-2 (carbon‑zinc) or 4LR25-2 (alkaline), other common names : 918, R25-2, Big Lantern, Double Lantern, MN918, Energizer 521"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lantern Big"
+            },
+            "skos:prefLabel": "Lantern Big",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LANTERN_SCREW",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Non-round multiple cell identified by IEC name 4R25X (carbon‑zinc) or 4LR25X (alkaline), other common names : Lantern Screw, Lantern, 6 volt, Screw Top, 6135-99-645-6443 (NSN)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lantern Screw"
+            },
+            "skos:prefLabel": "Lantern Screw",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LANTERN_SPRING",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Common Non-round batteries identified by IEC name 4LR25Y (alkaline) or 4R25 (carbon‑zinc), other common names : Lantern, 6 volt, Spring Top, MN908 (UK), 996 or PJ996, Energizer 529, 6135-99-910-1145 (NSN), 908A"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Lantern Spring"
+            },
+            "skos:prefLabel": "Lantern Spring",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR03",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Common alkaline round cell identified by IEC name LR03 and other common names: AAA, U16 or HP16 (In Britain until the 1980s), Micro, Microlight, MN2400, MX2400, Type 286 (Soviet Union/Russia), UM 4 (JIS), #7 (China), 6135-99-117-3143"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR03"
+            },
+            "skos:prefLabel": "LR03",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR09",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Non common non round 1.5V Alkaline Battery"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR09"
+            },
+            "skos:prefLabel": "LR09",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR1",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline Round single-cell identified by IEC name LR1 and other common names : N, Lady, MN9100, UM-5 (JIS), E90, 6135-99-661-4958 (NSN)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR1"
+            },
+            "skos:prefLabel": "LR1",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR14",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Common alkaline round cell identified by the IEC name LR14 and other common names : C, U11 or HP11 (In Britain until the 1980s), MN1400, MX1400, Baby, Type 343 (Soviet Union/Russia), BA-42 (US Military Spec WWII–1980s), UM 2 (JIS), #2 (China), 6135-99-199-4779 (NSN)(carbon-zinc), 6135-99-117-3212 (NSN)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR14"
+            },
+            "skos:prefLabel": "LR14",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR20",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Common alkaline round cell identified by the IEC name LR20 and the common names : D, U2 or HP2 (In Britain until the 1980s), Flashlight Battery, MN1300, MX1300, Mono, Goliath, Type 373 (Soviet Union/Russia), BA-30 (US Military Spec WWII–1980s), UM 1 (JIS), #1 (China), 6135-99-464-1938 (NSN)(carbon-zinc), 6135-99-109-9428 (NSN)(alkaline)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR20"
+            },
+            "skos:prefLabel": "LR20",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR25",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline round single-cell identified by IEC name LR25 and common name F"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR25"
+            },
+            "skos:prefLabel": "LR25",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR41",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR736 and other common names : LR41, AG3/SG3/G3-A, 192/384/392, 6135-99-949-0402 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR41"
+            },
+            "skos:prefLabel": "LR41",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR42",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR1136 and other name LR42."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR42"
+            },
+            "skos:prefLabel": "LR42",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR43",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR1142 and other common names : LR43, AG12/SG12, L1142, 186/301/386, 6135-99-547-0573 (NSN)(S), VINNIC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR43"
+            },
+            "skos:prefLabel": "LR43",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR44",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR1154 and other common names : LR44, AG13/SG13, LR44/LR154, 6135-99-792-8475 (NSN)(alkaline), 6135-99-651-3240 (NSN)(S), A76/S76/EPX76, 157/303/357, 1128MP, 208-904, A-76, A613, AG14, AG-14, CA18, CA19, CR44, D76A, G13A, G13-A, GDA76, GP76A, GPA7, GPA75, GPA76, GPS76A, KA, KA76, AG76, L1154, L1154C, L1154F, L1154G, L1154H, LR44G, LR44GD, LR44H, MS76H, PX76A, PX675A, RPX675, RW82, SB-F9, V13G, 357A"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR44"
+            },
+            "skos:prefLabel": "LR44",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR48",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR754 and other common names : AG5/SG5, LR48, 193/309/393"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR48"
+            },
+            "skos:prefLabel": "LR48",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR54",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR1131 and other common names : LR54, AG10/SG10, 189/387/389/390, LR1130/SR1130, 6135-99-796-0471 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR54"
+            },
+            "skos:prefLabel": "LR54",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR55",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR1121 and other common names LR55, AG8/SG8, 191/381/391, LR1120"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR55"
+            },
+            "skos:prefLabel": "LR55",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR57",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR926 and other common names LR57, AG7/SG7, LR57, 195/395/399, LR927/SR927, SR927W/GR927, 6135-99-796-0471 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR57"
+            },
+            "skos:prefLabel": "LR57",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR58",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR721 and other common name : LR58, AG11/SG11, 162/361/362"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR58"
+            },
+            "skos:prefLabel": "LR58",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR59",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR726 and other common names LR59, AG2/SG2, 196/396/397"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR59"
+            },
+            "skos:prefLabel": "LR59",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR6",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Common alkaline round cell identified by IEC name LR6 and other common names : AA,D14 or HP7 (In Britain until the 1980s), Pencil-sized, Penlight, Mignon, MN1500, MX1500 Type 316 (Soviet Union/Russia), UM 3 (JIS), #5 (China), 6135-99-052-0009 (NSN)(carbon-zinc), 6135-99-195-6708 (NSN)(alkaline)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR6"
+            },
+            "skos:prefLabel": "LR6",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR60",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cells identified by IEC name LR621 and other common names : LR60, AG1/SG1, LR60, 164/364"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR60"
+            },
+            "skos:prefLabel": "LR60",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR61",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline round cell identified by IEC name LR8D425 and other common name : AAAA"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR61"
+            },
+            "skos:prefLabel": "LR61",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR63",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cell identified by IEC name LR521 and other common names : LR63, AG0/SG0, LR63, 379"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR63"
+            },
+            "skos:prefLabel": "LR63",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR68",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cell identified by IEC name LR916 and other common names : LR68, SR916SW, 373"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR68"
+            },
+            "skos:prefLabel": "LR68",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-LR69",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline button cell identified by IEC name LR921 and other common names : LR69, AG6/SG6, 171/371, LR920/SR920"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "LR69"
+            },
+            "skos:prefLabel": "LR69",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-N",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Round cell identified by IEC name R1(carbon-zinc), LR1(alkaline), KR1(NiCd), HR1(NiMH). Other common names : Lady, MN9100, UM-5 (JIS), E90, 6135-99-661-4958 (NSN), N"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "N"
+            },
+            "skos:prefLabel": "N",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-NONSTANDARD",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nonstandard batteries do not have a standardised name or ID, such as CR-2032. They may be assigned a standardised name or ID in the future."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Nonstandard battery"
+            },
+            "skos:prefLabel": "Nonstandard battery",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-NR50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Camera button battery identified by IEC name NR50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "NR50"
+            },
+            "skos:prefLabel": "NR50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-NR52",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Camera button battery identified by IEC name NR52"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "NR52"
+            },
+            "skos:prefLabel": "NR52",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-OTHER",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Other type of battery."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Other type of battery."
+            },
+            "skos:prefLabel": "Other type of battery.",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-PR41",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air button cells identified by IEC name PR41 and other names : 312, brown tab, 6135-99-752-3528 (NSN)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PR41"
+            },
+            "skos:prefLabel": "PR41",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-PR43",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air button cells identified by IEC name PR43 and other name AC41E"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PR43"
+            },
+            "skos:prefLabel": "PR43",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-PR44",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air button cells identified by IEC name PR44, and other names 675, blue tab"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PR44"
+            },
+            "skos:prefLabel": "PR44",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-PR48",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air button cells identified by IEC name PR48 and other names : 13,orange tab"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PR48"
+            },
+            "skos:prefLabel": "PR48",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-PR70",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Zinc air button cells identified by IEC name PR70 and other names : 10, yellow tab"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "PR70"
+            },
+            "skos:prefLabel": "PR70",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-PRODUCT_SPECIFIC",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Product specific batteries are purpose-built batteries which are compatible with one product or a family of products. By being custom fit, they are not a standardised battery."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Product specific"
+            },
+            "skos:prefLabel": "Product specific",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R03",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc commun round identified by the IEC name R03 and the other common names : AAA, U16 or HP16 (In Britain until the 1980s), Micro, Microlight, MN2400, MX2400, Type 286 (Soviet Union/Russia), UM 4 (JIS)[2], #7 (China), 6135-99-117-3143"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R03"
+            },
+            "skos:prefLabel": "R03",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R14C",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc common round cell identified by IEC name R14C"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R14C"
+            },
+            "skos:prefLabel": "R14C",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R14S",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc common round cell identified by IEC name R14S"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R14S"
+            },
+            "skos:prefLabel": "R14S",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R20C",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc common round cell identified by IEC name R20C"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R20C"
+            },
+            "skos:prefLabel": "R20C",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R20S",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc common round cell identified by IEC name R20S"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R20S"
+            },
+            "skos:prefLabel": "R20S",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R25",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-Zinc round cell identified by the IEC name R25 and the other name N."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R25"
+            },
+            "skos:prefLabel": "R25",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R40",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-Zinc round cell identified by the IEC name R40 and the other name: No. 6."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R40"
+            },
+            "skos:prefLabel": "R40",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R6C",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc common round cell identified by IEC name R6C"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R6C"
+            },
+            "skos:prefLabel": "R6C",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R6S",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon–zinc common round cell identified by IEC name R6S"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R6S"
+            },
+            "skos:prefLabel": "R6S",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-RCRV3",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Li-ion Camera Cell/Battery identified by IEC name CR-V3, other common names : CRV3, RCR-V3"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "RCRV3"
+            },
+            "skos:prefLabel": "RCRV3",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR41",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR736 and other common names : SR41, AG3/SG3/G3-A, 192/384/392, 6135-99-949-0402 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR41"
+            },
+            "skos:prefLabel": "SR41",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR42",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR1136 and other common name SR42"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR42"
+            },
+            "skos:prefLabel": "SR42",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR43",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR1142 and other common SR43, AG12/SG12, L1142, 186/301/386, 6135-99-547-0573 (NSN)(S), VINNIC"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR43"
+            },
+            "skos:prefLabel": "SR43",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR44",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR1154 identified by other common names : AG13/SG13, SR44, 6135-99-792-8475 (NSN)(alkaline), 6135-99-651-3240 (NSN)(S), A76/S76/EPX76, 157/303/357, 1128MP, 208-904, A-76, A613, AG14, AG-14, CA18, CA19, CR44, D76A, G13A, G13-A, GDA76, GP76A, GPA7, GPA75, GPA76, GPS76A, KA, KA76, AG76, L1154, L1154C, L1154F, L1154G, L1154H, LR44G, LR44GD, LR44H, MS76H, PX76A, PX675A, RPX675, RW82, SB-F9, V13G, 357A"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR44"
+            },
+            "skos:prefLabel": "SR44",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR45",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR936 and other names AG9/SG9, SR45, 194/394, 135-99-782-4675 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR45"
+            },
+            "skos:prefLabel": "SR45",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR48",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR754 and other name SR48, AG5/SG5, 193/309/393"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR48"
+            },
+            "skos:prefLabel": "SR48",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR54",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR1131 and other names SR54, AG10/SG10, 189/387/389/390, SR1130, 6135-99-796-0471 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR54"
+            },
+            "skos:prefLabel": "SR54",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR55",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR1121 and other common names : AG8/SG8, SR55, 191/381/391, SR1120"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR55"
+            },
+            "skos:prefLabel": "SR55",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR57",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR926 and other common names : SR57, AG7/SG7, 195/395/399, SR927, SR927W, 6135-99-796-0471 (NSN)(S)"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR57"
+            },
+            "skos:prefLabel": "SR57",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR58",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR721 and other common names SR58, AG11/SG11, 162/361/362"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR58"
+            },
+            "skos:prefLabel": "SR58",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR59",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR726 and other common names SR59, AG2/SG2, 196/396/397"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR59"
+            },
+            "skos:prefLabel": "SR59",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR60",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR621 and other common names : AG1/SG1, SR60, 164/364"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR60"
+            },
+            "skos:prefLabel": "SR60",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR63",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR521, and other common names : AG0/SG0, SR63, 379"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR63"
+            },
+            "skos:prefLabel": "SR63",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR66",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR626, and other common names : AG4/SG4, SR66, 177/376/377, SR626SW"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR66"
+            },
+            "skos:prefLabel": "SR66",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR68",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR916 and other common names : SR68, SR916SW, 373"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR68"
+            },
+            "skos:prefLabel": "SR68",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR69",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR921 and other common names : SR69, AG6/SG6, 171/371, LR920/SR920"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR69"
+            },
+            "skos:prefLabel": "SR69",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SUB_C",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Round single cell identified by IEC name KR22C429 (NiCd) and HR22C429 (NiMH)."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Sub C"
+            },
+            "skos:prefLabel": "Sub C",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-18650",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium-Ion rechargeable battery/cell, cylindrical, with a diameter of approximately 18 millimetres and a length of approximately 65 millimetres. Other common names: 168A, 1865."
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "18650"
+            },
+            "skos:prefLabel": "18650",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR17450",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium round cells identified by IEC name CR17450, 3V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR17450"
+            },
+            "skos:prefLabel": "CR17450",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-INR19_66",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Nickel Manganese Cobalt Oxide cells identified by IEC name INR19/66"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "INR19/66"
+            },
+            "skos:prefLabel": "INR19/66",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR62",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC name SR516 and other common names SR516SW, SR62, 317; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR62, SR516"
+            },
+            "skos:prefLabel": "SR62, SR516",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR416",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cells identified by IEC name SR416 and other common names : SR416SW, 337"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR416"
+            },
+            "skos:prefLabel": "SR416",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-1604LC",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium prismatic cell identified by ANSI code 1604LC, other common names 6LR61, 6LP3146, U9VL, U9VL-J, U9VL-J-P, CR9V; 9V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "1604LC"
+            },
+            "skos:prefLabel": "1604LC",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-3R20",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-zinc multiple cells identifed by IEC name 3R20; 4.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "3R20"
+            },
+            "skos:prefLabel": "3R20",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-3R8",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-zinc multiple cells identifed by IEC name 3R8; 4.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "3R8"
+            },
+            "skos:prefLabel": "3R8",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-4LR25",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Alkaline multiple cells identified by IEC name 4LR25; 6V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "4LR25"
+            },
+            "skos:prefLabel": "4LR25",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-4R25",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-zinc multiple cells identifed by IEC name 4R25; 6V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "4R25"
+            },
+            "skos:prefLabel": "4R25",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR12600",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium cylindrical cell identifed by IEC name CR12600, other common names CR2NP, CR 2NP, CR12600SE; 3V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR12600, CR2NP"
+            },
+            "skos:prefLabel": "CR12600, CR2NP",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR1612",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cell identifed by IEC name CR1612; 3V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR1612"
+            },
+            "skos:prefLabel": "CR1612",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2034",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cell identifed by IEC name CR2034; 3V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2034"
+            },
+            "skos:prefLabel": "CR2034",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR2320",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium button cell identifed by IEC name CR2320; 3V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR2320"
+            },
+            "skos:prefLabel": "CR2320",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-CR23500",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium cylindrical cell identifed by IEC name CR23500; 3V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "CR23500"
+            },
+            "skos:prefLabel": "CR23500",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-FR03",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium-iron disulfide cylindrical cell identified by IEC name FR03, other common name AAA lithium-iron battery; 1.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "FR03"
+            },
+            "skos:prefLabel": "FR03",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-FR6",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium-iron disulfide cylindrical cell identified by IEC name FR06, other common name AA lithium-iron battery; 1.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "FR6"
+            },
+            "skos:prefLabel": "FR6",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR03",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cylindrical (rechargeable) cell identifed by IEC name HR03, other common names HR3, AAA; 1.2V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR03, HR3"
+            },
+            "skos:prefLabel": "HR03, HR3",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR14",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cylindrical (rechargeable) cell identifed by IEC name HR14, other common name C; 1.2V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR14"
+            },
+            "skos:prefLabel": "HR14",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR20",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cylindrical (rechargeable) cell identifed by IEC name HR20, other common name D; 1.2V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR20"
+            },
+            "skos:prefLabel": "HR20",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR22",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride rectangular (rechargeable) cell identifed by IEC name HR22, other common name PP3, E; 9V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR22"
+            },
+            "skos:prefLabel": "HR22",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-HR6",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Nickel metal hydride cylindrical (rechargeable) cell identifed by IEC name HR6, other common name AA; 1.2V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "HR6"
+            },
+            "skos:prefLabel": "HR6",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-IFPR15_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Iron Phosphate (LiFePO4 / LFP) round cells identified by IEC name IFpR15/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "IFpR15/50"
+            },
+            "skos:prefLabel": "IFpR15/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-INR19_50",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Lithium Nickel Manganese Cobalt Oxide cells identified by IEC name INR19/50"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "INR19/50"
+            },
+            "skos:prefLabel": "INR19/50",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R14",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-zinc cylindrical cell identifed by IEC name R14, other common name C; 1.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R14"
+            },
+            "skos:prefLabel": "R14",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R20",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-zinc cylindrical cell identifed by IEC name R20, other common name D; 1.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R20"
+            },
+            "skos:prefLabel": "R20",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-R6",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Carbon-zinc cylindrical cell identifed by IEC name R6, other common name AA; 1.5V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "R6"
+            },
+            "skos:prefLabel": "R6",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR1116",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR1116, other common names 365, 366, SR1116W, SR1116SW; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR1116"
+            },
+            "skos:prefLabel": "SR1116",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR1156",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR1156, other common names SR1156S, SR1156SW; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR1156"
+            },
+            "skos:prefLabel": "SR1156",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR61",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by SR61; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR61"
+            },
+            "skos:prefLabel": "SR61",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR610",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR610SW, other common name 333; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR610"
+            },
+            "skos:prefLabel": "SR610",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR614",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR614SW, other common name 339; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR614"
+            },
+            "skos:prefLabel": "SR614",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR64",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR64, other common names SR527SW, 319; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR64"
+            },
+            "skos:prefLabel": "SR64",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR65",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR65, other common names SR616SW, 321; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR65"
+            },
+            "skos:prefLabel": "SR65",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR67",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR67, other common names SR716SW, 315; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR67"
+            },
+            "skos:prefLabel": "SR67",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR731",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR731SW, other common name 329; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR731"
+            },
+            "skos:prefLabel": "SR731",
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1de:BatteryTypeCode-SR910",
+            "@type": "gs1de:BatteryTypeCode",
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "Silver oxide button cell identified by IEC SR910SW; 1.55V"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "SR910"
+            },
+            "skos:prefLabel": "SR910",
             "sw:term_status": "testing"
         }
     ]
