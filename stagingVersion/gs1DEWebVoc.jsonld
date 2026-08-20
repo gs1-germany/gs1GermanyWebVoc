@@ -2839,6 +2839,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:batteryTypeQualifierCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "Qualifier to denote the rating and material information are in reference to a battery or cell.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Type Qualifier Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryTypeQualifierCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
