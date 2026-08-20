@@ -2795,6 +2795,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:batteryTechnologyTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "The type of battery family (e.g. Lithium, NiMH) of batteries used by the product.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Technology Type Code"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryTechnologyTypeCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
