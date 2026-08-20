@@ -2773,6 +2773,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:areBatteriesBuiltIn",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "This code is defined as an indicator whether or not any batteries included with the trade item are built into the trade item during manufacturing. and cannot be changed or removed.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Are Batteries Built In"
+            },
+            "rdfs:range": {
+                "@id": "gs1:NonbinaryLogicCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
