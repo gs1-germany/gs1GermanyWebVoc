@@ -2909,6 +2909,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:quantityOfBatteriesBuiltIn",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": "The quantity of batteries built into the trade item during manufacturing. This includes batteries that can or cannot be changed or removed.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Quantity Of Batteries Built In"
+            },
+            "rdfs:range": {
+                "@id": "xsd:integer"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
