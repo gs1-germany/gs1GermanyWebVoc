@@ -37,9 +37,9 @@
             },
             "dc:lastModified": {
                 "@type": "xsd:date",
-                "@value": "2026-08-12"
+                "@value": "2026-08-21"
             },
-            "owl:versionInfo": "0.1.7",
+            "owl:versionInfo": "0.1.8",
             "vann:preferredNamespacePrefix": "gs1de",
             "vann:preferredNamespaceUri": {
                 "@id": "gs1de:"
@@ -789,7 +789,7 @@
         {
             "@id": "gs1de:licenceIdentificationTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -814,7 +814,7 @@
         {
             "@id": "gs1de:regulationTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -842,7 +842,7 @@
         {
             "@id": "gs1de:importClassificationTypeCode",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
@@ -1126,7 +1126,7 @@
         {
             "@id": "gs1de:greenhouseGasEmissionInfoIsExternallyValidated",
             "@type": [
-                "owl:DatatypeProperty",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
