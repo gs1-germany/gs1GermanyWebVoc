@@ -25,13 +25,13 @@
             "dc:creator": {
                 "@id": "https://www.gs1.de/"
             },
-            "dc:description:": {
+            "dc:description": {
                 "@language": "en",
                 "@value": "The GS1 Germany RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language. The vocabulary builds on and refers to https://schema.org/ and https://ref.gs1.org/voc/ where appropriate."
             },
-            "dc:identifier:": "GS1 Germany Web Vocabulary",
+            "dc:identifier": "GS1 Germany Web Vocabulary",
             "dc:title": "GS1 Germany Web Vocabulary",
-            "dc:issued:": {
+            "dc:issued": {
                 "@type": "xsd:date",
                 "@value": "2025-01-09"
             },
