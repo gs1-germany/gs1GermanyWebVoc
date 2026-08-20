@@ -3019,6 +3019,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:isBatteryRechargeable",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "An indicator to show if the battery can be recharged. A rechargeable battery is a type of battery which can be charged, discharged, and recharged many times.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Is Battery Rechargeable"
+            },
+            "rdfs:range": {
+                "@id": "gs1:NonbinaryLogicCode"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
