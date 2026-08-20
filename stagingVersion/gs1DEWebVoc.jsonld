@@ -546,7 +546,7 @@
         {
             "@id": "gs1de:referenceNumber",
             "@type": [
-                "owl:ObjectProperty ",
+                "owl:ObjectProperty",
                 "rdf:Property"
             ],
             "rdfs:comment": {
