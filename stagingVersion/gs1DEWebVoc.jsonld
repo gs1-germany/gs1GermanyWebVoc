@@ -3041,6 +3041,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:batteryDeviceCompatibilityStatement",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": "The statement that describes the compatibility of the battery to the type of the device.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Device Compatibility Statement"
+            },
+            "rdfs:range": {
+                "@id": "rdf:langString"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
