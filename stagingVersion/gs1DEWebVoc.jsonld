@@ -2861,6 +2861,32 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:batteryShapeTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:comment": "The code that indicates the shape of the battery.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Shape Type Code"
+            },
+            "rdfs:range": {
+                "@id": "xsd:string"
+            },
+            "sw:term_status": "testing",
+            "skos:note": {
+                "@language": "en",
+                "@value": "Modelled provisionally as xsd:string: the GS1 Navigator lists BatteryShapeTypeCode as a formal code list (generalisation GS1Code) but currently shows no defined code values."
+            }
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
