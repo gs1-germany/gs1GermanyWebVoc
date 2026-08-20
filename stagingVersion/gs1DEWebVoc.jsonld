@@ -3085,6 +3085,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:maximumBatteryLife",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "The maximum capacity of the battery, before it decreases with time and usage. It should be associated to the Battery Type in case a trade item has 2 different types of batteries. The different batteries could have different battery life.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Maximum Battery Life"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
