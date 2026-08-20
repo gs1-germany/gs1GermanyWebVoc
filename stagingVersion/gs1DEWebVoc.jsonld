@@ -2887,6 +2887,28 @@
             }
         },
         {
+            "@id": "gs1de:batteryWeight",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "The weight of each battery included with or built into the trade item.",
+            "rdfs:domain": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Weight"
+            },
+            "rdfs:range": {
+                "@id": "gs1:QuantitativeValue"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
