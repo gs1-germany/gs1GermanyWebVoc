@@ -2751,6 +2751,28 @@
             "sw:term_status": "testing"
         },
         {
+            "@id": "gs1de:batteryDetail",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:comment": "Links to a logical grouping of information related to the type of battery required for a trade item.",
+            "rdfs:domain": {
+                "@id": "gs1:Product"
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Battery Detail"
+            },
+            "rdfs:range": {
+                "@id": "gs1de:BatteryDetails"
+            },
+            "sw:term_status": "testing"
+        },
+        {
             "@id": "gs1de:ReferencedFileTypeCode",
             "rdfs:label": {
                 "@language": "en",
