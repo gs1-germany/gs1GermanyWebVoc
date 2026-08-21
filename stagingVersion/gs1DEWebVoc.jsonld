@@ -114,6 +114,31 @@
                 "@id": "gs1:RegulatoryInformation"
             }
         },
+                {
+            "@id": "gs1de:RegulatoryInformation",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "This term has been deprecated. Please use gs1:RegulatoryInformation instead."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "Regulatory Information"
+            },
+            "rdfs:subClassOf": {
+                "@id": "owl:Thing"
+            },
+            "sw:term_status": "deprecated",
+            "owl:deprecated": {
+                "@id": "gs1:RegulatoryInformation"
+            }
+        },
         {
             "@id": "gs1de:OrganismClassification",
             "@type": [
