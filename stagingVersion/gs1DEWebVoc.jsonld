@@ -1135,6 +1135,9 @@
             "rdfs:domain": {
                 "@id": "gs1:Organization"
             },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1de:"
+            },
             "rdfs:label": {
                 "@language": "en",
                 "@value": "Greenhouse Gas Emission Info"
