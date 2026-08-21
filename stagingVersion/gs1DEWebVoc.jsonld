@@ -115,7 +115,7 @@
             }
         },
         {
-            "@id": "gs1de:RegulatoryInformation",
+            "@id": "gs1de: RegulatoryInformation",
             "@type": [
                 "owl:Class",
                 "rdfs:Class"
