@@ -7,14 +7,14 @@ name: WebVoc Quality Gate
 on:
   pull_request:
     paths:
-      - "gs1GermanyWebVoc/stagingVersion/**.jsonld"
+      - "stagingVersion/**.jsonld"
   workflow_dispatch: {}   # allows manually re-running the gate from the Actions tab
 
 # NEW: explicit permissions so the "Publish report as PR comment" step
 # is actually allowed to write a comment on the Pull Request.
 # Without this, many orgs default GITHUB_TOKEN to read-only, and the
-# createComment() call below fails with a 403 "Resource not accessible
-# by integration" error.
+# createComment() call below fails with a 403 "Resource not accessible"
+# error.
 permissions:
   contents: read
   pull-requests: write
@@ -40,8 +40,8 @@ jobs:
       - name: Run quality gate
         run: |
           python scripts/validate_ontology.py \
-            "gs1GermanyWebVoc/stagingVersion/gs1DEWebVoc.jsonld" \
-            --baseline "gs1GermanyWebVoc/currentVersion/gs1DEWebVoc.jsonld"
+            "stagingVersion/gs1DEWebVoc.jsonld" \
+            --baseline "currentVersion/gs1DEWebVoc.jsonld"
 
       # Optional: publish the report as a PR comment for easier review
       - name: Publish report as PR comment on failure
