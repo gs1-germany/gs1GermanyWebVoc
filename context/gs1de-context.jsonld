@@ -1,0 +1,172 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "gs1de": "https://voc.gs1.de/",
+    "gs1de:referenceNumberTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:licenceIdentificationTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:regulationTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:importClassificationTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:commonName": {
+      "@container": "@language"
+    },
+    "gs1de:productionDateStart": {
+      "@type": "xsd:date"
+    },
+    "gs1de:productionDateEnd": {
+      "@type": "xsd:date"
+    },
+    "gs1de:organismTypeCodeList": {
+      "@type": "@vocab"
+    },
+    "gs1de:greenhouseGasEmissionInfoIsExternallyValidated": {
+      "@type": "@vocab"
+    },
+    "gs1de:greenhouseGasEmissionScope": {
+      "@type": "@vocab"
+    },
+    "gs1de:greenhouseGasEmissionYear": {
+      "@type": "xsd:gYear"
+    },
+    "gs1de:greenhouseGasEmissionQuantityTCO2e": {
+      "@type": "xsd:float"
+    },
+    "gs1de:cfpCountryCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:cfpDate": {
+      "@type": "xsd:date"
+    },
+    "gs1de:cfpValueVerificationCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:cfpBoundariesCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:cfpValue": {
+      "@type": "xsd:float"
+    },
+    "gs1de:cfpMeasurementUnitCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:cfpFunctionalUnit": {
+      "@container": "@language"
+    },
+    "gs1de:cfpMethodologyCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:cfpAccountingCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:packagingRawMaterialCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:packagingRawMaterialContentPercentage": {
+      "@type": "xsd:float"
+    },
+    "gs1de:materialCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:microplasticTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:usageUnitDescription": {
+      "@container": "@language"
+    },
+    "gs1de:packagingRecyclabilityAssessmentSpecificationCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:isTradeItemABaseUnit": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:isTradeItemAConsumerUnit": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:isTradeItemADespatchUnit": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:isTradeItemAService": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:isTradeItemAVariableUnit": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:productKeyWords": {
+      "@container": "@language"
+    },
+    "gs1de:descriptionShort": {
+      "@container": "@language"
+    },
+    "gs1de:tradeItemUnitDescriptorCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:isDangerousSubstance": {
+      "@type": "@vocab"
+    },
+    "gs1de:temperatureQualifierCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:targetConsumerGender": {
+      "@type": "@vocab"
+    },
+    "gs1de:minimumTradeItemLifespanFromTimeOfArrival": {
+      "@type": "xsd:float"
+    },
+    "gs1de:minimumTradeItemLifespanFromTimeOfProduction": {
+      "@type": "xsd:float"
+    },
+    "gs1de:openedTradeItemLifespan": {
+      "@type": "xsd:float"
+    },
+    "gs1de:supplierSpecifiedMinimumConsumerStorageDays": {
+      "@type": "xsd:float"
+    },
+    "gs1de:areBatteriesIncluded": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:areBatteriesRequired": {
+      "@type": "xsd:boolean"
+    },
+    "gs1de:powerSupplyTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:areBatteriesBuiltIn": {
+      "@type": "@vocab"
+    },
+    "gs1de:batteryTechnologyTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:batteryTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:batteryTypeQualifierCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:quantityOfBatteriesBuiltIn": {
+      "@type": "xsd:integer"
+    },
+    "gs1de:quantityOfBatteriesRequired": {
+      "@type": "xsd:integer"
+    },
+    "gs1de:quantityOfBatteriesIncluded": {
+      "@type": "xsd:integer"
+    },
+    "gs1de:isBatteryRechargeable": {
+      "@type": "@vocab"
+    },
+    "gs1de:batteryDeviceCompatibilityStatement": {
+      "@container": "@language"
+    },
+    "gs1de:batteryWattHourRating": {
+      "@type": "xsd:float"
+    }
+  }
+}
