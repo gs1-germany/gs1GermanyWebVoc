@@ -3208,7 +3208,32 @@
         "@value": "Target Hair Type Code"
       },
       "rdfs:range": {
+        "@id": "gs1de:TargetHairTypeCode"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:targetSkinTypeCode",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The code specifying the skin concern targeted by the product."
+      },
+      "rdfs:domain": {
+        "@id": "gs1:Product"
+      },
+      "rdfs:isDefinedBy": {
         "@id": "gs1de:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Target Skin Type Code"
+      },
+      "rdfs:range": {
+        "@id": "gs1de:TargetSkinTypeCode"
       },
       "sw:term_status": "testing"
     },
