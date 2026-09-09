@@ -36,7 +36,7 @@
       },
       "dc:lastModified": {
         "@type": "xsd:date",
-        "@value": "2026-08-21"
+        "@value": "2026-09-09"
       },
       "owl:versionInfo": "0.1.10",
       "vann:preferredNamespacePrefix": "gs1de",
@@ -3184,6 +3184,31 @@
       },
       "rdfs:range": {
         "@id": "xsd:string"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:targetHairTypeCode",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Indicates, with reference to the product branding, labelling or packaging, the descriptive term that is used by the product manufacturer to identify the hair type for which the product is intended."
+      },
+      "rdfs:domain": {
+        "@id": "gs1:Product"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "gs1de:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Target Hair Type Code"
+      },
+      "rdfs:range": {
+        "@id": "gs1de:"
       },
       "sw:term_status": "testing"
     },
