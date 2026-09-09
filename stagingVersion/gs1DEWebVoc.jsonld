@@ -9873,6 +9873,521 @@
       },
       "skos:prefLabel": "UNSPECIFIED",
       "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Target Skin Type Code"
+      },
+      "rdfs:subClassOf": {
+        "@id": "gs1:TypeCode"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-AGING",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Wrinkles, age spots and dryness skin becomes thinner and loses fat, making it less plump and smooth."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Aging"
+      },
+      "skos:prefLabel": "AGING",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-ALL_TYPES",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "All types of skin types applicable for use."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "All skin types"
+      },
+      "skos:prefLabel": "ALL_TYPES",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-ATOPIC",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Atopic dermatitis (eczema) is a condition that makes your skin red and itchy."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Atopic dermatitis (eczema)"
+      },
+      "skos:prefLabel": "ATOPIC",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-COMBINATION",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Multiple types of skin types applicable for use."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Combination"
+      },
+      "skos:prefLabel": "COMBINATION",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-CRACKED",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Cracked skin is a classic symptom of dry skin, but it can also occur in response to scratches or other trauma, or infection. When the skin dries, it can become rough and flaky, with small tears that can lead to deeper cracks called fissures, which can extend into the deeper layers of the skin."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Cracked"
+      },
+      "skos:prefLabel": "CRACKED",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-DRY_OR_DEHYDRATED",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Note: This code is being deprecated and will be removed in a future release. Please follow the migration for correct population. Dry skin is an uncomfortable condition marked by scaling, itching, and cracking."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dry or dehydrated"
+      },
+      "skos:prefLabel": "DRY_OR_DEHYDRATED",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-IMPURE",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Regulates oil production, combats acne-causing bacteria, and soothes inflammation to prevent new pimples from forming while treating existing ones."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Impure / acne-prone skin"
+      },
+      "skos:prefLabel": "IMPURE",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-NORMAL",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Normal is a term widely used to refer to well-balanced skin. The scientific term for well-balanced skin is eudermic."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Normal"
+      },
+      "skos:prefLabel": "NORMAL",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-OILY",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Balances sebum production with mattifying agents that absorb excess oil without stripping the skin’s natural moisture."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Oily / oiliness"
+      },
+      "skos:prefLabel": "OILY",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-OTHER",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The value needed is not listed or is not defined within this list’s individual code values and definitions. Please send a work request into GS1 or your solution provider requesting the code you are searching for."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Other"
+      },
+      "skos:prefLabel": "OTHER",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-REDDENED_IRRITATED",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Calms inflamed or irritated skin, reducing visible redness while providing comfort to stressed complexions."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Redness"
+      },
+      "skos:prefLabel": "REDDENED_IRRITATED",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-SENSITIVE",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Soothes and protects delicate skin, minimizing irritation and redness while strengthening the skin’s natural defense barrier against environmental stressors."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Sensitive skin"
+      },
+      "skos:prefLabel": "SENSITIVE",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-TIRED",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Skin fatigue is caused by a combination of lifestyle- and stress-related factors, lack of sleep and exercise, smoking, unhealthy diet."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Tired"
+      },
+      "skos:prefLabel": "TIRED",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-VERY_DRY",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Very dry skin is a deterioration of already dry skin. It can be caused by improper care of dry skin over prolonged time or by a medical condition. Similar to dry skin it is marked by scaling, itching, and cracking."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Very dry"
+      },
+      "skos:prefLabel": "VERY_DRY",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-DAMAGED",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Damaged or stressed skin is out of balance and consequently shows as a result redness and discomfort such as burning, tightness or itching."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Damaged"
+      },
+      "skos:prefLabel": "DAMAGED",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-HYPERSENSITIVE",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The term hypersensitivity is used in medicine to describe a general hypersensitivity of the skin to certain microorganisms, substances or stimuli. Hypersensitivity is a generic term for allergy, pseudo-allergy, intolerance and idiosyncrasy."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Hypersensitive"
+      },
+      "skos:prefLabel": "HYPERSENSITIVE",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-MEDIUM",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Medium is a term widely used to refer to skin which is characterized between Normal and Dry."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Medium"
+      },
+      "skos:prefLabel": "MEDIUM",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-ALL_TYPES_EXCEPT_SENSITIVE",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This refers to products suitable for normal, dry, combination, or oily skin types but not recommended for sensitive skin due to potential irritants that could cause reactions in those with delicate skin conditions."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "All types except sensitive"
+      },
+      "skos:prefLabel": "ALL_TYPES_EXCEPT_SENSITIVE",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-NORMAL_TO_OILY",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Normal to oily skin tends to have a balanced moisture level with occasional overproduction of sebum in the T-zone (forehead, nose, and chin). This skin type may experience some shininess by mid-day and might be prone to mild acne or enlarged pores."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Normal to oily"
+      },
+      "skos:prefLabel": "NORMAL_TO_OILY",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-VERY_OILY",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Very oily skin produces excess sebum (skin oil), leading to a shiny complexion, enlarged pores, frequent acne breakouts or blemishes, and may require specific skincare regimens to manage oiliness."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Very oily"
+      },
+      "skos:prefLabel": "VERY_OILY",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-AGE_SPOT",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Brightens age-related pigmentation spots through targeted ingredients that fade discoloration for an even-toned surface."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Age spot"
+      },
+      "skos:prefLabel": "AGE_SPOT",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-BLACK_SPOT",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Lightens dark spots on the skin caused by hyperpigmentation or sun damage for a more uniform skin tone and enhanced radiance."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Black spot"
+      },
+      "skos:prefLabel": "BLACK_SPOT",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-BLACKHEADS_WHITEHEADS",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Clears clogged pores of trapped oils and dead cells which form blackheads (open comedones) or whiteheads (closed comedones), promoting clear pores."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Blackheads/whiteheads"
+      },
+      "skos:prefLabel": "BLACKHEADS_WHITEHEADS",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-DARK_CIRCLES",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Reduces under-eye discoloration with active ingredients that improve microcirculation and lighten darkened areas for a refreshed look."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dark circles"
+      },
+      "skos:prefLabel": "DARK_CIRCLES",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-DEHYDRATION",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Boosts water content in the outer layer of the skin using humectants that attract moisture from the environment for lasting hydration."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dehydration"
+      },
+      "skos:prefLabel": "DEHYDRATION",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-DRYNESS",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Intensely hydrates dry areas by locking in moisture to relieve tightness and flakiness for supple, nourished skin."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dryness"
+      },
+      "skos:prefLabel": "DRYNESS",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-DULLNESS",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Revitalizes tired-looking skin by encouraging cell turnover to reveal a fresher, brighter complexion underneath."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dullness"
+      },
+      "skos:prefLabel": "DULLNESS",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-FINE_LINES_WRINKLES",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Diminishes visible signs of aging by filling in fine lines and plumping up wrinkles to create a smoother facial canvas."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Fine lines/wrinkles"
+      },
+      "skos:prefLabel": "FINE_LINES_WRINKLES",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-HYPERPIGMENTATION",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Evens out pigmentation issues like dark spots or melasma with brightening agents that inhibit excess melanin production."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Hyperpigmentation"
+      },
+      "skos:prefLabel": "HYPERPIGMENTATION",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-IMPERFECTIONS",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Refines skin's texture, targeting irregularities such as minor blemishes and rough patches for a smoother, more even complexion."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Imperfections"
+      },
+      "skos:prefLabel": "IMPERFECTIONS",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-LACK_OF_FIRMNESS",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Rejuvenates slackened areas with firming treatments that reinforce structural components within the dermis layer for tighter contours."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Lack of firmness"
+      },
+      "skos:prefLabel": "LACK_OF_FIRMNESS",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-LOSS_OF_ELASTICITY",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Improves skin's resilience and tightness by enhancing the synthesis of collagen and elastin, reducing the appearance of sagging and promoting a youthful bounce."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Loss of elasticity"
+      },
+      "skos:prefLabel": "LOSS_OF_ELASTICITY",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-PIMPLES",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Targets and treats acne-causing bacteria, reduces inflammation, and prevents future breakouts to promote clearer-looking skin."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Pimples"
+      },
+      "skos:prefLabel": "PIMPLES",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-PUFFINES",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Reduces swelling around the eyes with decongesting properties that alleviate water retention to restore eye contour definition."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Puffines"
+      },
+      "skos:prefLabel": "PUFFINES",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-UNEVEN_TEXTURE",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Smooths out irregular textures by accelerating cell renewal processes which refine surface imperfections for an improved feel."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Uneven texture"
+      },
+      "skos:prefLabel": "UNEVEN_TEXTURE",
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:TargetSkinTypeCode-VISIBLE_PORES",
+      "@type": "gs1de:TargetSkinTypeCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Minimizes the appearance of enlarged pores through deep cleansing and tightening actions for a smooth, refined texture."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Visible pores"
+      },
+      "skos:prefLabel": "VISIBLE_PORES",
+      "sw:term_status": "testing"
     }
   ]
 }
