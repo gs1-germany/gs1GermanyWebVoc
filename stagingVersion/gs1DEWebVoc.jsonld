@@ -531,6 +531,9 @@
         "@language": "en",
         "@value": "Health Related Information"
       },
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      },
       "sw:term_status": "testing"
     },
     {
