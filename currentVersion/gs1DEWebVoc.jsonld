@@ -3502,7 +3502,7 @@
       "sw:term_status": "testing"
     },
     {
-      "@id": "gs1de:GreenhouseGasEmissionScopeType-SCOPE_1",
+      "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_1",
       "@type": "gs1de:GreenhouseGasEmissionScopeType",
       "rdfs:comment": {
         "@language": "en",
@@ -3512,11 +3512,11 @@
         "@language": "en",
         "@value": "Greenhouse Gas Protocol Scope 1"
       },
-      "skos:prefLabel": "SCOPE_1",
+      "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_1",
       "sw:term_status": "testing"
     },
     {
-      "@id": "gs1de:GreenhouseGasEmissionScopeType-SCOPE_2",
+      "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_2",
       "@type": "gs1de:GreenhouseGasEmissionScopeType",
       "rdfs:comment": {
         "@language": "en",
@@ -3526,11 +3526,11 @@
         "@language": "en",
         "@value": "Greenhouse Gas Protocol Scope 2"
       },
-      "skos:prefLabel": "SCOPE_2",
+      "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_2",
       "sw:term_status": "testing"
     },
     {
-      "@id": "gs1de:GreenhouseGasEmissionScopeType-SCOPE_3",
+      "@id": "gs1de:GreenhouseGasEmissionScopeType-GREENHOUSEGAS_PROTOCOL_SCOPE_3",
       "@type": "gs1de:GreenhouseGasEmissionScopeType",
       "rdfs:comment": {
         "@language": "en",
@@ -3540,7 +3540,7 @@
         "@language": "en",
         "@value": "Greenhouse Gas Protocol Scope 3"
       },
-      "skos:prefLabel": "SCOPE_3",
+      "skos:prefLabel": "GREENHOUSEGAS_PROTOCOL_SCOPE_3",
       "sw:term_status": "testing"
     },
     {
