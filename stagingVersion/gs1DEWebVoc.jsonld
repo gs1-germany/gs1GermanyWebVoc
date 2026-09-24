@@ -36,7 +36,7 @@
       },
       "dc:lastModified": {
         "@type": "xsd:date",
-        "@value": "2026-09-14"
+        "@value": "2026-09-24"
       },
       "owl:versionInfo": "0.1.12",
       "vann:preferredNamespacePrefix": "gs1de",
@@ -3406,6 +3406,31 @@
       },
       "rdfs:range": {
         "@id": "xsd:float"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:greenhouseGasEmissionFlagClassificationCode",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Indicates whether the greenhouse gas emission reduction target relates to Forest, Land and Agriculture (FLAG) emissions or to all other greenhouse gas emissions (NON_FLAG)."
+      },
+      "rdfs:domain": {
+        "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "gs1de:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Greenhouse Gas Emission Flag Classification Code"
+      },
+      "rdfs:range": {
+        "@id": "gs1de:GreenhouseGasEmissionFlagClassificationCode"
       },
       "sw:term_status": "testing"
     },
