@@ -10585,6 +10585,53 @@
       },
       "skos:prefLabel": "VISIBLE_PORES",
       "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:GreenhouseGasEmissionFlagClassificationCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A code list indicating whether a greenhouse gas emission reduction target relates to Forest, Land and Agriculture (FLAG) emissions or to all other greenhouse gas emissions (NON_FLAG)."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Greenhouse Gas Emission Flag Classification Code"
+      },
+      "rdfs:subClassOf": {
+        "@id": "gs1:TypeCode"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:GreenhouseGasEmissionFlagClassificationCode-FLAG",
+      "@type": "gs1de:GreenhouseGasEmissionFlagClassificationCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Greenhouse gas emission reduction target related to Forest, Land and Agricultural activities."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "gs1de:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "FLAG"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:GreenhouseGasEmissionFlagClassificationCode-NON_FLAG",
+      "@type": "gs1de:GreenhouseGasEmissionFlagClassificationCode",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Greenhouse gas emission reduction target related to greenhouse gas emissions other than Forest, Land and Agriculture (FLAG) emissions."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "gs1de:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "NON_FLAG"
+      },
+      "sw:term_status": "testing"
     }
   ]
 }
