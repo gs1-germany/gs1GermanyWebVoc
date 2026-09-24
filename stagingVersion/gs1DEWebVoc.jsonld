@@ -10608,13 +10608,11 @@
         "@language": "en",
         "@value": "Greenhouse gas emission reduction target related to Forest, Land and Agricultural activities."
       },
-      "rdfs:isDefinedBy": {
-        "@id": "gs1de:"
-      },
       "rdfs:label": {
         "@language": "en",
         "@value": "FLAG"
       },
+      "skos:prefLabel": "FLAG",
       "sw:term_status": "testing"
     },
     {
@@ -10624,13 +10622,11 @@
         "@language": "en",
         "@value": "Greenhouse gas emission reduction target related to greenhouse gas emissions other than Forest, Land and Agriculture (FLAG) emissions."
       },
-      "rdfs:isDefinedBy": {
-        "@id": "gs1de:"
-      },
       "rdfs:label": {
         "@language": "en",
-        "@value": "NON_FLAG"
+        "@value": "NON-FLAG"
       },
+      "skos:prefLabel": "NON_FLAG",
       "sw:term_status": "testing"
     }
   ]
