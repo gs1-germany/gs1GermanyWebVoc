@@ -837,7 +837,7 @@
       ],
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Licence Identification Type Code"
+        "@value": "A coded value indicating the type of licence identifier being referenced."
       },
       "rdfs:domain": {
         "@id": "gs1de:LicenceID_Details"
@@ -8582,7 +8582,7 @@
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Other type of battery."
+        "@value": "Other"
       },
       "skos:prefLabel": "OTHER",
       "sw:term_status": "testing"
