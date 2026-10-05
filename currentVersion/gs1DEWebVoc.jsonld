@@ -36,9 +36,9 @@
       },
       "dc:lastModified": {
         "@type": "xsd:date",
-        "@value": "2026-09-24"
+        "@value": "2026-10-05"
       },
-      "owl:versionInfo": "0.1.12",
+      "owl:versionInfo": "0.1.13",
       "vann:preferredNamespacePrefix": "gs1de",
       "vann:preferredNamespaceUri": {
         "@id": "gs1de:"
@@ -837,7 +837,7 @@
       ],
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Licence Identification Type Code"
+        "@value": "A coded value indicating the type of licence identifier being referenced."
       },
       "rdfs:domain": {
         "@id": "gs1de:LicenceID_Details"
@@ -3431,6 +3431,31 @@
       },
       "rdfs:range": {
         "@id": "gs1de:GreenhouseGasEmissionFlagClassificationCode"
+      },
+      "sw:term_status": "testing"
+    },
+    {
+      "@id": "gs1de:preferredTradingCurrency",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The preferred trading currency of an organisation, expressed as an ISO 4217 currency code (e.g. EUR, USD, GBP)."
+      },
+      "rdfs:domain": {
+        "@id": "gs1:Organization"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "gs1de:"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Preferred Trading Currency"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
       },
       "sw:term_status": "testing"
     },
@@ -8557,7 +8582,7 @@
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Other type of battery."
+        "@value": "Other"
       },
       "skos:prefLabel": "OTHER",
       "sw:term_status": "testing"
