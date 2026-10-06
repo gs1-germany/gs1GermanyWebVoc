@@ -167,6 +167,24 @@
     },
     "gs1de:batteryWattHourRating": {
       "@type": "xsd:float"
+    },
+    "gs1de:targetHairTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:targetSkinTypeCode": {
+      "@type": "@vocab"
+    },
+    "gs1de:doesTradeItemCompositionIncludeLatex": {
+      "@type": "@vocab"
+    },
+    "gs1de:isTradeItemChemicalNotIntendedForHumanConsumption": {
+      "@type": "@vocab"
+    },
+    "gs1de:tradeItemUVRating": {
+      "@type": "xsd:float"
+    },
+    "gs1de:greenhouseGasEmissionFlagClassificationCode": {
+      "@type": "@vocab"
     }
   }
 }
