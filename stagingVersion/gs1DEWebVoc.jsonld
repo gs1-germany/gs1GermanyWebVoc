@@ -36,9 +36,9 @@
       },
       "dc:lastModified": {
         "@type": "xsd:date",
-        "@value": "2026-10-05"
+        "@value": "2026-10-20"
       },
-      "owl:versionInfo": "0.1.14",
+      "owl:versionInfo": "0.1.15",
       "vann:preferredNamespacePrefix": "gs1de",
       "vann:preferredNamespaceUri": {
         "@id": "gs1de:"
@@ -3417,7 +3417,7 @@
       ],
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Indicates whether the greenhouse gas emission reduction target relates to Forest, Land and Agriculture (FLAG) emissions or to all other greenhouse gas emissions (NON_FLAG)."
+        "@value": "Indicates whether the greenhouse gas emission reduction target relates to Forest, Land and Agriculture (FLAG) emissions or to all other greenhouse gas emissions (NON_FLAG). If the property is omitted, no FLAG/non-FLAG differentiation is stated for the target."
       },
       "rdfs:domain": {
         "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
@@ -10631,7 +10631,7 @@
       "@type": "gs1de:GreenhouseGasEmissionFlagClassificationCode",
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Greenhouse gas emission reduction target related to Forest, Land and Agricultural activities."
+        "@value": "Greenhouse gas emission reduction target covering emissions from Forest, Land and Agriculture (FLAG) sources, i.e. emissions related to land use change and land management. Where the applied target-setting methodology accounts for land-related carbon removals, the stated quantities may include them."
       },
       "rdfs:label": {
         "@language": "en",
@@ -10645,7 +10645,7 @@
       "@type": "gs1de:GreenhouseGasEmissionFlagClassificationCode",
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Greenhouse gas emission reduction target related to greenhouse gas emissions other than Forest, Land and Agriculture (FLAG) emissions."
+        "@value": "Greenhouse gas emission reduction target covering emissions from sources other than Forest, Land and Agriculture (FLAG), e.g. energy use and industrial processes. Land-related carbon removals are not included."
       },
       "rdfs:label": {
         "@language": "en",
