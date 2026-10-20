@@ -3417,7 +3417,7 @@
       ],
       "rdfs:comment": {
         "@language": "en",
-        "@value": "Indicates whether the greenhouse gas emission reduction target relates to Forest, Land and Agriculture (FLAG) emissions or to all other greenhouse gas emissions (NON_FLAG)."
+        "@value": "Indicates whether the greenhouse gas emission reduction target relates to Forest, Land and Agriculture (FLAG) emissions or to all other greenhouse gas emissions (NON_FLAG). If the property is omitted, no FLAG/non-FLAG differentiation is stated for the target."
       },
       "rdfs:domain": {
         "@id": "gs1de:GreenhouseGasEmissionReductionTargetDetails"
